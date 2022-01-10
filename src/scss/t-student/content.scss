@@ -1,0 +1,293 @@
+.t-student__info {
+    padding: 35px 0 70px 115px;
+    font-family: Inter;
+    & .wrappers {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 603px;
+        &-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #435179;
+        }
+        &-search {
+            width: 100%;
+            margin: 75px 0 0 0;
+            position: relative;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 12px 0 12px 60px;
+            &-icons {
+                position: absolute;
+                top: 50%;
+                left: 23px;
+                cursor: pointer;
+                transform: translate(0%, -50%);
+            }
+            & input {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000;
+                &::placeholder {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #435179;
+                }
+            }
+            & label {
+                position: absolute;
+                left: 17px;
+                top: calc(-100% + 10px);
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                color: #435179;
+            }
+        }
+        &-add {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 82px 0 17px;
+            margin: 45px 0 0 0;
+            &-items {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                color: #435179;
+                &:nth-child(2) {
+                    margin: 0 0 0 auto;
+                }
+                &:nth-child(3) {
+                    margin: 0 0 0 80px;
+                }
+            }
+        }
+        &-wrapper {
+            margin: 22px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        &-items {
+            margin: 0 0 23px 0;
+            padding: 13px 18px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-start;
+            &:last-child {
+                margin: 0;
+            }
+            &-photo {
+                width: 36px;
+                height: 36px;
+                background: #635FF2;
+                overflow: hidden;
+                border-radius: 50%;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &-name {
+                margin: 0 0 0 17px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: #435179;
+                width: 240px;
+            }
+            &-lessons {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 12px;
+                color: #8349FF;
+                margin: 0 0 0 20px;
+                width: 130px;
+            }
+            &-date {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 12px;
+                width: 110px;
+                margin: 0 0 0 20px;
+                color: #435179;
+            }
+        }
+    }
+    &-chat {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 603px;
+        &-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #435179;
+        }
+        &-add {
+            margin: 40px 0 0 17px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            color: #435179;
+        }
+        &-wrappers {
+            margin: 15px 0 0 0;
+            background: rgba(87, 65, 157, 0.03);
+            border-radius: 14px;
+            width: 603px;
+            height: 610px;
+            padding: 40px 41px 35px 41px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        &-message {
+            width: 100%;
+            height: 490px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            overflow-x: hidden;
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                width: 35px;
+            }
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 10px 10px transparent;
+                border: solid 12px transparent;
+                border-radius: 45px;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                box-shadow: inset 0 0 10px 10px transparent;
+                border: solid 12px transparent;
+                border-radius: 45px;
+            }
+            &-items {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 0 0 24px 0;
+                &-you {
+                    width: 100%;
+                    & .t-student__info-chat-message-photo {
+                        display: none;
+                    }
+                    & .t-student__info-chat-message-info {
+                        margin: 0 0 0 auto;
+                    }
+                    & .t-student__info-chat-message-date {
+                        margin: 8px 0 0 auto;
+                    }
+                    & .t-student__info-chat-message-text {
+                        background: rgba(113, 118, 255, 0.1);
+                        border-radius: 12px 0px 12px 12px;
+                    }
+                }
+            }
+            &-photo {
+                margin: 0 16px 0 0;
+                background: #C4C4C4;
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &-info {
+                width: max-content;
+                max-width: 430px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+            &-text {
+                background: #FFFFFF;
+                border-radius: 0px 12px 12px 12px;
+                padding: 16px;
+            }
+            &-date {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: #ACA7A7;
+                margin: 8px 0 0 0;
+            }
+        }
+        &-controls {
+            background: #FFFFFF;
+            border-radius: 12px;
+            width: 100%;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 30px;
+            &-message {
+                margin: 0 0 0 20px;
+                width: 100%;
+                & input {
+                    width: 100%;
+                }
+            }
+            &-file {
+                cursor: pointer;
+            }
+            &-small {
+                padding: 0 25px;
+                cursor: pointer;
+            }
+            &-btn {
+                width: 15px;
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}

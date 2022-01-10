@@ -1,0 +1,126 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg", alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_t-header.pug')
+
+section.t-student__info 
+    .wrappers 
+        .t-student__info-list 
+            .t-student__info-list-title Мои ученики
+            .t-student__info-list-search 
+                .t-student__info-list-search-icons 
+                    img(src="./svg/t-student/search.svg", alt="search")
+                input(type="text" placeholder="Поиск ..." id="teacherStudentSearch")
+                label(for="teacherStudentSearch") Найти ученика
+            ul.t-student__info-list-add
+                .t-student__info-list-add-items Ученик
+                .t-student__info-list-add-items Предмет
+                .t-student__info-list-add-items Дата
+            ul.t-student__info-list-wrapper 
+                li.t-student__info-list-items 
+                    .t-student__info-list-items-photo 
+                    .t-student__info-list-items-name Кузнецов Артур Дмитриевич
+                    .t-student__info-list-items-lessons Английский язык
+                    .t-student__info-list-items-date 8 месяцев назад
+                li.t-student__info-list-items 
+                    .t-student__info-list-items-photo 
+                    .t-student__info-list-items-name Кузнецов Артур Дмитриевич
+                    .t-student__info-list-items-lessons Английский язык
+                    .t-student__info-list-items-date 8 месяцев назад
+                li.t-student__info-list-items 
+                    .t-student__info-list-items-photo 
+                    .t-student__info-list-items-name Кузнецов Артур Дмитриевич
+                    .t-student__info-list-items-lessons Английский язык
+                    .t-student__info-list-items-date 8 месяцев назад
+                li.t-student__info-list-items 
+                    .t-student__info-list-items-photo 
+                    .t-student__info-list-items-name Кузнецов Артур Дмитриевич
+                    .t-student__info-list-items-lessons Английский язык
+                    .t-student__info-list-items-date 8 месяцев назад
+                li.t-student__info-list-items 
+                    .t-student__info-list-items-photo 
+                    .t-student__info-list-items-name Кузнецов Артур Дмитриевич
+                    .t-student__info-list-items-lessons Английский язык
+                    .t-student__info-list-items-date 8 месяцев назад
+                li.t-student__info-list-items 
+                    .t-student__info-list-items-photo 
+                    .t-student__info-list-items-name Кузнецов Артур Дмитриевич
+                    .t-student__info-list-items-lessons Английский язык
+                    .t-student__info-list-items-date 8 месяцев назад
+        .t-student__info-chat 
+            .t-student__info-chat-title Чат с учеником
+            .t-student__info-chat-add Сообщения
+            .t-student__info-chat-wrappers 
+                .t-student__info-chat-message 
+                    .t-student__info-chat-message-items 
+                        .t-student__info-chat-message-photo 
+                        .t-student__info-chat-message-info 
+                            .t-student__info-chat-message-text Артур, почему опять двойка ?
+                            .t-student__info-chat-message-date 3 минуты назад
+                    .t-student__info-chat-message-items.t-student__info-chat-message-items-you 
+                        .t-student__info-chat-message-photo 
+                        .t-student__info-chat-message-info 
+                            .t-student__info-chat-message-text Артур, почему опять двойка ?
+                            .t-student__info-chat-message-date 3 минуты назад
+                    .t-student__info-chat-message-items.t-student__info-chat-message-items-you 
+                        .t-student__info-chat-message-photo 
+                        .t-student__info-chat-message-info 
+                            .t-student__info-chat-message-text Артур, почему опять двойка ?
+                            .t-student__info-chat-message-date 3 минуты назад
+                    .t-student__info-chat-message-items 
+                        .t-student__info-chat-message-photo 
+                        .t-student__info-chat-message-info 
+                            .t-student__info-chat-message-text Артур, почему опять двойка ?
+                            .t-student__info-chat-message-date 3 минуты назад
+                    .t-student__info-chat-message-items 
+                        .t-student__info-chat-message-photo 
+                        .t-student__info-chat-message-info 
+                            .t-student__info-chat-message-text Артур, почему опять двойка ?
+                            .t-student__info-chat-message-date 3 минуты назад
+                    .t-student__info-chat-message-items.t-student__info-chat-message-items-you 
+                        .t-student__info-chat-message-photo 
+                        .t-student__info-chat-message-info 
+                            .t-student__info-chat-message-text Артур, почему опять двойка ?
+                            .t-student__info-chat-message-date 3 минуты назад
+                    
+
+
+
+
+
+
+                .t-student__info-chat-controls
+                    a(type="file").t-student__info-chat-controls-file 
+                        img(src="./svg/t-student/file.svg", alt="icons")
+                    .t-student__info-chat-controls-message 
+                        input(type="text" placeholder="Напишите сообщение ...")
+                    .t-student__info-chat-controls-small
+                        img(src="./svg/t-student/small.svg", alt="icons")
+                    button.t-student__info-chat-controls-btn 
+                        img(src="./svg/t-student/messages.svg", alt="icons")
+
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')

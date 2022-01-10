@@ -1,0 +1,91 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg", alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_t-header.pug')
+
+section.t-questions 
+    .wrappers 
+        .t-questions__message 
+            .t-questions__message-title Задать вопрос
+            .t-questions__message-add Текст сообщения
+            .t-questions__message-items 
+                textarea(placeholder="Опишите вашу проблему ...")
+            button.t-questions__message-btn 
+                p Отправить
+        .t-questions__list 
+            .t-questions__list-title Прошлые вопросы
+            .t-questions__list-nav 
+                .t-questions__list-nav-items 
+                    p Статус
+                .t-questions__list-nav-items 
+                    p Дата
+                .t-questions__list-nav-items 
+                    p Ваш вопрос
+            .t-questions__list-block 
+                .t-questions__list-block-items 
+                    .t-questions__list-block-status.t-questions__status-expectation Ждет ответа
+                    .t-questions__list-block-date 21.06.2021 
+                        span 23:02
+                    .t-questions__list-block-question Что из перечисленного не имеет отношения ...
+                
+                .t-questions__list-block-items 
+                    .t-questions__list-block-status.t-questions__status-cancel Отменен
+                    .t-questions__list-block-date 21.06.2021 
+                        span 23:02
+                    .t-questions__list-block-question Что из перечисленного не имеет отношения ...
+                .t-questions__list-block-items 
+                    .t-questions__list-block-status.t-questions__status-expectation Ждет ответа
+                    .t-questions__list-block-date 21.06.2021 
+                        span 23:02
+                    .t-questions__list-block-question Что из перечисленного не имеет отношения ...
+                .t-questions__list-block-items 
+                    .t-questions__list-block-status.t-questions__status-expectation Ждет ответа
+                    .t-questions__list-block-date 21.06.2021 
+                        span 23:02
+                    .t-questions__list-block-question Что из перечисленного не имеет отношения ...
+                .t-questions__list-block-items 
+                    .t-questions__list-block-status.t-questions__status-expectation Ждет ответа
+                    .t-questions__list-block-date 21.06.2021 
+                        span 23:02
+                    .t-questions__list-block-question Что из перечисленного не имеет отношения ...
+                .t-questions__list-block-items 
+                    .t-questions__list-block-status.t-questions__status-expectation Ждет ответа
+                    .t-questions__list-block-date 21.06.2021 
+                        span 23:02
+                    .t-questions__list-block-question Что из перечисленного не имеет отношения ...
+                .t-questions__list-block-items 
+                    .t-questions__list-block-status.t-questions__status-expectation Ждет ответа
+                    .t-questions__list-block-date 21.06.2021 
+                        span 23:02
+                    .t-questions__list-block-question Что из перечисленного не имеет отношения ...
+                .t-questions__list-block-items 
+                    .t-questions__list-block-status.t-questions__status-expectation Ждет ответа
+                    .t-questions__list-block-date 21.06.2021 
+                        span 23:02
+                    .t-questions__list-block-question Что из перечисленного не имеет отношения ...
+                
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')

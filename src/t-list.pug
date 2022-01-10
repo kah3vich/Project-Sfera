@@ -1,0 +1,107 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg", alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_t-header.pug')
+
+section.t-list 
+    .wrappers 
+        .t-list__title Мои ученики
+        .t-list__nav 
+            .t-list__nav-items 
+                p Ученик
+            .t-list__nav-items 
+                p Предмет
+            .t-list__nav-items 
+                p Дата
+        .t-list__block 
+            .t-list__block-items 
+                .t-list__block-items-info 
+                    .t-list__block-items-info-photo 
+                    .t-list__block-items-info-name Кузнецов Артур Дмитриевич
+                    .t-list__block-items-info-lesson Английский язык
+                    .t-list__block-items-info-date 8 месяцев назад
+                .t-list__block-items-btn
+                    p Перейти к уроку
+            .t-list__block-items 
+                .t-list__block-items-info 
+                    .t-list__block-items-info-photo 
+                    .t-list__block-items-info-name Кузнецов Артур Дмитриевич
+                    .t-list__block-items-info-lesson Английский язык
+                    .t-list__block-items-info-date 8 месяцев назад
+                .t-list__block-items-btn
+                    p Перейти к уроку
+            .t-list__block-items 
+                .t-list__block-items-info 
+                    .t-list__block-items-info-photo 
+                    .t-list__block-items-info-name Кузнецов Артур Дмитриевич
+                    .t-list__block-items-info-lesson Английский язык
+                    .t-list__block-items-info-date 8 месяцев назад
+                .t-list__block-items-btn
+                    p Перейти к уроку
+            .t-list__block-items 
+                .t-list__block-items-info 
+                    .t-list__block-items-info-photo 
+                    .t-list__block-items-info-name Кузнецов Артур Дмитриевич
+                    .t-list__block-items-info-lesson Английский язык
+                    .t-list__block-items-info-date 8 месяцев назад
+                .t-list__block-items-btn
+                    p Перейти к уроку
+            .t-list__block-items 
+                .t-list__block-items-info 
+                    .t-list__block-items-info-photo 
+                    .t-list__block-items-info-name Кузнецов Артур Дмитриевич
+                    .t-list__block-items-info-lesson Английский язык
+                    .t-list__block-items-info-date 8 месяцев назад
+                .t-list__block-items-btn
+                    p Перейти к уроку
+            .t-list__block-items 
+                .t-list__block-items-info 
+                    .t-list__block-items-info-photo 
+                    .t-list__block-items-info-name Кузнецов Артур Дмитриевич
+                    .t-list__block-items-info-lesson Английский язык
+                    .t-list__block-items-info-date 8 месяцев назад
+                .t-list__block-items-btn
+                    p Перейти к уроку
+            .t-list__block-items 
+                .t-list__block-items-info 
+                    .t-list__block-items-info-photo 
+                    .t-list__block-items-info-name Кузнецов Артур Дмитриевич
+                    .t-list__block-items-info-lesson Английский язык
+                    .t-list__block-items-info-date 8 месяцев назад
+                .t-list__block-items-btn
+                    p Перейти к уроку
+            .t-list__block-items 
+                .t-list__block-items-info 
+                    .t-list__block-items-info-photo 
+                    .t-list__block-items-info-name Кузнецов Артур Дмитриевич
+                    .t-list__block-items-info-lesson Английский язык
+                    .t-list__block-items-info-date 8 месяцев назад
+                .t-list__block-items-btn
+                    p Перейти к уроку
+            
+
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')

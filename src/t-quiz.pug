@@ -1,0 +1,245 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg", alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_t-header.pug')
+
+section.t-quiz
+    .wrappers 
+        .t-quiz__type 
+            .t-quiz__type-title Материалы
+            .t-quiz__type-add Выберите тип образования
+            .t-quiz__type-block 
+                .t-quiz__type-block-items 
+                    img(src="./img/t-quiz/img-1.png", alt="img")
+                    p Дошкольное образование
+                .t-quiz__type-block-items 
+                    img(src="./img/t-quiz/img-2.png", alt="img")
+                    p Начальное образование
+
+
+        .t-quiz__age.display-n
+            .t-quiz__age-title Материалы
+                span /
+                p Дошкольное образование
+            .t-quiz__age-add Выберите возраст
+            .t-quiz__age-list 
+                .t-quiz__age-items#t_quizAgeElement_1
+                    p 3-4 года
+                .t-quiz__age-items#t_quizAgeElement_2
+                    p 4-5 лет
+                .t-quiz__age-items#t_quizAgeElement_3
+                    p 5-6 лет
+                .t-quiz__age-items#t_quizAgeElement_4
+                    p 7-8 лет
+            .t-quiz__age-block 
+                .t-quiz__age-items#t_quizAgeElement_5
+                    p Методические пособия и материалы
+
+        .t-quiz__book.display-n 
+            .t-quiz__book-title Материалы
+                span /
+                h3 Дошкольное образование
+                span /
+                p 5-6 лет
+            .t-quiz__book-list 
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__book-items 
+                    .t-quiz__book-items-photo
+                        img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__book-items-text 
+                        p 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+
+
+        .t-quiz__page.display-n 
+            .t-quiz__page-title Материалы
+                span /
+                h3 Дошкольное образование
+                span /
+                p 5-6 лет
+            .t-quiz__page-add 
+                h3 3000 заданий для подготовки детей к школе. Раскрась и запомни - Узорова О.В., Нефёдова Е.А.
+                .t-quiz__page-adds
+                    p Всего страниц: 17
+                    span Могу купить: 2
+            .t-quiz__page-wrapper
+                .t-quiz__page-list 
+                    .t-quiz__page-items 
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/book.png", alt="book")
+                    .t-quiz__page-items 
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items 
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items 
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items 
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items 
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    .t-quiz__page-items.t-quiz__opacity-book
+                        .t-quiz__page-items-number
+                        .t-quiz__page-items-line 
+                        .t-quiz__page-items-photo
+                            img(src="./img/t-quiz/page.png", alt="page")
+                    
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')

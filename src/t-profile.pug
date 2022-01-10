@@ -1,0 +1,166 @@
+@@include('components/_head.pug', {
+    "title": "Профиль",
+})
+
+@@include('components/_menu.pug')
+
+@@include('components/_t-header.pug')
+
+section.t-profile__banners 
+    .wrappers 
+        .t-profile__banners-items 
+            .t-profile__banners-text 
+                h3 5
+                p Сегодня занятий
+            .t-profile__banners-icons 
+                img(src="./img/t-profile/profile-icons-1.png", alt="img")
+        .t-profile__banners-items 
+            .t-profile__banners-text 
+                h3 36
+                p Моих учеников
+            .t-profile__banners-icons 
+                img(src="./img/t-profile/profile-icons-2.png", alt="img")
+        .t-profile__banners-items 
+            .t-profile__banners-text 
+                h3 165
+                p Проведено занятий
+            .t-profile__banners-icons 
+                img(src="./img/t-profile/profile-icons-3.png", alt="img")
+
+section.t-profile__info 
+    .wrappers 
+        .t-profile__info-student 
+            .t-profile__info-student-title Мои ученики
+            .t-profile__info-student-nav 
+                .t-profile__info-student-nav-items Ученик
+                .t-profile__info-student-nav-items Предмет
+                .t-profile__info-student-nav-items Дата
+            ul.t-profile__info-student-list 
+                li.t-profile__info-student-items 
+                    .t-profile__info-student-photo 
+                    .t-profile__info-student-name Кузнецов Артур Дмитриевич
+                    .t-profile__info-student-lessons Английский язык
+                    .t-profile__info-student-date 8 месяцев назад
+                li.t-profile__info-student-items 
+                    .t-profile__info-student-photo 
+                    .t-profile__info-student-name Кузнецов Артур Дмитриевич
+                    .t-profile__info-student-lessons Английский язык
+                    .t-profile__info-student-date 8 месяцев назад
+                li.t-profile__info-student-items 
+                    .t-profile__info-student-photo 
+                    .t-profile__info-student-name Кузнецов Артур Дмитриевич
+                    .t-profile__info-student-lessons Английский язык
+                    .t-profile__info-student-date 8 месяцев назад
+                li.t-profile__info-student-items 
+                    .t-profile__info-student-photo 
+                    .t-profile__info-student-name Кузнецов Артур Дмитриевич
+                    .t-profile__info-student-lessons Английский язык
+                    .t-profile__info-student-date 8 месяцев назад
+                li.t-profile__info-student-items 
+                    .t-profile__info-student-photo 
+                    .t-profile__info-student-name Кузнецов Артур Дмитриевич
+                    .t-profile__info-student-lessons Английский язык
+                    .t-profile__info-student-date 8 месяцев назад
+                li.t-profile__info-student-items 
+                    .t-profile__info-student-photo 
+                    .t-profile__info-student-name Кузнецов Артур Дмитриевич
+                    .t-profile__info-student-lessons Английский язык
+                    .t-profile__info-student-date 8 месяцев назад
+                
+
+        .t-profile__info-lessons 
+            .t-profile__info-lessons-title Ближайшие занятия
+            .t-profile__info-lessons-nav 
+                .t-profile__info-lessons-nav-items Название урока
+                .t-profile__info-lessons-nav-items Дата
+                .t-profile__info-lessons-nav-items Статус
+            .t-profile__info-lessons-wrapper 
+                ul.t-profile__info-lessons-list
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    li.t-profile__info-lessons-items 
+                        .t-profile__info-lessons-name Высшая математика
+                        .t-profile__info-lessons-date 12.01.2022
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-ready.display-n Состоится
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-cancel.display-n Отменен
+                        .t-profile__info-lessons-status.t-profile__info-lessons-status-expect Не подтвержден
+                    
+
+
+@@include('components/_script.pug')

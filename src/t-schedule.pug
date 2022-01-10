@@ -1,0 +1,132 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg", alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_t-header.pug')
+
+section.t-schedule__info 
+    .wrappers 
+        .t-schedule__info-calendar 
+            .t-schedule__info-calendar-title Мое расписание
+            .t-schedule__info-calendar-add Выберите дату
+            .t-schedule__info-calendar-items 
+                #datepickerScheduleTeacher
+            button.t-schedule__info-calendar-btn 
+                p Добавить занятие
+        .t-schedule__info-list 
+            .t-schedule__info-list-title 18.01.2022
+            .t-schedule__info-list-add Название и время урока
+            .t-schedule__info-list-wrapper 
+                ul.t-schedule__info-lists 
+                    li.t-schedule__info-items.t-schedule__info-items-ready
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.t-schedule__info-items.t-schedule__info-items-cancel
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.t-schedule__info-items.t-schedule__info-items-waiting
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.t-schedule__info-items
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.t-schedule__info-items
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.t-schedule__info-items
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.t-schedule__info-items
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.t-schedule__info-items
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.t-schedule__info-items
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.t-schedule__info-items
+                        .t-schedule__info-items-number 
+                        .t-schedule__info-items-line 
+                        .t-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .t-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+
+.t-schedule__list.display-n
+    .t-schedule__list-items 12/29/2021
+    .t-schedule__list-items 12/30/2021
+    .t-schedule__list-items 12/31/2021
+    .t-schedule__list-items 01/12/2022
+    .t-schedule__list-items 01/17/2022
+    .t-schedule__list-items 01/30/2022
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')

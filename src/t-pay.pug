@@ -1,0 +1,104 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg", alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_t-header.pug')
+
+section.t-pay 
+    .wrappers 
+        .t-pay__history 
+            .t-pay__history-title История операций
+            .t-pay__history-nav 
+                .t-pay__history-nav-items 
+                    p Дата
+                .t-pay__history-nav-items 
+                    p Сумма платежа
+                .t-pay__history-nav-items 
+                    p Статус
+                .t-pay__history-nav-items 
+                    p Комментарий
+            .t-pay__history-list 
+                .t-pay__history-list-items 
+                    .t-pay__history-list-items-date 03.04.2021
+                    .t-pay__history-list-items-price 1 790₽ 
+                    .t-pay__history-list-items-status.t-pay__status-cancel Отменен
+                    .t-pay__history-list-items-comment Еще доплатить 300 руб
+                .t-pay__history-list-items 
+                    .t-pay__history-list-items-date 03.04.2021
+                    .t-pay__history-list-items-price 1 790₽ 
+                    .t-pay__history-list-items-status.t-pay__status-ready Выполнен
+                    .t-pay__history-list-items-comment Еще доплатить 300 руб
+                .t-pay__history-list-items 
+                    .t-pay__history-list-items-date 03.04.2021
+                    .t-pay__history-list-items-price 1 790₽ 
+                    .t-pay__history-list-items-status.t-pay__status-ready Выполнен
+                    .t-pay__history-list-items-comment Еще доплатить 300 руб
+                .t-pay__history-list-items 
+                    .t-pay__history-list-items-date 03.04.2021
+                    .t-pay__history-list-items-price 1 790₽ 
+                    .t-pay__history-list-items-status.t-pay__status-ready Выполнен
+                    .t-pay__history-list-items-comment Еще доплатить 300 руб
+                .t-pay__history-list-items 
+                    .t-pay__history-list-items-date 03.04.2021
+                    .t-pay__history-list-items-price 1 790₽ 
+                    .t-pay__history-list-items-status.t-pay__status-ready Выполнен
+                    .t-pay__history-list-items-comment Еще доплатить 300 руб
+                .t-pay__history-list-items 
+                    .t-pay__history-list-items-date 03.04.2021
+                    .t-pay__history-list-items-price 1 790₽ 
+                    .t-pay__history-list-items-status.t-pay__status-ready Выполнен
+                    .t-pay__history-list-items-comment Еще доплатить 300 руб
+                .t-pay__history-list-items 
+                    .t-pay__history-list-items-date 03.04.2021
+                    .t-pay__history-list-items-price 1 790₽ 
+                    .t-pay__history-list-items-status.t-pay__status-ready Выполнен
+                    .t-pay__history-list-items-comment Еще доплатить 300 руб
+                .t-pay__history-list-items 
+                    .t-pay__history-list-items-date 03.04.2021
+                    .t-pay__history-list-items-price 1 790₽ 
+                    .t-pay__history-list-items-status.t-pay__status-ready Выполнен
+                    .t-pay__history-list-items-comment Еще доплатить 300 руб
+                .t-pay__history-list-items 
+                    .t-pay__history-list-items-date 03.04.2021
+                    .t-pay__history-list-items-price 1 790₽ 
+                    .t-pay__history-list-items-status.t-pay__status-ready Выполнен
+                    .t-pay__history-list-items-comment Еще доплатить 300 руб
+                
+        .t-pay__account
+            .t-pay__account-title Мой счет
+            .t-pay__account-add Пополнить мой счет 
+            .t-pay__account-block 
+                .t-pay__account-block-sum 
+                    .t-pay__account-block-sum-add Баланс
+                    .t-pay__account-block-sum-items 10 790₽ 
+                    .t-pay__account-block-sum-text Замятина Татьяна Сергеевна
+                    .t-pay__account-block-sum-circle
+                .t-pay__account-block-input 
+                    input(type="text" placeholder="Укажите сумму ...")
+                button.t-pay__account-block-btn
+                    p Пополнить
+
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')
