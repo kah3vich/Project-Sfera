@@ -1,0 +1,448 @@
+.s-active-date {
+    & a {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 3px;
+            left: 55%;
+            transform: translate(-50%, 0%);
+            width: 6px;
+            height: 6px;
+            z-index: 5;
+            border-radius: 50%;
+            background: linear-gradient(90.82deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%), #6461F2;
+        }
+    }
+}
+
+
+.s-schedule__info {
+    padding: 35px 0 80px 115px;
+    font-family: Inter;
+    & .wrappers {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &-title {
+        max-width: 1325px;
+        margin: 0 auto 58px auto;
+        padding: 0 40px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: rgba(67, 81, 121, 0.5);
+        & span {
+            margin: 0 11px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #435179;
+        }
+        & p {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #435179;
+        }
+    }
+    &-profile {
+        width: 266px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 35px 0 35px 0;
+        &-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: #635FF2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-name {
+            margin: 27px 0 0 0;
+            width: 151px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+            color: #435179;
+        }
+        &-add {
+            margin: 21px 0 0 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+            opacity: 0.6;
+        }
+        &-price {
+            margin: 12px 0 0 0;
+            border: 1px solid #625DEE;
+            width: 151px;
+            height: 33px;
+            border-radius: 16.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            & p {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #625DEE;
+            }
+        }
+        &-lessons {
+            margin: 27px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        &-lesson {
+            margin: 0 0 5px 0;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 23px;
+            text-align: center;
+            color: #625DEE;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    &-calendar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        &-items {
+            width: 508px;
+            height: 500px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 38px 47px;
+            & #datepickerScheduleStudent {
+                width: 100%;
+                height: 100%;
+            }
+            & .ui-datepicker {
+                width: 100%;
+                height: 100%;
+            }
+            & .ui-datepicker-header {
+                background: transparent;
+                position: relative;
+                border: none;
+                padding: 0;
+                height: 45px;
+            }
+            & .ui-state-disabled {
+                & span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    background: transparent;
+                }
+            }
+            & .ui-datepicker-title {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0;
+                & span {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 44px;
+                    color: #000000;
+                    &:nth-child(2) {
+                        margin: 0 0 0 7px;
+                    }
+                }
+            }
+            & .ui-datepicker-prev {
+                position: absolute;
+                top: 50%;
+                transform: translate(0%, -50%);
+                right: 50px;
+                left: auto;
+                content: url('../svg/t-schedule/arrow-prev.svg');
+                width: 12px;
+                height: 22px;
+                &:hover {
+                    border-radius: none;
+                    border: none;
+                    background: transparent;
+                }
+            }
+            & .ui-datepicker-next {
+                position: absolute;
+                top: 50%;
+                transform: translate(0%, -50%);
+                right: 0;
+                left: auto;
+                content: url('../svg/t-schedule/arrow-next.svg');
+                width: 12px;
+                height: 22px;
+                &:hover {
+                    border-radius: none;
+                    border: none;
+                    background: transparent;
+                }
+            }
+            & .ui-widget.ui-widget-content {
+                border: none;
+            }
+            & .ui-datepicker-today {
+                background: linear-gradient(155.96deg, #625DEE 179460.87%, #FCBA59 208765.74%);
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                & a {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: #FFFFFF !important;
+                }
+            }
+            & .ui-state-active {
+                background: linear-gradient(155.96deg, #625DEE 179460.87%, #FCBA59 208765.74%) !important;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                color: #FFFFFF !important;
+            }
+            & .ui-datepicker-calendar {
+                margin: 25px 0 0 0;
+                & thead {
+                    width: 100%;
+                    position: relative;
+                    height: 65px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        transform: translate(-50%, 0%);
+                        border-bottom: 1px solid #E0E0E0;
+                        width: 100%;
+                        height: 1px;
+                    }
+                    & span {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 23px;
+                        text-align: center;
+                        color: #000000;
+                        text-transform: uppercase;
+                    }
+                }
+                & tbody {
+                    padding: 20px 0 0 0;
+                    margin: 20px 0 0 0;
+                    width: 414px;
+                    height: 250px;
+                    & tr {
+                        width: 50px;
+                        height: 50px;
+                        & a {
+                            border: none;
+                            background: transparent;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 44px;
+                            height: 44px;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 23px;
+                            text-align: center;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+        &-btn {
+            margin: 45px 0 0 0;
+            background: #FF5283;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px 45px;
+            width: 100%;
+            cursor: pointer;
+            & p {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 408px;
+        &-wrapper {
+            width: 100%;
+            background: #FFFFFF;
+            padding: 39px 30px 30px 30px;
+            border-radius: 15px;
+        }
+    }
+    &-lists {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+    &-items {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: #625DEE;
+        border-radius: 14px;
+        cursor: pointer;
+        padding: 10px 20px 10px 13px;
+        min-height: 67px;
+        &:hover {
+            & .s-schedule__info-items-icons {
+                transition: all 0.5s ease;
+                opacity: 1;
+            }
+        }
+        &-ready {
+            background: #625DEE;
+        }
+        &-cancel {
+            background: #FF2D55;
+        }
+        &-waiting {
+            background: #FF8F0D;
+        }
+        &-number {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 31px;
+            line-height: 38px;
+            color: #FFFFFF;
+        }
+        &-line {
+            width: 1px;
+            height: 100%;
+            border-left: 1px solid #FFFFFF;
+            margin: 0 15px;
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin: auto 0;
+            & h3 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+            }
+            & p {
+                margin: 6px 0 0 0;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+            }
+        }
+        &-icons {
+            margin: auto 0 auto auto;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+    }
+}
+
+
+.modelScheduleTeacher {
+    background: rgba(0,21,75,.4);
+    backdrop-filter: blur(80px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1055;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    &__wrappers {
+        width: 500px;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: 15px;
+        &-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+        }
+    }
+}

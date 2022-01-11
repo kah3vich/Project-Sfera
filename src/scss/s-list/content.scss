@@ -1,0 +1,116 @@
+.s-list {
+    padding: 65px 50px 50px 115px;
+    font-family: Inter;
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #435179;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 52px 0 0 0;
+        &-items {
+            & p {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                color: #435179;
+            }
+            &:nth-child(1) {
+                margin: 0 0 0 17px;
+            }
+            &:nth-child(2) {
+                margin: 0 0 0 335px;
+            }
+            &:nth-child(3) {
+                margin: 0 0 0 178px;
+            }
+        }
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        &-items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin: 23px 0 0 0;
+            &:last-child {
+                margin: 23px 0;
+            }
+            &-info {
+                background: #FFFFFF;
+                padding: 13px 18px;
+                max-width: 880px;
+                width: 100%;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                &-photo {
+                    width: 36px;
+                    height: 36px;
+                    background: #635FF2;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow-y: hidden;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &-name {
+                    margin: 0 0 0 16px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #435179;
+                    width: 340px;
+                }
+                &-lesson {
+                    margin: 0 0 0 auto;
+                    width: 170px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #8349FF;
+                }
+                &-date {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 12px;
+                    width: 130px;
+                    margin: 0 0 0 auto;
+                    color: #435179;
+                }
+            }
+            &-btn {
+                cursor: pointer;
+                background: #625DEE;
+                border-radius: 10px;
+                padding: 16px 55px;
+                & p {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

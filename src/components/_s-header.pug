@@ -1,0 +1,22 @@
+header.s-header__nav
+    .wrappers 
+        .s-header__nav-title 
+            p С возвращением Кузнецов Артур Дмитриевич
+        .s-header__nav-client 
+            .s-header__nav-client-sum 
+                h3 Мой счет: 
+                p 10 790₽ 
+            .s-header__nav-client-notif 
+                @@include('../svg/t-profile/yved.svg')
+            .s-header__nav-client-profile 
+                .s-header__nav-client-profile-photo 
+                .s-header__nav-client-profile-name 
+                    h3 Кузнецов Артур
+                    p Ученик
+                .s-header__nav-client-arrow 
+                    @@include('../svg/t-profile/arrow-down.svg')
+                .s-header__nav-client-list.display-n
+                    a(href="t-profile.html").s-header__nav-client-btn 
+                        p Профиль
+                    button.s-header__nav-client-btn
+                        p Выйти

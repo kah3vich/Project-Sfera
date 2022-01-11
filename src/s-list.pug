@@ -1,0 +1,107 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg", alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_t-header.pug')
+
+section.s-list 
+    .wrappers 
+        .s-list__title Список занятий
+        .s-list__nav 
+            .s-list__nav-items 
+                p Преподаватель
+            .s-list__nav-items 
+                p Предмет
+            .s-list__nav-items 
+                p Дата
+        .s-list__block 
+            .s-list__block-items 
+                .s-list__block-items-info 
+                    .s-list__block-items-info-photo 
+                    .s-list__block-items-info-name Замятина Татьяна Сергеевна
+                    .s-list__block-items-info-lesson Английский язык
+                    .s-list__block-items-info-date 8 месяцев назад
+                .s-list__block-items-btn
+                    p Урок завершен
+            .s-list__block-items 
+                .s-list__block-items-info 
+                    .s-list__block-items-info-photo 
+                    .s-list__block-items-info-name Замятина Татьяна Сергеевна
+                    .s-list__block-items-info-lesson Английский язык
+                    .s-list__block-items-info-date 8 месяцев назад
+                .s-list__block-items-btn
+                    p Урок завершен
+            .s-list__block-items 
+                .s-list__block-items-info 
+                    .s-list__block-items-info-photo 
+                    .s-list__block-items-info-name Замятина Татьяна Сергеевна
+                    .s-list__block-items-info-lesson Английский язык
+                    .s-list__block-items-info-date 8 месяцев назад
+                .s-list__block-items-btn
+                    p Урок завершен
+            .s-list__block-items 
+                .s-list__block-items-info 
+                    .s-list__block-items-info-photo 
+                    .s-list__block-items-info-name Замятина Татьяна Сергеевна
+                    .s-list__block-items-info-lesson Английский язык
+                    .s-list__block-items-info-date 8 месяцев назад
+                .s-list__block-items-btn
+                    p Урок завершен
+            .s-list__block-items 
+                .s-list__block-items-info 
+                    .s-list__block-items-info-photo 
+                    .s-list__block-items-info-name Замятина Татьяна Сергеевна
+                    .s-list__block-items-info-lesson Английский язык
+                    .s-list__block-items-info-date 8 месяцев назад
+                .s-list__block-items-btn
+                    p Урок завершен
+            .s-list__block-items 
+                .s-list__block-items-info 
+                    .s-list__block-items-info-photo 
+                    .s-list__block-items-info-name Замятина Татьяна Сергеевна
+                    .s-list__block-items-info-lesson Английский язык
+                    .s-list__block-items-info-date 8 месяцев назад
+                .s-list__block-items-btn
+                    p Урок завершен
+            .s-list__block-items 
+                .s-list__block-items-info 
+                    .s-list__block-items-info-photo 
+                    .s-list__block-items-info-name Замятина Татьяна Сергеевна
+                    .s-list__block-items-info-lesson Английский язык
+                    .s-list__block-items-info-date 8 месяцев назад
+                .s-list__block-items-btn
+                    p Урок завершен
+            .s-list__block-items 
+                .s-list__block-items-info 
+                    .s-list__block-items-info-photo 
+                    .s-list__block-items-info-name Замятина Татьяна Сергеевна
+                    .s-list__block-items-info-lesson Английский язык
+                    .s-list__block-items-info-date 8 месяцев назад
+                .s-list__block-items-btn
+                    p Урок завершен
+            
+
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')

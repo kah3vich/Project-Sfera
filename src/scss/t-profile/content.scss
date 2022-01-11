@@ -281,6 +281,14 @@
             width: 230px;
             line-height: 16px;
             color: #222B45;
+            &-cancel {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #96A5B8;
+                text-decoration: line-through;
+            }
         }
         &-date {
             font-family: Inter;

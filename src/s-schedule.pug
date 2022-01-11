@@ -1,0 +1,103 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg", alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="s-schedule.html").menu__list-items#menuList-2.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_s-header.pug')
+
+section.s-schedule__info 
+    .s-schedule__info-title Поиск репетитора
+        span / 
+        p Репетитор
+    .wrappers 
+        .s-schedule__info-profile 
+            .s-schedule__info-profile-photo 
+            .s-schedule__info-profile-name Замятина Татьяна Сергеевна
+            .s-schedule__info-profile-add Стоимость занятий:
+            .s-schedule__info-profile-price 
+                p 1 790₽ 
+            ul.s-schedule__info-profile-lessons
+                li.s-schedule__info-profile-lesson
+                    p Русский язык
+                li.s-schedule__info-profile-lesson
+                    p Английский язык
+                li.s-schedule__info-profile-lesson
+                    p Немецкий язык
+        .s-schedule__info-calendar 
+            .s-schedule__info-calendar-items 
+                #datepickerScheduleStudent
+        .s-schedule__info-list 
+            .s-schedule__info-list-wrapper 
+                ul.s-schedule__info-lists 
+                    li.s-schedule__info-items.s-schedule__info-items-ready
+                        .s-schedule__info-items-number 
+                        .s-schedule__info-items-line 
+                        .s-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .s-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.s-schedule__info-items.s-schedule__info-items-cancel
+                        .s-schedule__info-items-number 
+                        .s-schedule__info-items-line 
+                        .s-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .s-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.s-schedule__info-items.s-schedule__info-items-waiting
+                        .s-schedule__info-items-number 
+                        .s-schedule__info-items-line 
+                        .s-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .s-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.s-schedule__info-items
+                        .s-schedule__info-items-number 
+                        .s-schedule__info-items-line 
+                        .s-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .s-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+                    li.s-schedule__info-items
+                        .s-schedule__info-items-number 
+                        .s-schedule__info-items-line 
+                        .s-schedule__info-items-info 
+                            h3 Высшая математика
+                            p 18:00 - 19:00
+                        .s-schedule__info-items-icons 
+                            img(src="./svg/t-schedule/create.svg", alt="icons")
+
+
+.s-schedule__list.display-n
+    .s-schedule__list-items 12/29/2021
+    .s-schedule__list-items 12/30/2021
+    .s-schedule__list-items 12/31/2021
+    .s-schedule__list-items 01/12/2022
+    .s-schedule__list-items 01/17/2022
+    .s-schedule__list-items 01/30/2022
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')

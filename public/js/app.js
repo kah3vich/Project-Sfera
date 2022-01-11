@@ -153,3 +153,111 @@ for (var _i7 = 1; _i7 <= $('.t-quiz__book-items').length; _i7++) {
 }
 
 ;
+$('.s-header__nav-client-profile').on('click', function () {
+  $('.s-header__nav-client-list').toggleClass('display-n');
+  $('.s-header__nav-client-arrow').toggleClass('rotate-180');
+});
+;
+$(function () {
+  $('#s_search').css('display', 'none');
+  $('#s_searchCap').css('display', 'none');
+  $('#s_search').after("<div class=\"s-search__select-item\"><div class=\"s-search__select-placeholder\">".concat($('#s_search').children('option').eq(0).val(), "</div><div id=\"listConstructorElementPay\" class=\"s-search__select-wrapper display-n\"></div></div>"));
+  var count = $('#s_search').children('option').length;
+
+  for (var _i8 = 0; _i8 < count; _i8++) {
+    var arrows = $('#s_search').children('option').eq(_i8).val();
+    var newElementBlock = document.createElement("button");
+    newElementBlock.classList.add("s-search__select-element");
+    newElementBlock.id = "s-search__select-element-".concat(_i8);
+    newElementBlock.innerHTML = "".concat(arrows);
+    document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
+    $("#s-search__select-element-".concat(_i8)).attr('value', "".concat(arrows));
+  }
+
+  if ($('.s-search__select-placeholder').text() == '') {
+    $('.s-search__select-placeholder').text($('#s_searchCap').text());
+  }
+
+  $('#s-search__select-element-0').css('display', 'none');
+  $('.s-search__select-item').on('click', function () {
+    $('.s-search__select-wrapper').toggleClass('display-n');
+    $('.s-search__select-item').toggleClass('s-search__select-item-active');
+  });
+  $(".s-search__select-element").on('click', function () {
+    var idElement = this.id;
+    var valueElement = $("#".concat(idElement)).val();
+    $('.s-search__select-placeholder').html(valueElement);
+    $('#s_search option:nth-child(1)').val(valueElement);
+    $('#s_search option:nth-child(1)').html(valueElement);
+
+    for (var _i9 = 1; _i9 <= $(".s-search__select-element").length; _i9++) {
+      $("#s-search__select-element-".concat(_i9)).removeClass('s-search__select-active');
+    }
+
+    $(this).addClass('s-search__select-active');
+  });
+});
+var eventDatesStudent = {};
+var countElementDataListStudent = $('.s-schedule__list-items').length;
+
+for (var _i10 = 1; _i10 <= countElementDataListStudent; _i10++) {
+  var _element = $(".s-schedule__list-items:nth-child(".concat(_i10, ")")).text();
+
+  eventDatesStudent[new Date("".concat(_element))] = new Date("".concat(_element));
+}
+
+$(function () {
+  var quizOrderDataCalendarInput = $('#datepickerScheduleStudent').val();
+  $('.s-schedule__info-list-title').text(quizOrderDataCalendarInput);
+});
+$.datepicker.regional.ru = {
+  closeText: 'Закрыть',
+  prevText: 'Предыдущий',
+  nextText: 'Следующий',
+  currentText: 'Сегодня',
+  monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+  monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+  dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', ' суббота'],
+  dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+  dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+  weekHeader: 'Не',
+  dateFormat: 'dd.mm.yy',
+  firstDay: 1,
+  // minDate: 0,
+  isRTL: false,
+  showMonthAfterYear: false,
+  yearSuffix: '',
+  beforeShowDay: function beforeShowDay(date) {
+    var highlight = eventDatesStudent[date];
+
+    if (highlight) {
+      return [true, "t-active-date", ''];
+    } else {
+      return [true, '', ''];
+    }
+  }
+};
+$.datepicker.setDefaults($.datepicker.regional.ru);
+$('#datepickerScheduleStudent').datepicker().on('change', function () {
+  $('.model-calendar').addClass('display-n');
+  var quizOrderDataCalendarInput = $('#datepickerScheduleStudent').val();
+  $('.s-schedule__info-list-title').text(quizOrderDataCalendarInput);
+});
+
+for (var _i11 = 1; _i11 <= $(".s-schedule__info-items").length; _i11++) {
+  if (_i11 < 10) {
+    $(".s-schedule__info-items:nth-child(".concat(_i11, ") .s-schedule__info-items-number")).text('0' + _i11);
+  } else {
+    $(".s-schedule__info-items:nth-child(".concat(_i11, ") .s-schedule__info-items-number")).text(_i11);
+  }
+}
+
+$('.s-schedule__info-calendar-btn').on('click', function () {
+  $('.modelScheduleTeacher').removeClass('display-n');
+  $('body').css('overflow', 'hidden');
+});
+$('.modelScheduleTeacher__wrappers-close').on('click', function () {
+  $('body').css('overflow', 'visible');
+  $('.modelScheduleTeacher').addClass('display-n');
+});
+;
