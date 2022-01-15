@@ -21,88 +21,88 @@ $('.t-header__nav-client-profile').on('click', function () {
   $('.t-header__nav-client-arrow').toggleClass('rotate-180');
 });
 ;
-var eventDates = {};
-var countElementDataList = $('.t-schedule__list-items').length;
+var eventDatesTeacher = {};
+var countElementDataListTeacher = $(".t-schedule__list-items").length;
 
-for (var _i = 1; _i <= countElementDataList; _i++) {
+for (var _i = 1; _i <= countElementDataListTeacher; _i++) {
   var element = $(".t-schedule__list-items:nth-child(".concat(_i, ")")).text();
-  eventDates[new Date("".concat(element))] = new Date("".concat(element));
+  eventDatesTeacher[new Date("".concat(element))] = new Date("".concat(element));
 }
 
 $(function () {
-  var quizOrderDataCalendarInput = $('#datepickerScheduleTeacher').val();
-  $('.t-schedule__info-list-title').text(quizOrderDataCalendarInput);
+  var quizOrderDataCalendarInput = $("#datepickerScheduleTeacher").val();
+  $(".t-schedule__info-list-title").text(quizOrderDataCalendarInput);
 });
 $.datepicker.regional.ru = {
-  closeText: 'Закрыть',
-  prevText: 'Предыдущий',
-  nextText: 'Следующий',
-  currentText: 'Сегодня',
-  monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-  monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-  dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', ' суббота'],
-  dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
-  dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-  weekHeader: 'Не',
-  dateFormat: 'dd.mm.yy',
+  closeText: "Закрыть",
+  prevText: "Предыдущий",
+  nextText: "Следующий",
+  currentText: "Сегодня",
+  monthNames: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+  monthNamesShort: ["Янв", "Фев", "Мар", "Апр", "Май", "Июн", "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"],
+  dayNames: ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", " суббота"],
+  dayNamesShort: ["вск", "пнд", "втр", "срд", "чтв", "птн", "сбт"],
+  dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+  weekHeader: "Не",
+  dateFormat: "dd.mm.yy",
   firstDay: 1,
   // minDate: 0,
   isRTL: false,
   showMonthAfterYear: false,
-  yearSuffix: '',
+  yearSuffix: "",
   beforeShowDay: function beforeShowDay(date) {
-    var highlight = eventDates[date];
+    var highlight = eventDatesTeacher[date];
 
     if (highlight) {
-      return [true, "t-active-date", ''];
+      return [true, "t-active-date", ""];
     } else {
-      return [true, '', ''];
+      return [true, "", ""];
     }
   }
 };
 $.datepicker.setDefaults($.datepicker.regional.ru);
-$('#datepickerScheduleTeacher').datepicker().on('change', function () {
-  $('.model-calendar').addClass('display-n');
-  var quizOrderDataCalendarInput = $('#datepickerScheduleTeacher').val();
-  $('.t-schedule__info-list-title').text(quizOrderDataCalendarInput);
+$("#datepickerScheduleTeacher").datepicker().on("change", function () {
+  $(".model-calendar").addClass("display-n");
+  var quizOrderDataCalendarInput = $("#datepickerScheduleTeacher").val();
+  $(".t-schedule__info-list-title").text(quizOrderDataCalendarInput);
 });
 
 for (var _i2 = 1; _i2 <= $(".t-schedule__info-items").length; _i2++) {
   if (_i2 < 10) {
-    $(".t-schedule__info-items:nth-child(".concat(_i2, ") .t-schedule__info-items-number")).text('0' + _i2);
+    $(".t-schedule__info-items:nth-child(".concat(_i2, ") .t-schedule__info-items-number")).text("0" + _i2);
   } else {
     $(".t-schedule__info-items:nth-child(".concat(_i2, ") .t-schedule__info-items-number")).text(_i2);
   }
 }
 
-$('.t-schedule__info-calendar-btn').on('click', function () {
-  $('.modelScheduleTeacher').removeClass('display-n');
-  $('body').css('overflow', 'hidden');
+$(".t-schedule__info-calendar-btn").on("click", function () {
+  $(".modelScheduleTeacher").removeClass("display-n");
+  $("body").css("overflow", "hidden");
 });
-$('.modelScheduleTeacher__wrappers-close').on('click', function () {
-  $('body').css('overflow', 'visible');
-  $('.modelScheduleTeacher').addClass('display-n');
+$(".modelScheduleTeacher__wrappers-close").on("click", function () {
+  $("body").css("overflow", "visible");
+  $(".modelScheduleTeacher").addClass("display-n");
 });
 ;
 
 var _loop2 = function _loop2(_i3) {
-  $("#t_questionListElement_".concat(_i3)).on('click', function () {
-    for (var j = 1; j <= $('.t-question__list-block-items').length; j++) {
-      $("#t_questionListElement_".concat(j, " .t-question__list-block-text")).addClass('display-n');
-      $("#t_questionListElement_".concat(j, " .t-question__list-block-btn")).removeClass('rotate-45');
-    }
+  for (var j = 1; j <= $(".t-question__list-block-items").length; j++) {
+    $("#t_questionListElement_".concat(j, " .t-question__list-block-text")).addClass("display-n");
+    $("#t_questionListElement_".concat(j, " .t-question__list-block-btn")).removeClass("rotate-45");
+  }
 
-    if ($("#t_questionListElement_".concat(_i3, " .t-question__list-block-text")).hasClass('display-n')) {
-      $("#t_questionListElement_".concat(_i3, " .t-question__list-block-text")).removeClass('display-n');
-      $("#t_questionListElement_".concat(_i3, " .t-question__list-block-btn")).addClass('rotate-45');
+  $("#t_questionListElement_".concat(_i3)).on("click", function () {
+    if ($("#t_questionListElement_".concat(_i3, " .t-question__list-block-text")).hasClass("display-n")) {
+      $("#t_questionListElement_".concat(_i3, " .t-question__list-block-text")).removeClass("display-n");
+      $("#t_questionListElement_".concat(_i3, " .t-question__list-block-btn")).addClass("rotate-45");
     } else {
-      $("#t_questionListElement_".concat(_i3, " .t-question__list-block-text")).addClass('display-n');
-      $("#t_questionListElement_".concat(_i3, " .t-question__list-block-btn")).removeClass('rotate-45');
+      $("#t_questionListElement_".concat(_i3, " .t-question__list-block-text")).addClass("display-n");
+      $("#t_questionListElement_".concat(_i3, " .t-question__list-block-btn")).removeClass("rotate-45");
     }
   });
 };
 
-for (var _i3 = 1; _i3 <= $('.t-question__list-block-items').length; _i3++) {
+for (var _i3 = 1; _i3 <= $(".t-question__list-block-items").length; _i3++) {
   _loop2(_i3);
 }
 
@@ -198,66 +198,66 @@ $(function () {
   });
 });
 var eventDatesStudent = {};
-var countElementDataListStudent = $('.s-schedule__list-items').length;
+var countElementDataListStudent = $(".s-schedule__list-items").length;
 
 for (var _i10 = 1; _i10 <= countElementDataListStudent; _i10++) {
   var _element = $(".s-schedule__list-items:nth-child(".concat(_i10, ")")).text();
 
   eventDatesStudent[new Date("".concat(_element))] = new Date("".concat(_element));
-}
+} // $(() => {
+// 	let quizOrderDataCalendarInput = $("#datepickerScheduleStudent").val();
+// 	$(".s-schedule__info-list-title").text(quizOrderDataCalendarInput);
+// });
 
-$(function () {
-  var quizOrderDataCalendarInput = $('#datepickerScheduleStudent').val();
-  $('.s-schedule__info-list-title').text(quizOrderDataCalendarInput);
-});
+
 $.datepicker.regional.ru = {
-  closeText: 'Закрыть',
-  prevText: 'Предыдущий',
-  nextText: 'Следующий',
-  currentText: 'Сегодня',
-  monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-  monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-  dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', ' суббота'],
-  dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
-  dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-  weekHeader: 'Не',
-  dateFormat: 'dd.mm.yy',
+  closeText: "Закрыть",
+  prevText: "Предыдущий",
+  nextText: "Следующий",
+  currentText: "Сегодня",
+  monthNames: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+  monthNamesShort: ["Янв", "Фев", "Мар", "Апр", "Май", "Июн", "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"],
+  dayNames: ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", " суббота"],
+  dayNamesShort: ["вск", "пнд", "втр", "срд", "чтв", "птн", "сбт"],
+  dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+  weekHeader: "Не",
+  dateFormat: "dd.mm.yy",
   firstDay: 1,
   // minDate: 0,
   isRTL: false,
   showMonthAfterYear: false,
-  yearSuffix: '',
+  yearSuffix: "",
   beforeShowDay: function beforeShowDay(date) {
     var highlight = eventDatesStudent[date];
 
     if (highlight) {
-      return [true, "t-active-date", ''];
+      return [true, "s-active-date", ""];
     } else {
-      return [true, '', ''];
+      return [true, "", ""];
     }
   }
 };
 $.datepicker.setDefaults($.datepicker.regional.ru);
-$('#datepickerScheduleStudent').datepicker().on('change', function () {
-  $('.model-calendar').addClass('display-n');
-  var quizOrderDataCalendarInput = $('#datepickerScheduleStudent').val();
-  $('.s-schedule__info-list-title').text(quizOrderDataCalendarInput);
+$("#datepickerScheduleStudent").datepicker().on("change", function () {
+  $(".model-calendar").addClass("display-n");
+  var quizOrderDataCalendarInput = $("#datepickerScheduleStudent").val();
+  $(".s-schedule__info-list-title").text(quizOrderDataCalendarInput);
 });
 
 for (var _i11 = 1; _i11 <= $(".s-schedule__info-items").length; _i11++) {
   if (_i11 < 10) {
-    $(".s-schedule__info-items:nth-child(".concat(_i11, ") .s-schedule__info-items-number")).text('0' + _i11);
+    $(".s-schedule__info-items:nth-child(".concat(_i11, ") .s-schedule__info-items-number")).text("0" + _i11);
   } else {
     $(".s-schedule__info-items:nth-child(".concat(_i11, ") .s-schedule__info-items-number")).text(_i11);
   }
 }
 
-$('.s-schedule__info-calendar-btn').on('click', function () {
-  $('.modelScheduleTeacher').removeClass('display-n');
-  $('body').css('overflow', 'hidden');
+$(".s-schedule__info-calendar-btn").on("click", function () {
+  $(".modelScheduleTeacher").removeClass("display-n");
+  $("body").css("overflow", "hidden");
 });
-$('.modelScheduleTeacher__wrappers-close').on('click', function () {
-  $('body').css('overflow', 'visible');
-  $('.modelScheduleTeacher').addClass('display-n');
+$(".modelScheduleTeacher__wrappers-close").on("click", function () {
+  $("body").css("overflow", "visible");
+  $(".modelScheduleTeacher").addClass("display-n");
 });
 ;
