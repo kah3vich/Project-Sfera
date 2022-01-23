@@ -25,26 +25,25 @@
 		&-block {
 			display: grid;
 			gap: 40px;
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 			width: 100%;
+			gap: 26px;
 			margin: 25px 0 0 0;
 			&-items {
 				cursor: pointer;
 				display: flex;
-				flex-direction: column;
+				padding: 16px 34px;
 				align-items: center;
 				justify-content: center;
 				border-radius: 12px;
 				width: 100%;
-				height: 420px;
-				&:nth-child(1) {
+				&:nth-child(odd) {
 					background: #625dee;
 				}
-				&:nth-child(2) {
+				&:nth-child(even) {
 					background: #ff5283;
 				}
 				& p {
-					margin: 18px 0 0 0;
 					font-style: normal;
 					font-weight: bold;
 					font-size: 24px;
@@ -60,6 +59,25 @@
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
+		position: relative;
+		&-back {
+			position: absolute;
+			top: -65px;
+			left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			& img {
+				margin: 0 9px 0 0;
+			}
+			& p {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 43px;
+				color: #000000;
+			}
+		}
 		&-title {
 			display: flex;
 			align-items: center;
@@ -122,11 +140,30 @@
 	}
 	&__book {
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
 		width: 100%;
 		padding: 0 190px 0 0;
+		&-back {
+			position: absolute;
+			top: -65px;
+			left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			& img {
+				margin: 0 9px 0 0;
+			}
+			& p {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 43px;
+				color: #000000;
+			}
+		}
 		&-title {
 			display: flex;
 			align-items: center;
@@ -208,6 +245,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
+		position: relative;
 		width: 100%;
 		&-title {
 			display: flex;
@@ -241,6 +279,24 @@
 				line-height: 29px;
 				color: #435179;
 				opacity: 1;
+			}
+		}
+		&-back {
+			position: absolute;
+			top: -65px;
+			left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			& img {
+				margin: 0 9px 0 0;
+			}
+			& p {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 43px;
+				color: #000000;
 			}
 		}
 		&-add {
@@ -283,7 +339,6 @@
 			border-radius: 12px;
 			padding: 30px 40px;
 			margin: 42px 0 0 0;
-			height: 550px;
 			width: 100%;
 			display: flex;
 			align-items: flex-start;
@@ -325,6 +380,14 @@
 					object-fit: cover;
 				}
 			}
+		}
+	}
+	&__pages {
+		margin: 55px auto 0 auto;
+		width: max-content;
+		& img {
+			width: 705px;
+			object-fit: cover;
 		}
 	}
 	&__opacity-book {

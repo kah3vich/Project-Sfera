@@ -273,15 +273,20 @@
 			margin: 40px 0 0 0;
 			align-items: center;
 			justify-content: center;
+			flex-wrap: wrap;
 			width: 100%;
+			gap: 23px;
+			&-text {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+				color: #000000;
+			}
 			&-items {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				margin: 0 23px 0 0;
-				&:last-child {
-					margin: 0;
-				}
 				&:nth-child(1) {
 					& .t-schedule__info-list-legends-icons {
 						background: #00c37d;
@@ -295,6 +300,11 @@
 				&:nth-child(3) {
 					& .t-schedule__info-list-legends-icons {
 						background: #625dee;
+					}
+				}
+				&:nth-child(4) {
+					& .t-schedule__info-list-legends-icons {
+						background: #ff2d55;
 					}
 				}
 			}

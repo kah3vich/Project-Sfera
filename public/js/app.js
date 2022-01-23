@@ -110,52 +110,71 @@ for (var _i3 = 1; _i3 <= $(".t-question__list-block-items").length; _i3++) {
 
 for (var _i4 = 1; _i4 <= $(".t-quiz__page-items").length; _i4++) {
   if (_i4 < 10) {
-    $(".t-quiz__page-items:nth-child(".concat(_i4, ") .t-quiz__page-items-number")).text('0' + _i4);
+    $(".t-quiz__page-items:nth-child(".concat(_i4, ") .t-quiz__page-items-number")).text("0" + _i4);
   } else {
     $(".t-quiz__page-items:nth-child(".concat(_i4, ") .t-quiz__page-items-number")).text(_i4);
   }
 }
 
 var _loop3 = function _loop3(_i5) {
-  $(".t-quiz__type-block-items:nth-child(".concat(_i5, ")")).on('click', function () {
+  $(".t-quiz__type-block-items:nth-child(".concat(_i5, ")")).on("click", function () {
     var type = $(".t-quiz__type-block-items:nth-child(".concat(_i5, ") p")).text();
-    $('.t-quiz__age-title p').text(type);
-    $('.t-quiz__book-title h3').text(type);
-    $('.t-quiz__page-title h3').text(type);
-    $('.t-quiz__type').addClass('display-n');
-    $('.t-quiz__age').removeClass('display-n');
+    $(".t-quiz__age-title p").text(type);
+    $(".t-quiz__book-title h3").text(type);
+    $(".t-quiz__page-title h3").text(type);
+    $(".t-quiz__type").addClass("display-n");
+    $(".t-quiz__age").removeClass("display-n");
   });
 };
 
-for (var _i5 = 1; _i5 <= $('.t-quiz__type-block-items').length; _i5++) {
+for (var _i5 = 1; _i5 <= $(".t-quiz__type-block-items").length; _i5++) {
   _loop3(_i5);
 }
 
 var _loop4 = function _loop4(_i6) {
-  $("#t_quizAgeElement_".concat(_i6)).on('click', function () {
+  $("#t_quizAgeElement_".concat(_i6)).on("click", function () {
     var age = $("#t_quizAgeElement_".concat(_i6, " p")).text();
-    $('.t-quiz__book-title p').text(age);
-    $('.t-quiz__page-title p').text(age);
-    $('.t-quiz__age').addClass('display-n');
-    $('.t-quiz__book').removeClass('display-n');
+    $(".t-quiz__book-title p").text(age);
+    $(".t-quiz__page-title p").text(age);
+    $(".t-quiz__age").addClass("display-n");
+    $(".t-quiz__book").removeClass("display-n");
   });
 };
 
-for (var _i6 = 1; _i6 <= $('.t-quiz__age-items').length; _i6++) {
+for (var _i6 = 1; _i6 <= $(".t-quiz__age-items").length; _i6++) {
   _loop4(_i6);
 }
 
-for (var _i7 = 1; _i7 <= $('.t-quiz__book-items').length; _i7++) {
-  $(".t-quiz__book-items:nth-child(".concat(_i7, ")")).on('click', function () {
-    $('.t-quiz__book').addClass('display-n');
-    $('.t-quiz__page').removeClass('display-n');
+for (var _i7 = 1; _i7 <= $(".t-quiz__book-items").length; _i7++) {
+  $(".t-quiz__book-items:nth-child(".concat(_i7, ")")).on("click", function () {
+    $(".t-quiz__book").addClass("display-n");
+    $(".t-quiz__page").removeClass("display-n");
   });
 }
 
+for (var _i8 = 1; _i8 <= $(".t-quiz__page-items").length; _i8++) {
+  $(".t-quiz__page-items").on("click", function () {
+    $(".t-quiz__pages").removeClass("display-n");
+  });
+}
+
+$(".t-quiz__age-back").on("click", function () {
+  $(".t-quiz__age").addClass("display-n");
+  $(".t-quiz__type").removeClass("display-n");
+});
+$(".t-quiz__book-back").on("click", function () {
+  $(".t-quiz__book").addClass("display-n");
+  $(".t-quiz__age").removeClass("display-n");
+});
+$(".t-quiz__page-back").on("click", function () {
+  $(".t-quiz__page").addClass("display-n");
+  $(".t-quiz__pages").addClass("display-n");
+  $(".t-quiz__book").removeClass("display-n");
+});
 ;
 
-for (var _i8 = 1; _i8 <= $(".t-student__info-list-items").length; _i8++) {
-  $(".t-student__info-list-items:nth-child(".concat(_i8, ")")).on("click", function () {
+for (var _i9 = 1; _i9 <= $(".t-student__info-list-items").length; _i9++) {
+  $(".t-student__info-list-items:nth-child(".concat(_i9, ")")).on("click", function () {
     $(".t-student__info-chat").removeClass("display-n");
   });
 }
@@ -172,14 +191,14 @@ $(function () {
   $("#teacherListFilter").after("<div class=\"t_list-select-item\"><div class=\"t_list-select-placeholder\">".concat($("#teacherListFilter").children("option").eq(0).val(), "</div><div id=\"listConstructorElementPay\" class=\"t_list-select-wrapper display-n\"></div></div>"));
   var count = $("#teacherListFilter").children("option").length;
 
-  for (var _i9 = 0; _i9 < count; _i9++) {
-    var arrows = $("#teacherListFilter").children("option").eq(_i9).val();
+  for (var _i10 = 0; _i10 < count; _i10++) {
+    var arrows = $("#teacherListFilter").children("option").eq(_i10).val();
     var newElementBlock = document.createElement("button");
     newElementBlock.classList.add("t_list-select-element");
-    newElementBlock.id = "t_list-select-element-".concat(_i9);
+    newElementBlock.id = "t_list-select-element-".concat(_i10);
     newElementBlock.innerHTML = "".concat(arrows);
     document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
-    $("#t_list-select-element-".concat(_i9)).attr("value", "".concat(arrows));
+    $("#t_list-select-element-".concat(_i10)).attr("value", "".concat(arrows));
   }
 
   if ($(".t_list-select-placeholder").text() == "") {
@@ -198,8 +217,8 @@ $(function () {
     $("#teacherListFilter option:nth-child(1)").val(valueElement);
     $("#teacherListFilter option:nth-child(1)").html(valueElement);
 
-    for (var _i10 = 1; _i10 <= $(".t_list-select-element").length; _i10++) {
-      $("#t_list-select-element-".concat(_i10)).removeClass("t_list-select-active");
+    for (var _i11 = 1; _i11 <= $(".t_list-select-element").length; _i11++) {
+      $("#t_list-select-element-".concat(_i11)).removeClass("t_list-select-active");
     }
 
     $(this).addClass("t_list-select-active");
@@ -219,14 +238,14 @@ $(function () {
   $('#s_search').after("<div class=\"s-search__select-item\"><div class=\"s-search__select-placeholder\">".concat($('#s_search').children('option').eq(0).val(), "</div><div id=\"listConstructorElementPay\" class=\"s-search__select-wrapper display-n\"></div></div>"));
   var count = $('#s_search').children('option').length;
 
-  for (var _i11 = 0; _i11 < count; _i11++) {
-    var arrows = $('#s_search').children('option').eq(_i11).val();
+  for (var _i12 = 0; _i12 < count; _i12++) {
+    var arrows = $('#s_search').children('option').eq(_i12).val();
     var newElementBlock = document.createElement("button");
     newElementBlock.classList.add("s-search__select-element");
-    newElementBlock.id = "s-search__select-element-".concat(_i11);
+    newElementBlock.id = "s-search__select-element-".concat(_i12);
     newElementBlock.innerHTML = "".concat(arrows);
     document.getElementById("listConstructorElementPay").appendChild(newElementBlock);
-    $("#s-search__select-element-".concat(_i11)).attr('value', "".concat(arrows));
+    $("#s-search__select-element-".concat(_i12)).attr('value', "".concat(arrows));
   }
 
   if ($('.s-search__select-placeholder').text() == '') {
@@ -245,8 +264,8 @@ $(function () {
     $('#s_search option:nth-child(1)').val(valueElement);
     $('#s_search option:nth-child(1)').html(valueElement);
 
-    for (var _i12 = 1; _i12 <= $(".s-search__select-element").length; _i12++) {
-      $("#s-search__select-element-".concat(_i12)).removeClass('s-search__select-active');
+    for (var _i13 = 1; _i13 <= $(".s-search__select-element").length; _i13++) {
+      $("#s-search__select-element-".concat(_i13)).removeClass('s-search__select-active');
     }
 
     $(this).addClass('s-search__select-active');
@@ -255,8 +274,8 @@ $(function () {
 var eventDatesStudent = {};
 var countElementDataListStudent = $(".s-schedule__list-items").length;
 
-for (var _i13 = 1; _i13 <= countElementDataListStudent; _i13++) {
-  var _element = $(".s-schedule__list-items:nth-child(".concat(_i13, ")")).text();
+for (var _i14 = 1; _i14 <= countElementDataListStudent; _i14++) {
+  var _element = $(".s-schedule__list-items:nth-child(".concat(_i14, ")")).text();
 
   eventDatesStudent[new Date("".concat(_element))] = new Date("".concat(_element));
 } // $(() => {
@@ -299,11 +318,11 @@ $("#datepickerScheduleStudent").datepicker().on("change", function () {
   $(".s-schedule__info-list-title").text(quizOrderDataCalendarInput);
 });
 
-for (var _i14 = 1; _i14 <= $(".s-schedule__info-items").length; _i14++) {
-  if (_i14 < 10) {
-    $(".s-schedule__info-items:nth-child(".concat(_i14, ") .s-schedule__info-items-number")).text("0" + _i14);
+for (var _i15 = 1; _i15 <= $(".s-schedule__info-items").length; _i15++) {
+  if (_i15 < 10) {
+    $(".s-schedule__info-items:nth-child(".concat(_i15, ") .s-schedule__info-items-number")).text("0" + _i15);
   } else {
-    $(".s-schedule__info-items:nth-child(".concat(_i14, ") .s-schedule__info-items-number")).text(_i14);
+    $(".s-schedule__info-items:nth-child(".concat(_i15, ") .s-schedule__info-items-number")).text(_i15);
   }
 }
 
