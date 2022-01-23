@@ -1,0 +1,106 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg" alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_t-header.pug')
+
+section.t-lesson 
+    .wrappers 
+        .t-lesson__panel 
+            .t-lesson__panel-title Английский язык
+            .t-lesson__panel-controls 
+                .t-lesson__panel-controls-add 
+                ul.t-lesson__panel-controls-tools 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                    li.t-lesson__panel-controls-items 
+                .t-lesson__panel-controls-window 
+                    img(src="./img/t-list/banner_lessons.png" alt="window")
+        .t-lesson__contact 
+            .t-lesson__contact-title 
+                p Видеотрансляция
+                .t-lesson__contact-title-name Артур
+            .t-lesson__contact-video 
+            .t-lesson__contact-timeline(value="10")
+                .t-lesson__contact-timeline-progress 
+                    span 10
+                p 55:32
+            .t-lesson__contact-chat 
+                .t-lesson__contact-chat-message 
+                    .t-lesson__contact-chat-message-items 
+                        .t-lesson__contact-chat-message-photo 
+                        .t-lesson__contact-chat-message-info 
+                            .t-lesson__contact-chat-message-text Артур, почему опять двойка ?
+                            .t-lesson__contact-chat-message-date 3 минуты назад
+                    .t-lesson__contact-chat-message-items.t-lesson__contact-chat-message-items-you 
+                        .t-lesson__contact-chat-message-photo 
+                        .t-lesson__contact-chat-message-info 
+                            .t-lesson__contact-chat-message-text Артур, почему опять двойка ?
+                            .t-lesson__contact-chat-message-date 3 минуты назад
+                    .t-lesson__contact-chat-message-items.t-lesson__contact-chat-message-items-you 
+                        .t-lesson__contact-chat-message-photo 
+                        .t-lesson__contact-chat-message-info 
+                            .t-lesson__contact-chat-message-text Артур, почему опять двойка ?
+                            .t-lesson__contact-chat-message-date 3 минуты назад
+                    .t-lesson__contact-chat-message-items 
+                        .t-lesson__contact-chat-message-photo 
+                        .t-lesson__contact-chat-message-info 
+                            .t-lesson__contact-chat-message-text Артур, почему опять двойка ?
+                            .t-lesson__contact-chat-message-date 3 минуты назад
+                    .t-lesson__contact-chat-message-items 
+                        .t-lesson__contact-chat-message-photo 
+                        .t-lesson__contact-chat-message-info 
+                            .t-lesson__contact-chat-message-text Артур, почему опять двойка ?
+                            .t-lesson__contact-chat-message-date 3 минуты назад
+                    .t-lesson__contact-chat-message-items.t-lesson__contact-chat-message-items-you 
+                        .t-lesson__contact-chat-message-photo 
+                        .t-lesson__contact-chat-message-info 
+                            .t-lesson__contact-chat-message-text Артур, почему опять двойка ?
+                            .t-lesson__contact-chat-message-date 3 минуты назад
+
+
+                .t-lesson__contact-chat-controls
+                    a(type="file").t-lesson__contact-chat-controls-file 
+                        img(src="./svg/t-student/file.svg" alt="icons")
+                    .t-lesson__contact-chat-controls-message 
+                        input(type="text" placeholder="Напишите сообщение ...")
+                    .t-lesson__contact-chat-controls-small
+                        img(src="./svg/t-student/small.svg" alt="icons")
+                    button.t-lesson__contact-chat-controls-btn 
+                        img(src="./svg/t-student/messages.svg" alt="icons")
+
+
+
+@@include('components/_script.pug')

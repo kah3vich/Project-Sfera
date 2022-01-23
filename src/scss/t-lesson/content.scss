@@ -1,0 +1,249 @@
+.t-lesson {
+	padding: 65px 0 50px 115px;
+	font-family: Inter;
+	& .wrappers {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	&__panel {
+		width: 710px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		&-title {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 29px;
+			color: #435179;
+		}
+		&-controls {
+			margin: 45px 0 0 0;
+			background: #ffffff;
+			border-radius: 12px;
+			width: 100%;
+			padding: 17px 21px;
+			position: relative;
+			&-add {
+				position: absolute;
+				top: 17px;
+				right: 14px;
+				border: 2px solid #625dee;
+				width: 28px;
+				height: 28px;
+				border-radius: 50%;
+			}
+			&-tools {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(28px, 1fr));
+				gap: 25px 11px;
+				width: 610px;
+				margin: 0 0 35px 0;
+			}
+			&-items {
+				background: #625dee;
+				width: 28px;
+				height: 28px;
+				border-radius: 50%;
+				// margin: 0 11px 0 0;
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+	&__contact {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		width: 486px;
+		&-title {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			justify-content: space-between;
+			& p {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 19px;
+				color: #435179;
+			}
+			&-name {
+				background: #ff5283;
+				border-radius: 8px;
+				padding: 5px 30px;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 13px;
+				line-height: 16px;
+				color: #ffffff;
+			}
+		}
+		&-video {
+			margin: 45px 0 0 0;
+			background: #ffffff;
+			border-radius: 12px;
+			width: 100%;
+			height: 410px;
+		}
+		&-timeline {
+			background: #efefef;
+			border-radius: 9.5px;
+			width: 100%;
+			margin: 20px 0;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 20px;
+			& p {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 8px;
+				line-height: 10px;
+				color: #000000;
+			}
+			&-progress {
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: #625dee;
+				opacity: 0.4;
+				border-radius: 9.5px;
+				height: 100%;
+				width: 80%;
+				& span {
+					display: none;
+				}
+			}
+		}
+		&-chat {
+			margin: 15px 0 0 0;
+			background: rgba(87, 65, 157, 0.03);
+			border-radius: 14px;
+			width: 486px;
+			height: 610px;
+			padding: 40px 41px 35px 41px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			&-message {
+				width: 100%;
+				height: 490px;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				overflow-x: hidden;
+				overflow-y: auto;
+				&::-webkit-scrollbar {
+					width: 0;
+				}
+				&::-webkit-scrollbar-track {
+					box-shadow: inset 0 0 10px 10px transparent;
+					border: solid 12px transparent;
+					border-radius: 45px;
+				}
+
+				&::-webkit-scrollbar-thumb {
+					box-shadow: inset 0 0 10px 10px transparent;
+					border: solid 12px transparent;
+					border-radius: 45px;
+				}
+				&-items {
+					display: flex;
+					align-items: flex-start;
+					justify-content: flex-start;
+					margin: 0 0 24px 0;
+					&-you {
+						width: 100%;
+						& .t-lesson__contact-chat-message-photo {
+							display: none;
+						}
+						& .t-lesson__contact-chat-message-info {
+							margin: 0 0 0 auto;
+						}
+						& .t-lesson__contact-chat-message-date {
+							margin: 8px 0 0 auto;
+						}
+						& .t-lesson__contact-chat-message-text {
+							background: rgba(113, 118, 255, 0.1);
+							border-radius: 12px 0px 12px 12px;
+						}
+					}
+				}
+				&-photo {
+					margin: 0 16px 0 0;
+					background: #c4c4c4;
+					width: 40px;
+					height: 40px;
+					overflow: hidden;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					& img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				&-info {
+					width: max-content;
+					max-width: 400px;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: flex-start;
+				}
+				&-text {
+					background: #ffffff;
+					border-radius: 0px 12px 12px 12px;
+					padding: 16px;
+				}
+				&-date {
+					font-style: normal;
+					font-weight: normal;
+					font-size: 12px;
+					line-height: 16px;
+					color: #aca7a7;
+					margin: 8px 0 0 0;
+				}
+			}
+			&-controls {
+				background: #ffffff;
+				border-radius: 12px;
+				width: 100%;
+				height: 45px;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				padding: 0 30px;
+				&-message {
+					margin: 0 0 0 20px;
+					width: 100%;
+					& input {
+						width: 100%;
+					}
+				}
+				&-file {
+					cursor: pointer;
+				}
+				&-small {
+					padding: 0 25px;
+					cursor: pointer;
+				}
+				&-btn {
+					width: 15px;
+					background: transparent;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

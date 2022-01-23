@@ -2,6 +2,9 @@
 @@include("./t-schedule/index.js");
 @@include("./t-question/index.js");
 @@include("./t-quiz/index.js");
+@@include("./t-student/index.js");
+@@include("./t-list/index.js");
+@@include("./t-lesson/index.js");
 
 
 @@include("./s-profile/index.js");

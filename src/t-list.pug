@@ -4,7 +4,7 @@
 
 .menu 
     .menu__logo 
-        img(src="./svg/menu/logos.svg", alt="logo")
+        img(src="./svg/menu/logos.svg" alt="logo")
     .menu__list 
         a(href="t-profile.html").menu__list-items#menuList-1
             .menu__list-items-add
@@ -26,7 +26,21 @@
 
 section.t-list 
     .wrappers 
-        .t-list__title Мои ученики
+        .t-list__title
+            p Список занятий
+            .t-list__title-filter 
+                #teacherListFilterCap Фильтр по дате
+                select#teacherListFilter
+                    option(value="")
+                    option(value="Вчера") Вчера
+                    option(value="Было") Было
+                    option(value="Весело") Весело
+                    option(value="А") А
+                    option(value="Тебя") Тебя
+                    option(value="Не было") Не было
+                    option(value="Как") Как
+                    option(value="Так") Так
+                    option(value="?") ?
         .t-list__nav 
             .t-list__nav-items 
                 p Ученик
@@ -42,7 +56,7 @@ section.t-list
                     .t-list__block-items-info-lesson Английский язык
                     .t-list__block-items-info-date 8 месяцев назад
                 .t-list__block-items-btn
-                    p Перейти к уроку
+                    a(href="t-lesson.html") Перейти к уроку
             .t-list__block-items 
                 .t-list__block-items-info 
                     .t-list__block-items-info-photo 
@@ -50,7 +64,7 @@ section.t-list
                     .t-list__block-items-info-lesson Английский язык
                     .t-list__block-items-info-date 8 месяцев назад
                 .t-list__block-items-btn
-                    p Перейти к уроку
+                    a(href="t-lesson.html") Перейти к уроку
             .t-list__block-items 
                 .t-list__block-items-info 
                     .t-list__block-items-info-photo 
@@ -58,7 +72,7 @@ section.t-list
                     .t-list__block-items-info-lesson Английский язык
                     .t-list__block-items-info-date 8 месяцев назад
                 .t-list__block-items-btn
-                    p Перейти к уроку
+                    a(href="t-lesson.html") Перейти к уроку
             .t-list__block-items 
                 .t-list__block-items-info 
                     .t-list__block-items-info-photo 
@@ -66,7 +80,7 @@ section.t-list
                     .t-list__block-items-info-lesson Английский язык
                     .t-list__block-items-info-date 8 месяцев назад
                 .t-list__block-items-btn
-                    p Перейти к уроку
+                    a(href="t-lesson.html") Перейти к уроку
             .t-list__block-items 
                 .t-list__block-items-info 
                     .t-list__block-items-info-photo 
@@ -74,7 +88,7 @@ section.t-list
                     .t-list__block-items-info-lesson Английский язык
                     .t-list__block-items-info-date 8 месяцев назад
                 .t-list__block-items-btn
-                    p Перейти к уроку
+                    a(href="t-lesson.html") Перейти к уроку
             .t-list__block-items 
                 .t-list__block-items-info 
                     .t-list__block-items-info-photo 
@@ -82,7 +96,7 @@ section.t-list
                     .t-list__block-items-info-lesson Английский язык
                     .t-list__block-items-info-date 8 месяцев назад
                 .t-list__block-items-btn
-                    p Перейти к уроку
+                    a(href="t-lesson.html") Перейти к уроку
             .t-list__block-items 
                 .t-list__block-items-info 
                     .t-list__block-items-info-photo 
@@ -90,7 +104,7 @@ section.t-list
                     .t-list__block-items-info-lesson Английский язык
                     .t-list__block-items-info-date 8 месяцев назад
                 .t-list__block-items-btn
-                    p Перейти к уроку
+                    a(href="t-lesson.html") Перейти к уроку
             .t-list__block-items 
                 .t-list__block-items-info 
                     .t-list__block-items-info-photo 
@@ -98,10 +112,6 @@ section.t-list
                     .t-list__block-items-info-lesson Английский язык
                     .t-list__block-items-info-date 8 месяцев назад
                 .t-list__block-items-btn
-                    p Перейти к уроку
-            
-
-
-@@include('components/_modelScheduleTeacher.pug')
+                    a(href="t-lesson.html") Перейти к уроку
 
 @@include('components/_script.pug')
