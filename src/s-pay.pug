@@ -4,7 +4,7 @@
 
 .menu 
     .menu__logo 
-        img(src="./svg/menu/logos.svg", alt="logo")
+        img(src="./svg/menu/logos.svg" alt="logo")
     .menu__list 
         a(href="t-profile.html").menu__list-items#menuList-1
             .menu__list-items-add
@@ -27,7 +27,22 @@
 section.s-pay 
     .wrappers 
         .s-pay__history 
-            .s-pay__history-title История операций
+            .s-pay__history-title 
+                p История операций
+                .s-list__title-filter 
+                    select(name="sort" class="js-select" style="display: none")
+                        option Фильтр по дате
+                        option(value="default" selected="") Новые
+                        option(value="price_desc") Цена уменьшение
+                        option(value="price_asc") Цена увеличение
+                        option(value="comment") Комментируемые
+                        option(value="rating") Популярные
+                        option(value="shows") Просматриваемые
+                        option(value="price_desc") Цена уменьшение
+                        option(value="price_asc") Цена увеличение
+                        option(value="comment") Комментируемые
+                        option(value="rating") Популярные
+                        option(value="shows") Просматриваемые
             .s-pay__history-nav 
                 .s-pay__history-nav-items 
                     p Дата
@@ -83,7 +98,7 @@ section.s-pay
                     .s-pay__history-list-items-price 1 790₽ 
                     .s-pay__history-list-items-status.s-pay__status-ready Выполнен
                     .s-pay__history-list-items-comment Еще доплатить 300 руб
-                
+
         .s-pay__account
             .s-pay__account-title Мой счет
             .s-pay__account-add Пополнить мой счет 
@@ -95,6 +110,19 @@ section.s-pay
                     .s-pay__account-block-sum-circle
                 .s-pay__account-block-input 
                     input(type="text" placeholder="Укажите сумму ...")
+                ul.s-pay__account-block-list
+                    li.s-pay__account-block-items
+                        p 10 790₽ 
+                    li.s-pay__account-block-items
+                        p 10 790₽ 
+                    li.s-pay__account-block-items
+                        p 10 790₽ 
+                    li.s-pay__account-block-items
+                        p 10 790₽ 
+                    li.s-pay__account-block-items
+                        p 10 790₽ 
+                    li.s-pay__account-block-items
+                        p 10 790₽ 
                 button.s-pay__account-block-btn
                     p Пополнить
 

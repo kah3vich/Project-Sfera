@@ -1,0 +1,221 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg" alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_s-header.pug')
+
+section.s-profiles 
+    .wrappers 
+        .s-profiles__back
+            img(src="./svg/t-quiz/back.svg" alt="back")
+            p Назад
+        .s-profiles__client 
+
+        .s-profiles__info
+            .s-profiles__info-titles 
+            .s-profiles__info-table 
+                ul.s-profiles__info-table-time 
+                    li.s-profiles__info-table-times 
+                        p 6
+                    li.s-profiles__info-table-times 
+                        p 7
+                    li.s-profiles__info-table-times 
+                        p 8
+                    li.s-profiles__info-table-times 
+                        p 9
+                    li.s-profiles__info-table-times 
+                        p 10
+                    li.s-profiles__info-table-times 
+                        p 11
+                    li.s-profiles__info-table-times 
+                        p 12
+                    li.s-profiles__info-table-times 
+                        p 13
+                    li.s-profiles__info-table-times 
+                        p 14
+                    li.s-profiles__info-table-times 
+                        p 15
+                    li.s-profiles__info-table-times 
+                        p 17
+                    li.s-profiles__info-table-times 
+                        p 18
+                    li.s-profiles__info-table-times 
+                        p 19
+                    li.s-profiles__info-table-times 
+                        p 20
+                    li.s-profiles__info-table-times 
+                        p 21
+                    li.s-profiles__info-table-times 
+                        p 22
+                    li.s-profiles__info-table-times 
+                        p 23
+                    li.s-profiles__info-table-times 
+                        p 0
+                ul.s-profiles__info-table-day 
+                    li.s-profiles__info-table-days 
+                        p Пн
+                    li.s-profiles__info-table-days 
+                        p Вт
+                    li.s-profiles__info-table-days 
+                        p Ср
+                    li.s-profiles__info-table-days 
+                        p Чт
+                    li.s-profiles__info-table-days 
+                        p Пт
+                    li.s-profiles__info-table-days 
+                        p Сб
+                    li.s-profiles__info-table-days 
+                        p Вс
+                ul.s-profiles__info-table-list
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items.s-profiles__info-table-active 
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+                    li.s-profiles__info-table-items
+
+
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')

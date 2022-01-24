@@ -4,7 +4,7 @@
 
 .menu 
     .menu__logo 
-        img(src="./svg/menu/logos.svg", alt="logo")
+        img(src="./svg/menu/logos.svg" alt="logo")
     .menu__list 
         a(href="t-profile.html").menu__list-items#menuList-1
             .menu__list-items-add
@@ -30,7 +30,7 @@ section.s-teacher__info
             .s-teacher__info-list-title Мои репетиторы
             .s-teacher__info-list-search 
                 .s-teacher__info-list-search-icons 
-                    img(src="./svg/t-student/search.svg", alt="search")
+                    img(src="./svg/t-student/search.svg" alt="search")
                 input(type="text" placeholder="Поиск ..." id="studentTeacherSearch")
                 label(for="studentTeacherSearch") Найти репетитора
             ul.s-teacher__info-list-add
@@ -68,7 +68,7 @@ section.s-teacher__info
                     .s-teacher__info-list-items-name Кузнецов Артур Дмитриевич
                     .s-teacher__info-list-items-lessons Английский язык
                     .s-teacher__info-list-items-date 8 месяцев назад
-        .s-teacher__info-chat 
+        .s-teacher__info-chat.display-n
             .s-teacher__info-chat-title Чат с репетитором
             .s-teacher__info-chat-add Сообщения
             .s-teacher__info-chat-wrappers 
@@ -106,13 +106,13 @@ section.s-teacher__info
 
                 .s-teacher__info-chat-controls
                     a(type="file").s-teacher__info-chat-controls-file 
-                        img(src="./svg/t-student/file.svg", alt="icons")
+                        img(src="./svg/t-student/file.svg" alt="icons")
                     .s-teacher__info-chat-controls-message 
                         input(type="text" placeholder="Напишите сообщение ...")
                     .s-teacher__info-chat-controls-small
-                        img(src="./svg/t-student/small.svg", alt="icons")
+                        img(src="./svg/t-student/small.svg" alt="icons")
                     button.s-teacher__info-chat-controls-btn 
-                        img(src="./svg/t-student/messages.svg", alt="icons")
+                        img(src="./svg/t-student/messages.svg" alt="icons")
 
 
 @@include('components/_modelScheduleTeacher.pug')

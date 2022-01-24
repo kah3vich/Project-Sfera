@@ -10,3 +10,4 @@
 @@include("./s-profile/index.js");
 @@include("./s-search/index.js");
 @@include("./s-schedule/index.js");
+@@include("./s-teacher/index.js");

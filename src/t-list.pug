@@ -29,18 +29,19 @@ section.t-list
         .t-list__title
             p Список занятий
             .t-list__title-filter 
-                #teacherListFilterCap Фильтр по дате
-                select#teacherListFilter
-                    option(value="")
-                    option(value="Вчера") Вчера
-                    option(value="Было") Было
-                    option(value="Весело") Весело
-                    option(value="А") А
-                    option(value="Тебя") Тебя
-                    option(value="Не было") Не было
-                    option(value="Как") Как
-                    option(value="Так") Так
-                    option(value="?") ?
+                select(name="sort" class="js-select" style="display: none")
+                    option Фильтр по дате
+                    option(value="default" selected="") Новые
+                    option(value="price_desc") Цена уменьшение
+                    option(value="price_asc") Цена увеличение
+                    option(value="comment") Комментируемые
+                    option(value="rating") Популярные
+                    option(value="shows") Просматриваемые
+                    option(value="price_desc") Цена уменьшение
+                    option(value="price_asc") Цена увеличение
+                    option(value="comment") Комментируемые
+                    option(value="rating") Популярные
+                    option(value="shows") Просматриваемые
         .t-list__nav 
             .t-list__nav-items 
                 p Ученик

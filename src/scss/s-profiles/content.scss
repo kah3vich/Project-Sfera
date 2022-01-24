@@ -1,0 +1,96 @@
+.s-profiles {
+	padding: 65px 0 80px 115px;
+	font-family: Inter;
+	position: relative;
+	&__back {
+		position: absolute;
+		top: 0;
+		left: auto;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		& img {
+			margin: 0 9px 0 0;
+		}
+		& p {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 43px;
+			color: #000000;
+		}
+	}
+	& .wrappers {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	&__client {
+		width: 207px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	&__info {
+		width: 963px;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-start;
+		&-table {
+			width: 100%;
+			background: #ffffff;
+			border-radius: 20px;
+			padding: 70px 29px 35px 70px;
+			position: relative;
+			&-time {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 860px;
+				position: absolute;
+				top: 40px;
+				left: 70px;
+			}
+			&-active {
+				background: #625dee;
+			}
+			&-times {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 22px;
+				color: #000000;
+			}
+			&-day {
+				height: 305px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				position: absolute;
+				top: 84px;
+				left: 30px;
+			}
+			&-days {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 22px;
+				color: #000000;
+			}
+			&-list {
+				display: grid;
+				grid-template-columns: repeat(18, 1fr);
+				width: 100%;
+				border: 1px solid #d6d6d6;
+			}
+			&-items {
+				width: 48px;
+				height: 48px;
+				border: 1px solid #d6d6d6;
+			}
+		}
+	}
+}

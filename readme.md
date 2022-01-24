@@ -34,3 +34,5 @@
 ### Student Teacher: [click me](https://kah3vich.github.io/Project-Sfera/public/s-teacher.html)
 
 ### Student Search: [click me](https://kah3vich.github.io/Project-Sfera/public/s-search.html)
+
+### Student Teacher Profile: [click me](https://kah3vich.github.io/Project-Sfera/public/s-profiles.html)
