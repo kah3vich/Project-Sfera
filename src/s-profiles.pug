@@ -26,13 +26,70 @@
 
 section.s-profiles 
     .wrappers 
-        .s-profiles__back
+        .s-profiles__back(onclick="history.back();")
             img(src="./svg/t-quiz/back.svg" alt="back")
             p Назад
         .s-profiles__client 
+            .s-profiles__client-photo 
+            .s-profiles__client-star 
+                img(src="./svg/s-profiles/star.svg" alt="star")
+                img(src="./svg/s-profiles/star.svg" alt="star")
+                img(src="./svg/s-profiles/star.svg" alt="star")
+                img(src="./svg/s-profiles/star.svg" alt="star")
+                img(src="./svg/s-profiles/star.svg" alt="star")
+            .s-profiles__client-rating 
+                h3 Рейтинг ученика:
+                p 4.93 
+            .s-profiles__client-verified
+                img(src="./svg/s-profiles/check.svg" alt="check")
+                p - верифицирован
+            button.s-profiles__client-btn Выбрать
 
         .s-profiles__info
-            .s-profiles__info-titles 
+            .s-profiles__info-name Банду Каруна
+            .s-profiles__info-type Репетитор по английскому языку
+            .s-profiles__info-year Частный преподаватель 
+                br 
+                | Стаж с 2011 года
+            .s-profiles__info-catalog 
+                p Категории:
+                ul.s-profiles__info-catalogs 
+                    li.s-profiles__info-thing 
+                        a(href="#") Общий курс,
+                    li.s-profiles__info-thing 
+                        a(href="#") Подготовка к ЕГЭ,
+                    li.s-profiles__info-thing 
+                        a(href="#") Подготовка к ОГЭ,
+                    li.s-profiles__info-thing 
+                        a(href="#") Подготовка к интервью
+                    li.s-profiles__info-thing 
+                        a(href="#") Общий курс,
+                    li.s-profiles__info-thing 
+                        a(href="#") Подготовка к ЕГЭ,
+                    li.s-profiles__info-thing 
+                        a(href="#") Подготовка к ОГЭ,
+                    li.s-profiles__info-thing 
+                        a(href="#") Подготовка к интервью
+            .s-profiles__info-titles Стоимость занятий
+            .s-profiles__info-pricelist
+                p Дистанционно
+                .s-profiles__info-price
+                    h3 Школьники с 1 по 4 класс
+                    p 60 минут
+                    span от 800 руб.
+                .s-profiles__info-price
+                    h3 Школьники с 5 по 9 класс
+                    p 60 минут
+                    span от 800 руб.
+                .s-profiles__info-price
+                    h3 Школьники с 10 по 11 класс, студенты колледжей и техникумов, абитуриенты
+                    p 60 минут
+                    span от 1000 руб.
+                .s-profiles__info-price
+                    h3 Взрослые кроме абитуриентов и студентов
+                    p 60 минут
+                    span от 1000 руб.
+            .s-profiles__info-titles Место и время занятий
             .s-profiles__info-table 
                 ul.s-profiles__info-table-time 
                     li.s-profiles__info-table-times 
@@ -213,6 +270,111 @@ section.s-profiles
                     li.s-profiles__info-table-items
                     li.s-profiles__info-table-items
                     li.s-profiles__info-table-items
+            .s-profiles__info-titles О себе
+            .s-profiles__info-about 
+                p 
+                    span Уровни: 
+                    | (Pre)Elementary, Intermediate, Upper-Intermediate, Advanced 
+                    br
+                    | - Подготовка к экзаменам и вступительным испытаниям (не кратковременная)
+                    br
+                    | - Постановка правильного произношения (British Received Pronunciation), по желанию - углубленное изучение фонетики
+                    br
+                    | - Обучение связной речи (connected speech), английскому ритму, ударению и интонации 
+                    br
+                    | - Грамматика по кембриджским и оксфордским изданиям
+                    br
+                    | - Business English
+                    br
+                    | - Знакомство с англоязычной культурой (фильмы, музыка, новостные издания, юмор)
+                    br
+                    | - Акценты и диалекты английского языка 
+                    br
+                    | Занятия проходят только по Skype, поскольку проживаю в Германии.
+            .s-profiles__info-titles Образование
+            .s-profiles__info-education Репетитор не предоставил информацию об образовании
+            .s-profiles__info-titles Достижения
+            .s-profiles__info-progress 
+                p 
+                    span Certificate in Advanced English (CAE). 
+                    br
+                    | Экзамен по английскому языку, разработанный и проводящийся подразделением
+                    br
+                    | ESOL (English for Speakers of Other Languages) Кембриджского университета. 
+                    br
+                    | Результат: оценка A (высший балл)
+                .s-profiles__info-progress-doc
+                    p Документы по наградам
+                    ul.s-profiles__info-progress-docs 
+                        li 
+                            img(src="./img/s-profiles/boc.png" alt="dock")
+                        li 
+                            img(src="./img/s-profiles/boc.png" alt="dock")
+                        li 
+                            img(src="./img/s-profiles/boc.png" alt="dock")
+                        li 
+                            img(src="./img/s-profiles/boc.png" alt="dock")
+                        li 
+                            img(src="./img/s-profiles/boc.png" alt="dock")
+                        li 
+                            img(src="./img/s-profiles/boc.png" alt="dock")
+                        li 
+                            img(src="./img/s-profiles/boc.png" alt="dock")
+                        li 
+                            img(src="./img/s-profiles/boc.png" alt="dock")
+                        li 
+                            img(src="./img/s-profiles/boc.png" alt="dock")
+            .s-profiles__info-titles Опыт работы
+            .s-profiles__info-experience 
+                span ФГУП НИИ "Поиск". 
+                | Перевод деловой документации, переписки, чертежей, дизайн-проектов, участие в международных выставках
+                br
+                span Пелком Дубна Машиностроительный завод. 
+                | Внештатный переводчик, письменный перевод, устный перевод на переговорах, консалтинг
+                br
+                span Частный репетитор, тьюторинг. 
+                | Преподавание английского языка (до)школьникам, офисным работникам индивидуально и в группах, преподавание удаленно по Skype (маркерная доска в наличии)
+            .s-profiles__info-titles Отзывы
+            ul.s-profiles__info-review 
+                li.s-profiles__info-reviews 
+                    .s-profiles__info-reviews-nav 
+                        h3 Елена
+                        div 
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                        p 22 декабря 2021
+                    p Как бы не плохо. Но 400 грн как по мне, то дороговато. Я мало говорила на уроках, только слушала. Запрос был подтянуть произношение. А я только слушала. Использует доску сзади, учителя не видно толком. Сейчас люди используют уже zoom, если хотят что либо написать. Но 3 уроке начала повторяться. Советовать мне разные ресурсы, рассказывать то что говорила на прошлых. Нету курса по связной речи. Хотя приятно что человек вообще знает что это такое. Большенсво не знают. Я думаю за 3 урока она все рассказала, что знала по этой теме. КПД низкий как по мне. Тем более за 400 грн. Может просто я с Украины. У нас тут преподают за 200.
+                li.s-profiles__info-reviews 
+                    .s-profiles__info-reviews-nav 
+                        h3 Елена
+                        div 
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                        p 22 декабря 2021
+                    p Как бы не плохо. Но 400 грн как по мне, то дороговато. Я мало говорила на уроках, только слушала. Запрос был подтянуть произношение. А я только слушала. Использует доску сзади, учителя не видно толком. Сейчас люди используют уже zoom, если хотят что либо написать. Но 3 уроке начала повторяться. Советовать мне разные ресурсы, рассказывать то что говорила на прошлых. Нету курса по связной речи. Хотя приятно что человек вообще знает что это такое. Большенсво не знают. Я думаю за 3 урока она все рассказала, что знала по этой теме. КПД низкий как по мне. Тем более за 400 грн. Может просто я с Украины. У нас тут преподают за 200.
+                li.s-profiles__info-reviews 
+                    .s-profiles__info-reviews-nav 
+                        h3 Елена
+                        div 
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                            img(src="./svg/s-profiles/stars.svg" alt="star")
+                        p 22 декабря 2021
+                    p Как бы не плохо. Но 400 грн как по мне, то дороговато. Я мало говорила на уроках, только слушала. Запрос был подтянуть произношение. А я только слушала. Использует доску сзади, учителя не видно толком. Сейчас люди используют уже zoom, если хотят что либо написать. Но 3 уроке начала повторяться. Советовать мне разные ресурсы, рассказывать то что говорила на прошлых. Нету курса по связной речи. Хотя приятно что человек вообще знает что это такое. Большенсво не знают. Я думаю за 3 урока она все рассказала, что знала по этой теме. КПД низкий как по мне. Тем более за 400 грн. Может просто я с Украины. У нас тут преподают за 200.
+
+
+
+
+
+
 
 
 

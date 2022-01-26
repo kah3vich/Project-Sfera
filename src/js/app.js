@@ -11,3 +11,4 @@
 @@include("./s-search/index.js");
 @@include("./s-schedule/index.js");
 @@include("./s-teacher/index.js");
+@@include("./s-found/index.js");

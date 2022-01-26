@@ -1,0 +1,375 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg" alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_s-header.pug')
+
+section.s-found  
+    .wrappers 
+        .s-found__title Найдено репетиторов 
+            p (167)
+        ul.s-found__list 
+            li.s-found__items 
+                .s-found__profile 
+                    .s-found__profile-photo 
+                    .s-found__profile-star 
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                    .s-found__profile-add Оценка по отзывам
+                    .s-found__profile-rating 5
+                    .s-found__profile-verified
+                        img(src="./svg/s-profiles/check.svg" alt="check")
+                        p - верифицирован
+                    button.s-found__profile-btn Выбрать
+                .s-found__info 
+                    .s-found__info-wrapper
+                        .s-found__info-types
+                            .s-found__info-name Банду Каруна
+                            .s-found__info-type Репетитор по английскому языку
+                            .s-found__info-year Частный преподаватель
+                                br
+                                | Стаж с 2011 года
+                            ul.s-found__info-thing
+                                li.s-found__info-things 
+                                    p Общий курс
+                                li.s-found__info-things 
+                                    p С носителем языка - разговорная практика
+                                li.s-found__info-things 
+                                    p Интенсив
+                                li.s-found__info-things 
+                                    p Подготовка к ЕГЭ
+                                li.s-found__info-things 
+                                    p Подготовка к ОГЭ
+                                li.s-found__info-things 
+                                    p IELTS
+                                li.s-found__info-things 
+                                    p Общий курс
+                                li.s-found__info-things 
+                                    p С носителем языка - разговорная практика
+                                li.s-found__info-things 
+                                    p Интенсив
+                                li.s-found__info-things 
+                                    p Подготовка к ЕГЭ
+                                li.s-found__info-things 
+                                    p Подготовка к ОГЭ
+                                li.s-found__info-things 
+                                    p IELTS
+                        .s-found__info-prices 
+                            .s-found__info-prices-title Цена
+                            .s-found__info-prices-block 
+                                .s-found__info-prices-info
+                                    h3 10 790₽ 
+                                    p Дистанционно
+                                img(src="./img/s-profiles/block.png" alt="img")
+                    .s-found__info-titles Характеристики
+                    ul.s-found__info-specif 
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title Образование
+                            .s-found__info-specifs-text Липецкий государственный педагогический университет имени П.П. Семенова-Тян-Шанского. Диплом с отличием. (2017) Высшая школа экономики. Диплом с 
+                                span далее ...
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title Опыт работы
+                            .s-found__info-specifs-text Teacher of English Language 2011-1017 Private Tutor of English 2017 - up to now
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title О себе
+                            .s-found__info-specifs-text Hello! My name is Karouna Bundhoo. I am a native English speaker and I have over 9 years of teaching experience. I have mainly taught English to 
+                                span далее ...
+                        li.s-found__info-specifs 
+                            button.s-found__info-specifs-btn Смотреть анкету
+                    .s-found__info-titles Отзывы
+                    ul.s-found__info-review 
+                        li.s-found__info-reviews 
+                            .s-found__info-reviews-nav 
+                                h3 Елена
+                                .s-found__info-reviews-star 
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                span 22 декабря 2021
+                            p Как бы не плохо. Но 400 грн как по мне, то дороговато. Я мало говорила на уроках, только слушала. Запрос был подтянуть произношение. А я только слушала. Использует доску сзади, учителя не видно толком. Сейчас люди используют уже zoom, если хотят что либо написать. Но 3 уроке начала повторяться. Советовать мне разные ресурсы, рассказывать то что говорила на прошлых. Нету курса по связной речи. Хотя приятно что человек вообще знает что это такое. Большенсво не знают. Я думаю за 3 урока она все рассказала, что знала по этой теме. КПД низкий как по мне. Тем более за 400 грн. Может просто я с Украины. У нас тут преподают за 200.
+            li.s-found__items 
+                .s-found__profile 
+                    .s-found__profile-photo 
+                    .s-found__profile-star 
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                    .s-found__profile-add Оценка по отзывам
+                    .s-found__profile-rating 5
+                    .s-found__profile-verified
+                        img(src="./svg/s-profiles/check.svg" alt="check")
+                        p - верифицирован
+                    button.s-found__profile-btn Выбрать
+                .s-found__info 
+                    .s-found__info-wrapper
+                        .s-found__info-types
+                            .s-found__info-name Банду Каруна
+                            .s-found__info-type Репетитор по английскому языку
+                            .s-found__info-year Частный преподаватель
+                                br
+                                | Стаж с 2011 года
+                            ul.s-found__info-thing
+                                li.s-found__info-things 
+                                    p Общий курс
+                                li.s-found__info-things 
+                                    p С носителем языка - разговорная практика
+                                li.s-found__info-things 
+                                    p Интенсив
+                                li.s-found__info-things 
+                                    p Подготовка к ЕГЭ
+                                li.s-found__info-things 
+                                    p Подготовка к ОГЭ
+                                li.s-found__info-things 
+                                    p IELTS
+                                li.s-found__info-things 
+                                    p Общий курс
+                                li.s-found__info-things 
+                                    p С носителем языка - разговорная практика
+                                li.s-found__info-things 
+                                    p Интенсив
+                                li.s-found__info-things 
+                                    p Подготовка к ЕГЭ
+                                li.s-found__info-things 
+                                    p Подготовка к ОГЭ
+                                li.s-found__info-things 
+                                    p IELTS
+                        .s-found__info-prices 
+                            .s-found__info-prices-title Цена
+                            .s-found__info-prices-block 
+                                .s-found__info-prices-info
+                                    h3 10 790₽ 
+                                    p Дистанционно
+                                img(src="./img/s-profiles/block.png" alt="img")
+                    .s-found__info-titles Характеристики
+                    ul.s-found__info-specif 
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title Образование
+                            .s-found__info-specifs-text Липецкий государственный педагогический университет имени П.П. Семенова-Тян-Шанского. Диплом с отличием. (2017) Высшая школа экономики. Диплом с 
+                                span далее ...
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title Опыт работы
+                            .s-found__info-specifs-text Teacher of English Language 2011-1017 Private Tutor of English 2017 - up to now
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title О себе
+                            .s-found__info-specifs-text Hello! My name is Karouna Bundhoo. I am a native English speaker and I have over 9 years of teaching experience. I have mainly taught English to 
+                                span далее ...
+                        li.s-found__info-specifs 
+                            button.s-found__info-specifs-btn Смотреть анкету
+                    .s-found__info-titles Отзывы
+                    ul.s-found__info-review 
+                        li.s-found__info-reviews 
+                            .s-found__info-reviews-nav 
+                                h3 Елена
+                                .s-found__info-reviews-star 
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                span 22 декабря 2021
+                            p Как бы не плохо. Но 400 грн как по мне, то дороговато. Я мало говорила на уроках, только слушала. Запрос был подтянуть произношение. А я только слушала. Использует доску сзади, учителя не видно толком. Сейчас люди используют уже zoom, если хотят что либо написать. Но 3 уроке начала повторяться. Советовать мне разные ресурсы, рассказывать то что говорила на прошлых. Нету курса по связной речи. Хотя приятно что человек вообще знает что это такое. Большенсво не знают. Я думаю за 3 урока она все рассказала, что знала по этой теме. КПД низкий как по мне. Тем более за 400 грн. Может просто я с Украины. У нас тут преподают за 200.
+            li.s-found__items 
+                .s-found__profile 
+                    .s-found__profile-photo 
+                    .s-found__profile-star 
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                    .s-found__profile-add Оценка по отзывам
+                    .s-found__profile-rating 5
+                    .s-found__profile-verified
+                        img(src="./svg/s-profiles/check.svg" alt="check")
+                        p - верифицирован
+                    button.s-found__profile-btn Выбрать
+                .s-found__info 
+                    .s-found__info-wrapper
+                        .s-found__info-types
+                            .s-found__info-name Банду Каруна
+                            .s-found__info-type Репетитор по английскому языку
+                            .s-found__info-year Частный преподаватель
+                                br
+                                | Стаж с 2011 года
+                            ul.s-found__info-thing
+                                li.s-found__info-things 
+                                    p Общий курс
+                                li.s-found__info-things 
+                                    p С носителем языка - разговорная практика
+                                li.s-found__info-things 
+                                    p Интенсив
+                                li.s-found__info-things 
+                                    p Подготовка к ЕГЭ
+                                li.s-found__info-things 
+                                    p Подготовка к ОГЭ
+                                li.s-found__info-things 
+                                    p IELTS
+                                li.s-found__info-things 
+                                    p Общий курс
+                                li.s-found__info-things 
+                                    p С носителем языка - разговорная практика
+                                li.s-found__info-things 
+                                    p Интенсив
+                                li.s-found__info-things 
+                                    p Подготовка к ЕГЭ
+                                li.s-found__info-things 
+                                    p Подготовка к ОГЭ
+                                li.s-found__info-things 
+                                    p IELTS
+                        .s-found__info-prices 
+                            .s-found__info-prices-title Цена
+                            .s-found__info-prices-block 
+                                .s-found__info-prices-info
+                                    h3 10 790₽ 
+                                    p Дистанционно
+                                img(src="./img/s-profiles/block.png" alt="img")
+                    .s-found__info-titles Характеристики
+                    ul.s-found__info-specif 
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title Образование
+                            .s-found__info-specifs-text Липецкий государственный педагогический университет имени П.П. Семенова-Тян-Шанского. Диплом с отличием. (2017) Высшая школа экономики. Диплом с 
+                                span далее ...
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title Опыт работы
+                            .s-found__info-specifs-text Teacher of English Language 2011-1017 Private Tutor of English 2017 - up to now
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title О себе
+                            .s-found__info-specifs-text Hello! My name is Karouna Bundhoo. I am a native English speaker and I have over 9 years of teaching experience. I have mainly taught English to 
+                                span далее ...
+                        li.s-found__info-specifs 
+                            button.s-found__info-specifs-btn Смотреть анкету
+                    .s-found__info-titles Отзывы
+                    ul.s-found__info-review 
+                        li.s-found__info-reviews 
+                            .s-found__info-reviews-nav 
+                                h3 Елена
+                                .s-found__info-reviews-star 
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                span 22 декабря 2021
+                            p Как бы не плохо. Но 400 грн как по мне, то дороговато. Я мало говорила на уроках, только слушала. Запрос был подтянуть произношение. А я только слушала. Использует доску сзади, учителя не видно толком. Сейчас люди используют уже zoom, если хотят что либо написать. Но 3 уроке начала повторяться. Советовать мне разные ресурсы, рассказывать то что говорила на прошлых. Нету курса по связной речи. Хотя приятно что человек вообще знает что это такое. Большенсво не знают. Я думаю за 3 урока она все рассказала, что знала по этой теме. КПД низкий как по мне. Тем более за 400 грн. Может просто я с Украины. У нас тут преподают за 200.
+            li.s-found__items 
+                .s-found__profile 
+                    .s-found__profile-photo 
+                    .s-found__profile-star 
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                        img(src="./svg/s-profiles/star.svg" alt="star")
+                    .s-found__profile-add Оценка по отзывам
+                    .s-found__profile-rating 5
+                    .s-found__profile-verified
+                        img(src="./svg/s-profiles/check.svg" alt="check")
+                        p - верифицирован
+                    button.s-found__profile-btn Выбрать
+                .s-found__info 
+                    .s-found__info-wrapper
+                        .s-found__info-types
+                            .s-found__info-name Банду Каруна
+                            .s-found__info-type Репетитор по английскому языку
+                            .s-found__info-year Частный преподаватель
+                                br
+                                | Стаж с 2011 года
+                            ul.s-found__info-thing
+                                li.s-found__info-things 
+                                    p Общий курс
+                                li.s-found__info-things 
+                                    p С носителем языка - разговорная практика
+                                li.s-found__info-things 
+                                    p Интенсив
+                                li.s-found__info-things 
+                                    p Подготовка к ЕГЭ
+                                li.s-found__info-things 
+                                    p Подготовка к ОГЭ
+                                li.s-found__info-things 
+                                    p IELTS
+                                li.s-found__info-things 
+                                    p Общий курс
+                                li.s-found__info-things 
+                                    p С носителем языка - разговорная практика
+                                li.s-found__info-things 
+                                    p Интенсив
+                                li.s-found__info-things 
+                                    p Подготовка к ЕГЭ
+                                li.s-found__info-things 
+                                    p Подготовка к ОГЭ
+                                li.s-found__info-things 
+                                    p IELTS
+                        .s-found__info-prices 
+                            .s-found__info-prices-title Цена
+                            .s-found__info-prices-block 
+                                .s-found__info-prices-info
+                                    h3 10 790₽ 
+                                    p Дистанционно
+                                img(src="./img/s-profiles/block.png" alt="img")
+                    .s-found__info-titles Характеристики
+                    ul.s-found__info-specif 
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title Образование
+                            .s-found__info-specifs-text Липецкий государственный педагогический университет имени П.П. Семенова-Тян-Шанского. Диплом с отличием. (2017) Высшая школа экономики. Диплом с 
+                                span далее ...
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title Опыт работы
+                            .s-found__info-specifs-text Teacher of English Language 2011-1017 Private Tutor of English 2017 - up to now
+                        li.s-found__info-specifs 
+                            .s-found__info-specifs-title О себе
+                            .s-found__info-specifs-text Hello! My name is Karouna Bundhoo. I am a native English speaker and I have over 9 years of teaching experience. I have mainly taught English to 
+                                span далее ...
+                        li.s-found__info-specifs 
+                            button.s-found__info-specifs-btn Смотреть анкету
+                    .s-found__info-titles Отзывы
+                    ul.s-found__info-review 
+                        li.s-found__info-reviews 
+                            .s-found__info-reviews-nav 
+                                h3 Елена
+                                .s-found__info-reviews-star 
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                    img(src="./svg/s-profiles/stars.svg" alt="star")
+                                span 22 декабря 2021
+                            p Как бы не плохо. Но 400 грн как по мне, то дороговато. Я мало говорила на уроках, только слушала. Запрос был подтянуть произношение. А я только слушала. Использует доску сзади, учителя не видно толком. Сейчас люди используют уже zoom, если хотят что либо написать. Но 3 уроке начала повторяться. Советовать мне разные ресурсы, рассказывать то что говорила на прошлых. Нету курса по связной речи. Хотя приятно что человек вообще знает что это такое. Большенсво не знают. Я думаю за 3 урока она все рассказала, что знала по этой теме. КПД низкий как по мне. Тем более за 400 грн. Может просто я с Украины. У нас тут преподают за 200.
+
+
+
+
+
+
+
+
+
+@@include('components/_modelScheduleTeacher.pug')
+
+@@include('components/_script.pug')

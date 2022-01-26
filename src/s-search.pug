@@ -7,49 +7,209 @@
 @@include('components/_s-header.pug')
 
 section.s-search 
-    .wrappers 
-        .s-search__block 
-            .s-search__title Поиск репетитора
-            .s-search__select 
-                <div id="s_searchCap">Веберите предмет ...</div>
-                <select id="s_search">
-                    <option value=""></option>
-                    <option value="Русский язык">Русский язык</option>
-                    <option value="Математика">Математика</option>
-                    <option value="Биология">Биология</option>
-                    <option value="Русский язык">Русский язык</option>
-                    <option value="Математика">Математика</option>
-                    <option value="Биология">Биология</option>
-                    <option value="Русский язык">Русский язык</option>
-                    <option value="Математика">Математика</option>
-                    <option value="Биология">Биология</option>
-                </select>
-        .s-search__teacher 
-            .s-search__teacher-items 
-                .s-search__teacher-photo 
-                    .s-search__teacher-photo-title Мой преподаватель
-                    .s-search__teacher-photo-items
-                .s-search__teacher-name Замятина Татьяна Сергеевна
-            .s-search__teacher-items 
-                .s-search__teacher-photo 
-                    .s-search__teacher-photo-title 
-                    .s-search__teacher-photo-items
-                .s-search__teacher-name Замятина Татьяна Сергеевна
-            .s-search__teacher-items 
-                .s-search__teacher-photo 
-                    .s-search__teacher-photo-title 
-                    .s-search__teacher-photo-items
-                .s-search__teacher-name Замятина Татьяна Сергеевна
-            .s-search__teacher-items 
-                .s-search__teacher-photo 
-                    .s-search__teacher-photo-title 
-                    .s-search__teacher-photo-items
-                .s-search__teacher-name Замятина Татьяна Сергеевна
-            .s-search__teacher-items 
-                .s-search__teacher-photo 
-                    .s-search__teacher-photo-title 
-                    .s-search__teacher-photo-items
-                .s-search__teacher-name Замятина Татьяна Сергеевна
+    .wrappers  
+        .s-search__title Поиск репетитора
+        .s-search__quiz 
+            .s-search__quiz-wrapper  
+                .s-search__quiz-title 
+                    h3 Выбор предмета
+                    p Шаг 1 из 8
+                .s-search__quiz-line 
+                ul.s-search__quiz-things
+                    li.s-search__quiz-things-info 
+                        h3 Что будете изучать?
+                        p Можно выбрать только один предмет. Если вам нужны репетиторы по нескольким предметам, то придется создать отдельные запросы по каждому предмету.
+                    li.s-search__quiz-things-line 
+                    li.s-search__quiz-things-select
+                        select(class="quiz-select" name="thing" style="display: none")
+                            option Введите предмет
+                            option(value="default" selected="") Новые
+                            option(value="price_desc") Цена уменьшение
+                            option(value="price_asc") Цена увеличение
+                            option(value="comment") Комментируемые
+                            option(value="rating") Популярные
+
+                ul.s-search__quiz-long 
+                    li.s-search__quiz-long-info 
+                        h3 Какая будет длительность ?
+                        p Можно выбрать только один предмет. Если вам нужны репетиторы по нескольким предметам, то придется создать отдельные запросы по каждому предмету.
+                    li.s-search__quiz-long-line 
+                    li.s-search__quiz-long-wrapper 
+                        .s-search__quiz-long-titles Длительность курса занятий
+                        ul.s-search__quiz-long-list 
+                            li.s-search__quiz-long-items 
+                                input(class="s-search__quiz-long-items-radio__input" name="long" type="radio" id="long_1" checked)
+                                label(class="s-search__quiz-long-items-radio__label" for="long_1") Длительный курс
+                            li.s-search__quiz-long-items 
+                                input(class="s-search__quiz-long-items-radio__input" name="long" type="radio" id="long_2")
+                                label(class="s-search__quiz-long-items-radio__label" for="long_2") Короткий курс (до четырех занятий)
+                            li.s-search__quiz-long-items 
+                                input(class="s-search__quiz-long-items-radio__input" name="long" type="radio" id="long_3")
+                                label(class="s-search__quiz-long-items-radio__label" for="long_3") Однократная консультация
+                        .s-search__quiz-long-titles Интенсивность курса занятий
+                        ul.s-search__quiz-long-list 
+                            li.s-search__quiz-long-items 
+                                input(class="s-search__quiz-long-items-radio__input" name="longs" type="radio" id="long_4" checked)
+                                label(class="s-search__quiz-long-items-radio__label" for="long_4") Два раза и более в неделю
+                            li.s-search__quiz-long-items 
+                                input(class="s-search__quiz-long-items-radio__input" name="longs" type="radio" id="long_5")
+                                label(class="s-search__quiz-long-items-radio__label" for="long_5") Раз в неделю
+                            li.s-search__quiz-long-items 
+                                input(class="s-search__quiz-long-items-radio__input" name="longs" type="radio" id="long_6")
+                                label(class="s-search__quiz-long-items-radio__label" for="long_6") Реже одного раза в неделю
+                .s-search__quiz-times 
+                    ul.s-search__quiz-time
+                        li.s-search__quiz-time-items 
+                            h3 Понедельник
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input" onmouseout="this.blur();") 
+                            .s-search__quiz-time-line 
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-close 
+                                img(src="./svg/s-search/close.svg" alt="close")
+                        li.s-search__quiz-time-items 
+                            h3 Вторник
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-line 
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-close 
+                                img(src="./svg/s-search/close.svg" alt="close")
+                        li.s-search__quiz-time-items 
+                            h3 Среда
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-line 
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-close 
+                                img(src="./svg/s-search/close.svg" alt="close")
+                        li.s-search__quiz-time-items 
+                            h3 Четверг
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-line 
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-close 
+                                img(src="./svg/s-search/close.svg" alt="close")
+                        li.s-search__quiz-time-items 
+                            h3 Пятница
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-line 
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-close 
+                                img(src="./svg/s-search/close.svg" alt="close")
+                        li.s-search__quiz-time-items 
+                            h3 Суббота
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-line 
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-close 
+                                img(src="./svg/s-search/close.svg" alt="close")
+                        li.s-search__quiz-time-items 
+                            h3 Воскресенье
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-line 
+                            input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
+                            .s-search__quiz-time-close 
+                                img(src="./svg/s-search/close.svg" alt="close")
+
+                .s-search__quiz-stat
+                    ul.s-search__quiz-status 
+                        li.s-search__quiz-status-title Статус репетитора
+                        li.s-search__quiz-status-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_1" checked)
+                            label(class="s-search__quiz-long-items-radio__label" for="stat_1") Не важно
+                        li.s-search__quiz-status-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_2")
+                            label(class="s-search__quiz-long-items-radio__label" for="stat_2") Университетский преподаватель
+                        li.s-search__quiz-status-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_3")
+                            label(class="s-search__quiz-long-items-radio__label" for="stat_3") Школьный преподаватель
+                        li.s-search__quiz-status-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_4")
+                            label(class="s-search__quiz-long-items-radio__label" for="stat_4") Аспирант или ординатор очной формы обучения
+                        li.s-search__quiz-status-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_5")
+                            label(class="s-search__quiz-long-items-radio__label" for="stat_5") Частный преподаватель
+                        li.s-search__quiz-status-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_6")
+                            label(class="s-search__quiz-long-items-radio__label" for="stat_6") Студент
+                    ul.s-search__quiz-status 
+                        li.s-search__quiz-status-title Пол репетитора
+                        li.s-search__quiz-status-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="status" type="radio" id="status_1" checked)
+                            label(class="s-search__quiz-long-items-radio__label" for="status_1") Не важно
+                        li.s-search__quiz-status-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="status" type="radio" id="status_2")
+                            label(class="s-search__quiz-long-items-radio__label" for="status_2") Женский
+                        li.s-search__quiz-status-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="status" type="radio" id="status_3")
+                            label(class="s-search__quiz-long-items-radio__label" for="status_3") Мужской
+
+                .s-search__quiz-student
+                    ul.s-search__quiz-students 
+                        li.s-search__quiz-students-title Возрастная категория
+                        li.s-search__quiz-students-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_1" checked)
+                            label(class="s-search__quiz-long-items-radio__label" for="stat_1") Школьники с 5 по 9 класс
+                        li.s-search__quiz-students-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_2")
+                            label(class="s-search__quiz-long-items-radio__label" for="stat_2") Школьники с 10 по 11 класс, студенты колледжей и техникумов, абитуриенты
+                        li.s-search__quiz-students-items 
+                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_3")
+                            label(class="s-search__quiz-long-items-radio__label" for="stat_3") Взрослые кроме абитуриентов
+                    ul.s-search__quiz-students 
+                        li.s-search__quiz-students-title Опишите ситуацию
+                        li.s-search__quiz-students-text 
+                            textarea
+
+                ul.s-search__quiz-price
+                    li.s-search__quiz-price-info 
+                        h3 Рекомендации
+                        ul.s-search__quiz-price-list   
+                            li.s-search__quiz-price-items 
+                                h4 Дешевле 800 р
+                                p Вашим репетитором может оказаться студент, либо начинающий репетитор.
+                            li.s-search__quiz-price-items 
+                                h4 От 800 до 1500 р.
+                                p Скорее всего, у этого репетитора уже есть опыт преподавания.
+                            li.s-search__quiz-price-items 
+                                h4 От 1300 до 2500 р. 
+                                p Обычно это опытный репетитор, успешно подготовивший немало учеников.
+                            li.s-search__quiz-price-items 
+                                h4 От 2500 до 4000 р
+                                p Обычно в этом стоимостном диапазоне работают наиболее опытные репетиторы.
+                            li.s-search__quiz-price-items 
+                                h4 Более 4000 р
+                                p Чаще всего, такую цену устанавливают самые успешные и известные репетиторы.
+
+                    li.s-search__quiz-price-line 
+                    li.s-search__quiz-price-input
+                        h3 Укажите приемлемую стоимость занятий
+                        .s-search__quiz-price-wrappers 
+                            input(type="text" placeholder="Сумма").s-search__quiz-price-inputs 
+
+
+
+
+
+                .s-search__quiz-nav     
+                    ul.s-search__quiz-navs 
+                        li.s-search__quiz-navig.s-search__quiz-navig-active
+                            .s-search__quiz-navig-circle 
+                            p Выбор предмета
+                        li.s-search__quiz-navig
+                            .s-search__quiz-navig-circle 
+                            p Выбор длительности и интенсивности
+                        li.s-search__quiz-navig
+                            .s-search__quiz-navig-circle 
+                            p Время проведения занятий
+                        li.s-search__quiz-navig
+                            .s-search__quiz-navig-circle 
+                            p Требования к репетитору
+                        li.s-search__quiz-navig
+                            .s-search__quiz-navig-circle 
+                            p Об ученике
+                        li.s-search__quiz-navig
+                            .s-search__quiz-navig-circle 
+                            p Стоимость занятия
+                    button.s-search__quiz-btn Далее
 
 
 @@include('components/_script.pug')
