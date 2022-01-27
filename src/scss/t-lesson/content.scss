@@ -34,6 +34,7 @@
 				width: 28px;
 				height: 28px;
 				border-radius: 50%;
+				cursor: pointer;
 			}
 			&-tools {
 				display: grid;
@@ -44,6 +45,7 @@
 			}
 			&-items {
 				background: #625dee;
+				cursor: pointer;
 				width: 28px;
 				height: 28px;
 				border-radius: 50%;

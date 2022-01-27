@@ -4438,6 +4438,7 @@ input:focus {
 	width : 28px;
 	height : 28px;
 	border-radius : 50%;
+	cursor : pointer;
 }
 
 .t-lesson__panel-controls-tools {
@@ -4451,6 +4452,7 @@ input:focus {
 
 .t-lesson__panel-controls-items {
 	background : #625dee;
+	cursor : pointer;
 	width : 28px;
 	height : 28px;
 	border-radius : 50%;
@@ -5340,12 +5342,22 @@ input:focus {
 	color : #2a2a2a;
 }
 
-.s-search__quiz-title p {
+.s-search__quiz-text {
 	font-style : normal;
 	font-weight : normal;
 	font-size : 20px;
 	line-height : 81px;
 	color : #2a2a2a;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : justify;
+	-ms-flex-pack : justify;
+	justify-content : space-between;
+	width : 110px;
 }
 
 .s-search__quiz-line {
@@ -5592,6 +5604,7 @@ input:focus {
 .s-search__quiz-time-close {
 	margin : 0 0 0 28px;
 	cursor : pointer;
+	background : transparent;
 }
 
 .s-search__quiz-stat {
@@ -6004,6 +6017,22 @@ input:focus {
 	color : #ffffff;
 }
 
+.s-search__quiz-btns {
+	margin : -9px 0 0 36px;
+	background : #625dee;
+	border-radius : 26px;
+	padding : 3px 50px;
+	font-style : normal;
+	font-weight : normal;
+	font-size : 18px;
+	line-height : 43px;
+	color : #ffffff;
+}
+
+.s-search__quiz-btns:hover {
+	color : #ffffff;
+}
+
 .quiz-select-css {
 	padding : 7px 20px 7px 40px;
 	border : 2px solid #635ff2;
@@ -6265,8 +6294,8 @@ second, second and am/pm */
 	height : 6px;
 	z-index : 5;
 	border-radius : 50%;
-	background : -o-linear-gradient(359.18deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%), #6461F2;
-	background :    linear-gradient(90.82deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%), #6461F2;
+	background : -o-linear-gradient(359.18deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%), #6461f2;
+	background :    linear-gradient(90.82deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%), #6461f2;
 }
 
 .s-schedule__info {
@@ -6325,7 +6354,7 @@ second, second and am/pm */
 
 .s-schedule__info-profile {
 	width : 266px;
-	background : #FFFFFF;
+	background : #ffffff;
 	border-radius : 12px;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -6347,7 +6376,7 @@ second, second and am/pm */
 	width : 140px;
 	height : 140px;
 	border-radius : 50%;
-	background : #635FF2;
+	background : #635ff2;
 	display : -webkit-box;
 	display : -ms-flexbox;
 	display : flex;
@@ -6390,7 +6419,7 @@ second, second and am/pm */
 
 .s-schedule__info-profile-price {
 	margin : 12px 0 0 0;
-	border : 1px solid #625DEE;
+	border : 1px solid #625dee;
 	width : 151px;
 	height : 33px;
 	border-radius : 16.5px;
@@ -6412,7 +6441,7 @@ second, second and am/pm */
 	font-weight : 600;
 	font-size : 14px;
 	line-height : 17px;
-	color : #625DEE;
+	color : #625dee;
 }
 
 .s-schedule__info-profile-lessons {
@@ -6433,13 +6462,14 @@ second, second and am/pm */
 }
 
 .s-schedule__info-profile-lesson {
+	cursor : pointer;
 	margin : 0 0 5px 0;
 	font-style : normal;
 	font-weight : 600;
 	font-size : 14px;
 	line-height : 23px;
 	text-align : center;
-	color : #625DEE;
+	color : #625dee;
 }
 
 .s-schedule__info-profile-lesson:last-child {
@@ -6465,7 +6495,7 @@ second, second and am/pm */
 .s-schedule__info-calendar-items {
 	width : 508px;
 	height : 500px;
-	background : #FFFFFF;
+	background : #ffffff;
 	border-radius : 12px;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -6573,8 +6603,8 @@ second, second and am/pm */
 }
 
 .s-schedule__info-calendar-items .ui-datepicker-today {
-	background : -o-linear-gradient(294.04deg, #625DEE 179460.87%, #FCBA59 208765.74%);
-	background :    linear-gradient(155.96deg, #625DEE 179460.87%, #FCBA59 208765.74%);
+	background : -o-linear-gradient(294.04deg, #625dee 179460.87%, #fcba59 208765.74%);
+	background :    linear-gradient(155.96deg, #625dee 179460.87%, #fcba59 208765.74%);
 	width : 44px;
 	height : 44px;
 	display : -webkit-box;
@@ -6595,12 +6625,12 @@ second, second and am/pm */
 	font-size : 18px;
 	line-height : 23px;
 	text-align : center;
-	color : #FFFFFF !important;
+	color : #ffffff !important;
 }
 
 .s-schedule__info-calendar-items .ui-state-active {
-	background : -o-linear-gradient(294.04deg, #625DEE 179460.87%, #FCBA59 208765.74%) !important;
-	background :    linear-gradient(155.96deg, #625DEE 179460.87%, #FCBA59 208765.74%) !important;
+	background : -o-linear-gradient(294.04deg, #625dee 179460.87%, #fcba59 208765.74%) !important;
+	background :    linear-gradient(155.96deg, #625dee 179460.87%, #fcba59 208765.74%) !important;
 	width : 44px;
 	height : 44px;
 	display : -webkit-box;
@@ -6618,7 +6648,7 @@ second, second and am/pm */
 	font-size : 18px;
 	line-height : 23px;
 	text-align : center;
-	color : #FFFFFF !important;
+	color : #ffffff !important;
 }
 
 .s-schedule__info-calendar-items .ui-datepicker-calendar {
@@ -6639,7 +6669,7 @@ second, second and am/pm */
 	-webkit-transform : translate(-50%, 0%);
 	    -ms-transform : translate(-50%, 0%);
 	        transform : translate(-50%, 0%);
-	border-bottom : 1px solid #E0E0E0;
+	border-bottom : 1px solid #e0e0e0;
 	width : 100%;
 	height : 1px;
 }
@@ -6690,7 +6720,7 @@ second, second and am/pm */
 
 .s-schedule__info-calendar-btn {
 	margin : 45px 0 0 0;
-	background : #FF5283;
+	background : #ff5283;
 	border-radius : 100px;
 	display : -webkit-box;
 	display : -ms-flexbox;
@@ -6711,7 +6741,7 @@ second, second and am/pm */
 	font-weight : bold;
 	font-size : 24px;
 	line-height : 29px;
-	color : #FFFFFF;
+	color : #ffffff;
 }
 
 .s-schedule__info-list {
@@ -6733,7 +6763,7 @@ second, second and am/pm */
 
 .s-schedule__info-list-wrapper {
 	width : 100%;
-	background : #FFFFFF;
+	background : #ffffff;
 	padding : 39px 30px 30px 30px;
 	border-radius : 15px;
 }
@@ -6756,7 +6786,7 @@ second, second and am/pm */
 	-webkit-box-pack : start;
 	-ms-flex-pack : start;
 	justify-content : flex-start;
-	background : #625DEE;
+	background : #625dee;
 	border-radius : 14px;
 	cursor : pointer;
 	padding : 10px 20px 10px 13px;
@@ -6771,15 +6801,15 @@ second, second and am/pm */
 }
 
 .s-schedule__info-items-ready {
-	background : #625DEE;
+	background : #625dee;
 }
 
 .s-schedule__info-items-cancel {
-	background : #FF2D55;
+	background : #ff2d55;
 }
 
 .s-schedule__info-items-waiting {
-	background : #FF8F0D;
+	background : #ff8f0d;
 }
 
 .s-schedule__info-items-number {
@@ -6787,13 +6817,13 @@ second, second and am/pm */
 	font-weight : bold;
 	font-size : 31px;
 	line-height : 38px;
-	color : #FFFFFF;
+	color : #ffffff;
 }
 
 .s-schedule__info-items-line {
 	width : 1px;
 	height : 100%;
-	border-left : 1px solid #FFFFFF;
+	border-left : 1px solid #ffffff;
 	margin : 0 15px;
 }
 
@@ -6819,7 +6849,7 @@ second, second and am/pm */
 	font-weight : 500;
 	font-size : 14px;
 	line-height : 16px;
-	color : #FFFFFF;
+	color : #ffffff;
 }
 
 .s-schedule__info-items-info p {
@@ -6828,7 +6858,7 @@ second, second and am/pm */
 	font-weight : 500;
 	font-size : 14px;
 	line-height : 16px;
-	color : #FFFFFF;
+	color : #ffffff;
 }
 
 .s-schedule__info-items-icons {
@@ -6838,49 +6868,6 @@ second, second and am/pm */
 	     -o-transition : all 0.5s ease;
 	        transition : all 0.5s ease;
 	opacity : 0;
-}
-
-.modelScheduleTeacher {
-	background : rgba(0, 21, 75, 0.4);
-	-webkit-backdrop-filter : blur(80px);
-	        backdrop-filter : blur(80px);
-	position : fixed;
-	top : 0;
-	left : 0;
-	z-index : 1055;
-	width : 100%;
-	height : 100%;
-	overflow-x : hidden;
-	overflow-y : auto;
-	outline : 0;
-}
-
-.modelScheduleTeacher__wrappers {
-	width : 500px;
-	padding : 20px;
-	position : absolute;
-	top : 50%;
-	left : 50%;
-	-webkit-transform : translate(-50%, -50%);
-	    -ms-transform : translate(-50%, -50%);
-	        transform : translate(-50%, -50%);
-	background : #ffffff;
-	border-radius : 15px;
-}
-
-.modelScheduleTeacher__wrappers-close {
-	position : absolute;
-	top : 10px;
-	right : 10px;
-	cursor : pointer;
-	width : 36px;
-	height : 36px;
-	-webkit-transform : rotate(45deg);
-	    -ms-transform : rotate(45deg);
-	        transform : rotate(45deg);
-	-webkit-transition : all 0.5s ease;
-	     -o-transition : all 0.5s ease;
-	        transition : all 0.5s ease;
 }
 
 .s-teacher__info {
@@ -7979,6 +7966,7 @@ second, second and am/pm */
 	-webkit-box-pack : start;
 	-ms-flex-pack : start;
 	justify-content : flex-start;
+	cursor : pointer;
 }
 
 .s-profiles__back img {

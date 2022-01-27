@@ -11,11 +11,14 @@ section.s-search
         .s-search__title Поиск репетитора
         .s-search__quiz 
             .s-search__quiz-wrapper  
-                .s-search__quiz-title 
+                .s-search__quiz-title
                     h3 Выбор предмета
-                    p Шаг 1 из 8
+                    .s-search__quiz-text Шаг 
+                        #numberActiveQuiz 1 
+                        | из 
+                        #numberAllQuiz 8
                 .s-search__quiz-line 
-                ul.s-search__quiz-things
+                ul.s-search__quiz-things.elementQuiz
                     li.s-search__quiz-things-info 
                         h3 Что будете изучать?
                         p Можно выбрать только один предмет. Если вам нужны репетиторы по нескольким предметам, то придется создать отдельные запросы по каждому предмету.
@@ -29,7 +32,7 @@ section.s-search
                             option(value="comment") Комментируемые
                             option(value="rating") Популярные
 
-                ul.s-search__quiz-long 
+                ul.s-search__quiz-long.display-n.elementQuiz 
                     li.s-search__quiz-long-info 
                         h3 Какая будет длительность ?
                         p Можно выбрать только один предмет. Если вам нужны репетиторы по нескольким предметам, то придется создать отдельные запросы по каждому предмету.
@@ -57,59 +60,60 @@ section.s-search
                             li.s-search__quiz-long-items 
                                 input(class="s-search__quiz-long-items-radio__input" name="longs" type="radio" id="long_6")
                                 label(class="s-search__quiz-long-items-radio__label" for="long_6") Реже одного раза в неделю
-                .s-search__quiz-times 
+
+                .s-search__quiz-times.display-n.elementQuiz 
                     ul.s-search__quiz-time
-                        li.s-search__quiz-time-items 
+                        li.s-search__quiz-time-items#timeElement_1 
                             h3 Понедельник
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input" onmouseout="this.blur();") 
                             .s-search__quiz-time-line 
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
-                            .s-search__quiz-time-close 
+                            button(onClick="removeTimeElement(this)" value="timeElement_1").s-search__quiz-time-close 
                                 img(src="./svg/s-search/close.svg" alt="close")
-                        li.s-search__quiz-time-items 
+                        li.s-search__quiz-time-items#timeElement_2
                             h3 Вторник
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
                             .s-search__quiz-time-line 
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
-                            .s-search__quiz-time-close 
+                            button(onClick="removeTimeElement(this)" value="timeElement_2").s-search__quiz-time-close 
                                 img(src="./svg/s-search/close.svg" alt="close")
-                        li.s-search__quiz-time-items 
+                        li.s-search__quiz-time-items#timeElement_3
                             h3 Среда
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
                             .s-search__quiz-time-line 
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
-                            .s-search__quiz-time-close 
+                            button(onClick="removeTimeElement(this)" value="timeElement_3").s-search__quiz-time-close 
                                 img(src="./svg/s-search/close.svg" alt="close")
-                        li.s-search__quiz-time-items 
+                        li.s-search__quiz-time-items#timeElement_4 
                             h3 Четверг
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
                             .s-search__quiz-time-line 
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
-                            .s-search__quiz-time-close 
+                            button(onClick="removeTimeElement(this)" value="timeElement_4").s-search__quiz-time-close 
                                 img(src="./svg/s-search/close.svg" alt="close")
-                        li.s-search__quiz-time-items 
+                        li.s-search__quiz-time-items#timeElement_5
                             h3 Пятница
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
                             .s-search__quiz-time-line 
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
-                            .s-search__quiz-time-close 
+                            button(onClick="removeTimeElement(this)" value="timeElement_5").s-search__quiz-time-close 
                                 img(src="./svg/s-search/close.svg" alt="close")
-                        li.s-search__quiz-time-items 
+                        li.s-search__quiz-time-items#timeElement_6
                             h3 Суббота
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
                             .s-search__quiz-time-line 
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
-                            .s-search__quiz-time-close 
+                            button(onClick="removeTimeElement(this)" value="timeElement_6").s-search__quiz-time-close 
                                 img(src="./svg/s-search/close.svg" alt="close")
-                        li.s-search__quiz-time-items 
+                        li.s-search__quiz-time-items#timeElement_7
                             h3 Воскресенье
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
                             .s-search__quiz-time-line 
                             input(type="time" id="quiz__time" value="13:37" class="s-search__quiz-time-input") 
-                            .s-search__quiz-time-close 
+                            button(onClick="removeTimeElement(this)" value="timeElement_7").s-search__quiz-time-close 
                                 img(src="./svg/s-search/close.svg" alt="close")
 
-                .s-search__quiz-stat
+                .s-search__quiz-stat.display-n.elementQuiz
                     ul.s-search__quiz-status 
                         li.s-search__quiz-status-title Статус репетитора
                         li.s-search__quiz-status-items 
@@ -142,24 +146,24 @@ section.s-search
                             input(class="s-search__quiz-long-items-radio__input" name="status" type="radio" id="status_3")
                             label(class="s-search__quiz-long-items-radio__label" for="status_3") Мужской
 
-                .s-search__quiz-student
+                .s-search__quiz-student.display-n.elementQuiz
                     ul.s-search__quiz-students 
                         li.s-search__quiz-students-title Возрастная категория
                         li.s-search__quiz-students-items 
-                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_1" checked)
-                            label(class="s-search__quiz-long-items-radio__label" for="stat_1") Школьники с 5 по 9 класс
+                            input(class="s-search__quiz-long-items-radio__input" name="student" type="radio" id="student_1" checked)
+                            label(class="s-search__quiz-long-items-radio__label" for="student_1") Школьники с 5 по 9 класс
                         li.s-search__quiz-students-items 
-                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_2")
-                            label(class="s-search__quiz-long-items-radio__label" for="stat_2") Школьники с 10 по 11 класс, студенты колледжей и техникумов, абитуриенты
+                            input(class="s-search__quiz-long-items-radio__input" name="student" type="radio" id="student_2")
+                            label(class="s-search__quiz-long-items-radio__label" for="student_2") Школьники с 10 по 11 класс, студенты колледжей и техникумов, абитуриенты
                         li.s-search__quiz-students-items 
-                            input(class="s-search__quiz-long-items-radio__input" name="stat" type="radio" id="stat_3")
-                            label(class="s-search__quiz-long-items-radio__label" for="stat_3") Взрослые кроме абитуриентов
+                            input(class="s-search__quiz-long-items-radio__input" name="student" type="radio" id="student_3")
+                            label(class="s-search__quiz-long-items-radio__label" for="student_3") Взрослые кроме абитуриентов
                     ul.s-search__quiz-students 
                         li.s-search__quiz-students-title Опишите ситуацию
                         li.s-search__quiz-students-text 
                             textarea
 
-                ul.s-search__quiz-price
+                ul.s-search__quiz-price.display-n.elementQuiz
                     li.s-search__quiz-price-info 
                         h3 Рекомендации
                         ul.s-search__quiz-price-list   
@@ -210,6 +214,7 @@ section.s-search
                             .s-search__quiz-navig-circle 
                             p Стоимость занятия
                     button.s-search__quiz-btn Далее
+                    a(href="#").s-search__quiz-btns.display-n Далее
 
 
 @@include('components/_script.pug')

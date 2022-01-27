@@ -41,13 +41,17 @@
 				line-height: 81px;
 				color: #2a2a2a;
 			}
-			& p {
-				font-style: normal;
-				font-weight: normal;
-				font-size: 20px;
-				line-height: 81px;
-				color: #2a2a2a;
-			}
+		}
+		&-text {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 81px;
+			color: #2a2a2a;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 110px;
 		}
 		&-line {
 			width: 100%;
@@ -201,6 +205,7 @@
 			&-close {
 				margin: 0 0 0 28px;
 				cursor: pointer;
+				background: transparent;
 			}
 		}
 		&-stat {
@@ -445,6 +450,20 @@
 			font-size: 18px;
 			line-height: 43px;
 			color: #ffffff;
+		}
+		&-btns {
+			margin: -9px 0 0 36px;
+			background: #625dee;
+			border-radius: 26px;
+			padding: 3px 50px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 43px;
+			color: #ffffff;
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 }

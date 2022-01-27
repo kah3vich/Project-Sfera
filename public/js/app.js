@@ -243,12 +243,198 @@ $(function () {
     });
   });
 });
+$("#numberAllQuiz").html($(".elementQuiz").length);
+var activeQuizElement = 0;
+var elementQuizCount = 6;
+
+var _loop6 = function _loop6(_i10) {
+  $(".s-search__quiz-navig:nth-child(".concat(_i10, ")")).on("click", function () {
+    changeSlide(_i10);
+  });
+};
+
+for (var _i10 = 0; _i10 <= $(".s-search__quiz-navig").length; _i10++) {
+  _loop6(_i10);
+}
+
+$(".s-search__quiz-btn").on("click", function () {
+  changeSlide("next");
+});
+
+function displayElementQuiz() {
+  $(".s-search__quiz-things").addClass("display-n");
+  $(".s-search__quiz-long").addClass("display-n");
+  $(".s-search__quiz-times").addClass("display-n");
+  $(".s-search__quiz-stat").addClass("display-n");
+  $(".s-search__quiz-student").addClass("display-n");
+  $(".s-search__quiz-price").addClass("display-n");
+}
+
+function lastElementQuiz() {
+  $(".s-search__quiz-btn").removeClass("display-n");
+  $(".s-search__quiz-btns").addClass("display-n");
+}
+
+function activeNavQuiz() {
+  for (var _i11 = 1; _i11 <= $(".s-search__quiz-navig").length; _i11++) {
+    $(".s-search__quiz-navig:nth-child(".concat(_i11, ")")).removeClass("s-search__quiz-navig-active");
+  }
+}
+
+function changeSlide(id) {
+  if (id === "next") {
+    activeQuizElement++;
+
+    if (activeQuizElement === elementQuizCount) {
+      activeQuizElement = 0;
+    }
+  }
+
+  if (activeQuizElement == 0) {
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(1)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-things").removeClass("display-n");
+    $("#numberActiveQuiz").html(1);
+    $(".s-search__quiz-title h3").html("Выбор предмета");
+  }
+
+  if (activeQuizElement == 1) {
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(2)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-long").removeClass("display-n");
+    $("#numberActiveQuiz").html(2);
+    $(".s-search__quiz-title h3").html("Выбор длительности и интенсивности");
+  }
+
+  if (activeQuizElement == 2) {
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(3)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-times").removeClass("display-n");
+    $("#numberActiveQuiz").html(3);
+    $(".s-search__quiz-title h3").html("Время проведения занятий");
+  }
+
+  if (activeQuizElement == 3) {
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(4)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-stat").removeClass("display-n");
+    $("#numberActiveQuiz").html(4);
+    $(".s-search__quiz-title h3").html("Требования к репетитору");
+  }
+
+  if (activeQuizElement == 4) {
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(5)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-student").removeClass("display-n");
+    $("#numberActiveQuiz").html(5);
+    $(".s-search__quiz-title h3").html("Об ученике");
+  }
+
+  if (activeQuizElement == 5) {
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(6)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-price").removeClass("display-n");
+    $(".s-search__quiz-btns").removeClass("display-n");
+    $(".s-search__quiz-btn").addClass("display-n");
+    $("#numberActiveQuiz").html(6);
+    $(".s-search__quiz-title h3").html("Стоимость занятия");
+  }
+
+  if (id == 1) {
+    activeQuizElement = 0;
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(1)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-things").removeClass("display-n");
+    $("#numberActiveQuiz").html(1);
+    $(".s-search__quiz-title h3").html("Выбор предмета");
+  }
+
+  if (id == 2) {
+    activeQuizElement = 1;
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(2)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-long").removeClass("display-n");
+    $("#numberActiveQuiz").html(2);
+    $(".s-search__quiz-title h3").html("Выбор длительности и интенсивности");
+  }
+
+  if (id == 3) {
+    activeQuizElement = 2;
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(3)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-times").removeClass("display-n");
+    $("#numberActiveQuiz").html(3);
+    $(".s-search__quiz-title h3").html("Время проведения занятий");
+  }
+
+  if (id == 4) {
+    activeQuizElement = 3;
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(4)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-stat").removeClass("display-n");
+    $("#numberActiveQuiz").html(4);
+    $(".s-search__quiz-title h3").html("Требования к репетитору");
+  }
+
+  if (id == 5) {
+    activeQuizElement = 4;
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(5)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-student").removeClass("display-n");
+    $("#numberActiveQuiz").html(5);
+    $(".s-search__quiz-title h3").html("Об ученике");
+  }
+
+  if (id == 6) {
+    activeQuizElement = 5;
+    activeNavQuiz();
+    $(".s-search__quiz-navig:nth-child(6)").addClass("s-search__quiz-navig-active");
+    displayElementQuiz();
+    lastElementQuiz();
+    $(".s-search__quiz-price").removeClass("display-n");
+    $(".s-search__quiz-btns").removeClass("display-n");
+    $(".s-search__quiz-btn").addClass("display-n");
+    $("#numberActiveQuiz").html(6);
+    $(".s-search__quiz-title h3").html("Стоимость занятия");
+  }
+}
+
+function removeTimeElement(e) {
+  var valueElement = e.value;
+
+  if ($(".s-search__quiz-time-items").length == 1) {} else {
+    $("#".concat(valueElement)).remove();
+  }
+}
+
 ;
 var eventDatesStudent = {};
 var countElementDataListStudent = $(".s-schedule__list-items").length;
 
-for (var _i10 = 1; _i10 <= countElementDataListStudent; _i10++) {
-  var _element = $(".s-schedule__list-items:nth-child(".concat(_i10, ")")).text();
+for (var _i12 = 1; _i12 <= countElementDataListStudent; _i12++) {
+  var _element = $(".s-schedule__list-items:nth-child(".concat(_i12, ")")).text();
 
   eventDatesStudent[new Date("".concat(_element))] = new Date("".concat(_element));
 } // $(() => {
@@ -291,11 +477,11 @@ $("#datepickerScheduleStudent").datepicker().on("change", function () {
   $(".s-schedule__info-list-title").text(quizOrderDataCalendarInput);
 });
 
-for (var _i11 = 1; _i11 <= $(".s-schedule__info-items").length; _i11++) {
-  if (_i11 < 10) {
-    $(".s-schedule__info-items:nth-child(".concat(_i11, ") .s-schedule__info-items-number")).text("0" + _i11);
+for (var _i13 = 1; _i13 <= $(".s-schedule__info-items").length; _i13++) {
+  if (_i13 < 10) {
+    $(".s-schedule__info-items:nth-child(".concat(_i13, ") .s-schedule__info-items-number")).text("0" + _i13);
   } else {
-    $(".s-schedule__info-items:nth-child(".concat(_i11, ") .s-schedule__info-items-number")).text(_i11);
+    $(".s-schedule__info-items:nth-child(".concat(_i13, ") .s-schedule__info-items-number")).text(_i13);
   }
 }
 
@@ -309,15 +495,15 @@ $(".modelScheduleTeacher__wrappers-close").on("click", function () {
 });
 ;
 
-var _loop6 = function _loop6(_i12) {
-  $(".s-teacher__info-list-items:nth-child(".concat(_i12, ")")).on("click", function () {
+var _loop7 = function _loop7(_i14) {
+  $(".s-teacher__info-list-items:nth-child(".concat(_i14, ")")).on("click", function () {
     $(".wrappers .s-teacher__info-chat").addClass("display-n");
-    $(".wrappers .s-teacher__info-chat:nth-child(".concat(_i12 + 1, ")")).removeClass("display-n");
+    $(".wrappers .s-teacher__info-chat:nth-child(".concat(_i14 + 1, ")")).removeClass("display-n");
   });
 };
 
-for (var _i12 = 1; _i12 <= $(".s-teacher__info-list-items").length; _i12++) {
-  _loop6(_i12);
+for (var _i14 = 1; _i14 <= $(".s-teacher__info-list-items").length; _i14++) {
+  _loop7(_i14);
 }
 
 ;
