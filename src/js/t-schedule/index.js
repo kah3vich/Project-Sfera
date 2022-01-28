@@ -12,6 +12,8 @@ $(() => {
 	$(".t-schedule__info-list-title").text(quizOrderDataCalendarInput);
 });
 
+console.log($.datepicker);
+
 $.datepicker.regional.ru = {
 	closeText: "Закрыть",
 	prevText: "Предыдущий",
@@ -64,6 +66,7 @@ $.datepicker.regional.ru = {
 		}
 	},
 };
+
 $.datepicker.setDefaults($.datepicker.regional.ru);
 
 $("#datepickerScheduleTeacher")
@@ -72,6 +75,7 @@ $("#datepickerScheduleTeacher")
 		$(".model-calendar").addClass("display-n");
 		let quizOrderDataCalendarInput = $("#datepickerScheduleTeacher").val();
 		$(".t-schedule__info-list-title").text(quizOrderDataCalendarInput);
+		$("#modaldatepickerScheduleTeacher").val(quizOrderDataCalendarInput);
 	});
 
 for (let i = 1; i <= $(".t-schedule__info-items").length; i++) {
@@ -89,4 +93,31 @@ $(".t-schedule__info-calendar-btn").on("click", () => {
 $(".modelScheduleTeacher__wrappers-close").on("click", () => {
 	$("body").css("overflow", "visible");
 	$(".modelScheduleTeacher").addClass("display-n");
+});
+
+$(function () {
+	$("#modaldatepickerScheduleTeacher").datepicker();
+	$("#modalsdatepickerScheduleTeacher").datepicker();
+});
+
+$(() => {
+	var selected = $(".modelScheduleTeacher__time-items")
+		.map(function () {
+			if ($(this).html()) return $(this).html();
+		})
+		.get();
+	$.each(selected, function (index, value) {
+		let newElementBlock = document.createElement("option");
+		newElementBlock.setAttribute("value", `${value}`);
+		newElementBlock.innerHTML = `${value}`;
+		let classNameTime = document.getElementsByClassName("modaltime")[0];
+		classNameTime.appendChild(newElementBlock);
+	});
+});
+
+let quizOrderDataCalendarInput = $("#datepickerScheduleTeacher").val();
+$("#modaldatepickerScheduleTeacher").val(quizOrderDataCalendarInput);
+
+$("#againDate").on("click", () => {
+	$(".modelScheduleTeacher__wrappers-calendars").toggleClass("display-n");
 });

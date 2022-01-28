@@ -22,6 +22,10 @@ body {
 	position: relative;
 	background: $bg;
 }
+textarea:focus,
+input:focus {
+	outline: none;
+}
 a {
 	text-decoration: none;
 }
@@ -540,6 +544,7 @@ input:focus {
 @import "t-question/style";
 @import "t-quiz/style";
 @import "t-lesson/style";
+@import "t-edit/style";
 
 // Student
 
@@ -551,6 +556,7 @@ input:focus {
 @import "s-pay/style";
 @import "s-profiles/style";
 @import "s-found/style";
+@import "s-edit/style";
 
 //! --------------------------------------------------------------------
 //! --------------------------------------------------------------------

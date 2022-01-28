@@ -1,0 +1,104 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg" alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_t-header.pug')
+
+section.t-edit 
+    .wrappers 
+        .t-edit__title 
+            h3 Мой профиль
+            .t-edit__title-v Подтвержден
+        .t-edit__wrapper 
+            .t-edit__photo 
+                .t-edit__photo-img 
+            .t-edit__info 
+                .t-edit__info-contact 
+                    .t-edit__info-surname
+                        input(type="text" placeholder="Фамилия" id='edit__surname')
+                        label(for="edit__surname") Фамилия
+                    .t-edit__info-name
+                        input(type="text" placeholder="Имя" id='edit__name')
+                        label(for="edit__name") Имя
+                    .t-edit__info-patronymic
+                        input(type="text" placeholder="Отчество" id='edit__patronymic')
+                        label(for="edit__patronymic") Отчество
+
+                    .t-edit__info-year
+                        input(type="text" placeholder="Ваш возраст" id='edit__year')
+                        label(for="edit__year") Ваш возраст
+                    .t-edit__info-email
+                        input(type="text" placeholder="E-mail" id='edit__email')
+                        label(for="edit__email") E-mail
+                    .t-edit__info-phone
+                        input(type="text" placeholder="Номер телефона" id='edit__phone')
+                        label(for="edit__phone") Номер телефона
+
+                    .t-edit__info-lessons
+                        textarea(placeholder="Предметы" id='edit__lessons')
+                        label(for="edit__lessons") Что вы преподаёте?
+                    .t-edit__info-password
+                        input(type="text" placeholder="Новый пароль" id='edit__password')
+                        label(for="edit__password") Изменить пароль
+                    .t-edit__info-passwords
+                        input(type="text" placeholder="Подтверждение пароля" id='edit__passwords')
+
+                .t-edit__info-list 
+                    .t-edit__info-student
+                        .t-edit__info-students
+                            input(type="text" placeholder="Введите категорию" id='edit__student')
+                        label(for="edit__student") Категории учеников
+                    .t-edit__info-time
+                        .t-edit__info-times
+                            input(type="text" placeholder="Введите количество минут" id='edit__time')
+                        label(for="edit__time") Количество минут
+                    .t-edit__info-price
+                        .t-edit__info-prices
+                            input(type="text" placeholder="Введите стоимость" id='edit__price')
+                        label(for="edit__price") Стоимость
+                .t-edit__info-plus 
+                    img(src="./svg/t-edit/plus.svg" alt="icons")
+                    p Добавить
+
+                .t-edit__info-add
+                    .t-edit__info-about
+                        textarea(placeholder="О себе" id='edit__about')
+                        label(for="edit__about") О себе
+                    .t-edit__info-education
+                        textarea(placeholder="Образование" id='edit__education')
+                        label(for="edit__education") Образование
+                    .t-edit__info-files 
+                        label(for="edit_file") Загрузить файл
+                        input(type="file" name="photo" id="edit_file")
+                    .t-edit__info-process
+                        textarea(placeholder="Достижения" id='edit__process')
+                        label(for="edit__process") Достижения
+                    .t-edit__info-experience
+                        textarea(placeholder="Опыт работы" id='edit__experience')
+                        label(for="edit__experience") Опыт работы
+                    button.t-edit__info-btn Сохранить
+
+
+
+
+@@include('components/_script.pug')

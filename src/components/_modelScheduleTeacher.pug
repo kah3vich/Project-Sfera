@@ -1,8 +1,42 @@
 .modelScheduleTeacher.display-n
     form.modelScheduleTeacher__wrappers 
         .modelScheduleTeacher__wrappers-close 
-            img(src="../svg/t-schedule/model-close.svg", alt="close")
-        .modelScheduleTeacher__wrappers-title 
+            img(src="../svg/t-schedule/model-close.svg" alt="close")
+        button.modelScheduleTeacher__wrappers-btn Сохранить
+        .modelScheduleTeacher__wrappers-title Добавить уроки
         .modelScheduleTeacher__wrappers-lessons 
-        input.modelScheduleTeacher__wrappers-date#datetimepickerScheduleTeacherModel
+            select(name="time" class="js-select" style="display: none")
+                option Выберите урок
+                option(value="ru") Русский язык
+                option(value="uk") Украинский язык
+                option(value="be") Беларусский язык
+                option(value="ru") Русский язык
+                option(value="uk") Украинский язык
+                option(value="be") Беларусский язык
+                option(value="ru") Русский язык
+                option(value="uk") Украинский язык
+                option(value="be") Беларусский язык
+        .modelScheduleTeacher__wrappers-line
+        .modelScheduleTeacher__wrappers-block 
+            .modelScheduleTeacher__wrappers-date 
+                input(type="text" id="modaldatepickerScheduleTeacher" value='')
+            .modelScheduleTeacher__wrappers-time 
+                select(name="time" class="js-select modaltime" style="display: none")
+                    option Выберите время
+        .modelScheduleTeacher__wrappers-line
+        .modelScheduleTeacher__wrappers-again 
+            input(class="modelScheduleTeacher__wrappers-again__input" type="checkbox" id="againDate")
+            label(class="modelScheduleTeacher__wrappers-again__label" for="againDate") Повторять ежедневно
+        .modelScheduleTeacher__wrappers-calendars.display-n
+            input(type="text" id="modalsdatepickerScheduleTeacher" value='' placeholder='Повторять до')
 
+ul.modelScheduleTeacher__time.display-n 
+    li.modelScheduleTeacher__time-items 06:00
+    li.modelScheduleTeacher__time-items 06:15
+    li.modelScheduleTeacher__time-items 06:30
+    li.modelScheduleTeacher__time-items 06:45
+    li.modelScheduleTeacher__time-items 07:00
+    li.modelScheduleTeacher__time-items 06:15
+    li.modelScheduleTeacher__time-items 06:30
+    li.modelScheduleTeacher__time-items 06:45
+    li.modelScheduleTeacher__time-items 08:00

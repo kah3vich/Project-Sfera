@@ -185,6 +185,12 @@
 		width: 106px;
 		height: 100px;
 		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		& img {
+			object-fit: cover;
+		}
 	}
 }
 
@@ -287,6 +293,16 @@
 			font-size: 10px;
 			line-height: 12px;
 			color: #435179;
+		}
+		&-banner {
+			width: 100%;
+			padding: 35px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			& img {
+				object-fit: cover;
+			}
 		}
 	}
 	&-lessons {
@@ -432,6 +448,16 @@
 				width: 6px;
 				height: 6px;
 				border-radius: 50%;
+			}
+		}
+		&-banner {
+			width: 100%;
+			padding: 35px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			& img {
+				object-fit: cover;
 			}
 		}
 	}

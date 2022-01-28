@@ -18,6 +18,8 @@
 
 ### Teacher Lesson: [click me](https://kah3vich.github.io/Project-Sfera/public/t-lesson.html)
 
+### Teacher Edit: [click me](https://kah3vich.github.io/Project-Sfera/public/t-edit.html)
+
 <hr />
 <br />
 
@@ -38,3 +40,5 @@
 ### Student Teacher Profile: [click me](https://kah3vich.github.io/Project-Sfera/public/s-profiles.html)
 
 ### Student List Teacher: [click me](https://kah3vich.github.io/Project-Sfera/public/s-found.html)
+
+### Student Edit: [click me](https://kah3vich.github.io/Project-Sfera/public/s-edit.html)

@@ -1,0 +1,72 @@
+@@include('components/_head.pug', {
+    "title": "Моё расписание",
+})
+
+.menu 
+    .menu__logo 
+        img(src="./svg/menu/logos.svg" alt="logo")
+    .menu__list 
+        a(href="t-profile.html").menu__list-items#menuList-1
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
+        a(href="t-schedule.html").menu__list-items#menuList-2
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
+        a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
+        a(href="t-profile.html").menu__list-items#menuList-4 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
+        a(href="t-profile.html").menu__list-items#menuList-5 
+            .menu__list-items-add
+            svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
+
+@@include('components/_s-header.pug')
+
+section.s-edit 
+    .wrappers 
+        .s-edit__title 
+            h3 Мой профиль
+            .s-edit__title-v Подтвержден
+        .s-edit__wrapper 
+            .s-edit__photo 
+                .s-edit__photo-img 
+            .s-edit__info 
+                .s-edit__info-contact 
+                    .s-edit__info-surname
+                        input(type="text" placeholder="Фамилия" id='s-edit__surname')
+                        label(for="s-edit__surname") Фамилия
+                    .s-edit__info-name
+                        input(type="text" placeholder="Имя" id='s-edit__name')
+                        label(for="s-edit__name") Имя
+                    .s-edit__info-patronymic
+                        input(type="text" placeholder="Отчество" id='s-edit__patronymic')
+                        label(for="s-edit__patronymic") Отчество
+
+                    .s-edit__info-year
+                        input(type="text" placeholder="Ваш возраст" id='s-edit__year')
+                        label(for="s-edit__year") Ваш возраст
+                    .s-edit__info-email
+                        input(type="text" placeholder="E-mail" id='s-edit__email')
+                        label(for="s-edit__email") E-mail
+                    .s-edit__info-phone
+                        input(type="text" placeholder="Номер телефона" id='s-edit__phone')
+                        label(for="s-edit__phone") Номер телефона
+
+                    .s-edit__info-password
+                        input(type="text" placeholder="Новый пароль" id='s-edit__password')
+                        label(for="s-edit__password") Изменить пароль
+                    .s-edit__info-passwords
+                        input(type="text" placeholder="Подтверждение пароля" id='s-edit__passwords')
+
+                .s-edit__info-add
+                    .s-edit__info-about
+                        textarea(placeholder="О себе" id='s-edit__about')
+                        label(for="s-edit__about") О себе
+                    button.s-edit__info-btn Сохранить
+
+
+
+
+@@include('components/_script.pug')

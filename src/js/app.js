@@ -5,6 +5,7 @@
 @@include("./t-student/index.js");
 @@include("./t-list/index.js");
 @@include("./t-lesson/index.js");
+@@include("./t-edit/index.js");
 
 
 @@include("./s-profile/index.js");
