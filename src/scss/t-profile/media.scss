@@ -1,0 +1,161 @@
+@media (max-width: 1410px) {
+	.t-profile__info .wrappers {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 45px;
+	}
+}
+@media (max-width: 1230px) {
+	.t-header__nav-client {
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+@media (max-width: 790px) {
+	.t-profile__info-student-name {
+		width: 170px;
+	}
+	.t-profile__info-student-lessons {
+		margin: 0 0 0 auto;
+	}
+	.t-profile__info-student {
+		min-width: 100%;
+	}
+	.t-profile__info-lessons {
+		min-width: 100%;
+	}
+	.t-profile__info-lessons-date {
+		margin: 0 0 0 auto;
+	}
+	.t-profile__info-lessons-name {
+		width: 170px;
+	}
+	.t-profile__info-lessons-status {
+		margin: 0 0 0 3px;
+	}
+	.t-profile__info-lessons-nav-items:nth-child(3) {
+		margin: 0 50px 0 55px;
+	}
+	.t-profile__banners {
+		padding: 0 0 30px 0;
+		font-family: Inter;
+	}
+	.t-profile__banner {
+		padding: 0 0 70px 0;
+		font-family: Inter;
+	}
+	.t-profile__info {
+		font-family: Inter;
+		padding: 0 0 36px 0;
+	}
+	.t-header__nav-client {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 25px 0;
+		width: 55%;
+		margin: 0 auto 0 0;
+	}
+	.t-header__nav-client-notif {
+		margin: 0 !important;
+	}
+}
+@media (max-width: 750px) {
+	.t-header__nav-client {
+		display: grid;
+		grid-template-columns: unset;
+		gap: 25px 0;
+		width: 350px;
+		margin: 0 auto 0 0;
+		position: relative;
+	}
+	.t-header__nav-client-notif {
+		position: absolute;
+		top: 50%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+	}
+}
+@media (max-width: 670px) {
+	.t-profile__info-student-photo {
+		display: none;
+	}
+	.t-profile__info-student-name {
+		margin: 0;
+	}
+}
+@media (max-width: 600px) {
+	.t-profile__banners .wrappers {
+		padding: 0 20px;
+	}
+	.t-profile__banner .wrappers {
+		padding: 0 20px;
+	}
+	.t-profile__info .wrappers {
+		padding: 0 20px;
+	}
+}
+@media (max-width: 550px) {
+	.t-profile__info-lessons-name {
+		width: 120px;
+	}
+	.t-profile__info-student-name {
+		width: 120px;
+	}
+	.t-profile__info-lessons-wrapper {
+		background: #ffffff;
+		border-radius: 12px;
+		width: 100%;
+		padding: 31px 15px 31px 20px;
+		margin: 22px 0 0 0;
+		height: 485px;
+	}
+	.t-profile__info-lessons-nav {
+		margin: 40px 0 0 0;
+		padding: 0 70px 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+}
+@media (max-width: 500px) {
+	.t-profile__info-lessons-status {
+		width: 80px;
+	}
+	.t-profile__info-lessons-nav {
+		margin: 40px 0 0 0;
+		padding: 0 35px 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	.t-profile__info-student-lessons {
+		width: 100px;
+	}
+	.t-profile__info-student-nav {
+		margin: 40px 0 0 0;
+		padding: 0 50px 0 17px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+}
+@media (max-width: 450px) {
+	.t-profile__info-student-name {
+		width: 100px;
+		font-size: 11px;
+	}
+	.t-profile__banners .wrappers {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+		gap: 34px;
+	}
+	.t-profile__banner .wrappers {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+		gap: 34px;
+	}
+}

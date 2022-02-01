@@ -1,0 +1,30 @@
+@media (max-width: 1410px) {
+    .t-question .wrappers {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 35px;
+    }
+    .t-question__list {
+        max-width: 100%;
+    }
+}
+@media (max-width: 790px) {
+    .t-question {
+        padding: 65px 0 70px 0;
+        font-family: Inter;
+    }
+}
+@media (max-width: 600px) {
+    .t-question .wrappers {
+        padding: 0 20px;
+    }
+    .t-question__add {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

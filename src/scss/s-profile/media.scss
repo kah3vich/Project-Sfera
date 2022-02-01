@@ -1,0 +1,206 @@
+@media (max-width: 1410px) {
+	.s-profile__info .wrappers {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 35px;
+	}
+	.s-profile__info-lessons {
+		min-width: 100%;
+	}
+	.s-profile__info-lessons-date {
+		margin: 0 0 0 auto;
+	}
+	.s-profile__info-lessons-status {
+		width: 120px;
+		margin: 0 0 0 130px;
+	}
+	.s-profile__info-lessons-nav {
+		margin: 40px 0 0 0;
+		padding: 0 140px 0 29px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	.s-profile__info-lessons-nav-items:nth-child(3) {
+		margin: 0 0 0 185px;
+	}
+	.s-profile__info-student {
+		min-width: 100%;
+	}
+	.s-profile__info-student-date {
+		margin: 0 0 0 80px;
+	}
+	.s-profile__info-student-lessons {
+		margin: 0 0 0 auto;
+	}
+	.s-profile__info-student-nav-items:nth-child(3) {
+		margin: 0 0 0 145px;
+	}
+}
+@media (max-width: 850px) {
+	.s-profile__info-lessons-nav-items:nth-child(3) {
+		margin: 0 0 0 100px;
+	}
+	.s-profile__info-lessons-status {
+		width: 120px;
+		margin: 0 0 0 45px;
+	}
+	.s-profile__info-student-name {
+		margin: 0 0 0 17px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #435179;
+		width: 150px;
+	}
+}
+@media (max-width: 790px) {
+	.s-profile__info {
+		font-family: Inter;
+		padding: 0 0 36px 0;
+	}
+	.s-profile__banners {
+		padding: 0 0 70px 0;
+		font-family: Inter;
+	}
+}
+@media (max-width: 670px) {
+	.s-profile__info-lessons-status {
+		width: 80px;
+		margin: 0 0 0 45px;
+	}
+	.s-profile__info-lessons-nav {
+		margin: 40px 0 0 0;
+		padding: 0 95px 0 29px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	.s-profile__info-student-date {
+		font-style: normal;
+		font-weight: bold;
+		width: 90px;
+	}
+	.s-profile__info-student-date {
+		margin: 0 0 0 50px;
+	}
+	.s-profile__info-student-lessons {
+		font-weight: bold;
+		font-size: 10px;
+		line-height: 12px;
+		color: #8349ff;
+		width: 105px;
+	}
+	.s-profile__info-student-nav {
+		margin: 40px 0 0 0;
+		padding: 0 70px 0 17px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	.s-profile__info-student-nav-items:nth-child(3) {
+		margin: 0 0 0 80px;
+	}
+	.s-profile__info-lessons-name {
+		width: 150px;
+	}
+}
+@media (max-width: 600px) {
+	.s-profile__info .wrappers {
+		padding: 0 20px;
+	}
+	.s-profile__banners .wrappers {
+		padding: 0 20px;
+	}
+}
+@media (max-width: 550px) {
+	.s-profile__info-lessons-wrapper {
+		background: #ffffff;
+		border-radius: 12px;
+		width: 100%;
+		padding: 32px 15px;
+		margin: 22px 0 0 0;
+		height: 485px;
+	}
+	.s-profile__info-lessons-name {
+		width: 110px;
+	}
+	.s-profile__info-lessons-nav {
+		margin: 40px 0 0 0;
+		padding: 0 95px 0 10px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	.s-profile__info-lessons-status {
+		width: 80px;
+		margin: 0 0 0 20px;
+	}
+	.s-profile__info-lessons-nav {
+		margin: 40px 0 0 0;
+		padding: 0 74px 0 10px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	.s-profile__info-lessons-nav-items:nth-child(3) {
+		margin: 0 0 0 85px;
+	}
+	.s-profile__info-student-name {
+		margin: 0;
+	}
+	.s-profile__info-student-photo {
+		display: none;
+	}
+	.s-profile__info-student-date {
+		margin: 0 0 0 25px;
+	}
+	.s-profile__info-student-nav-items:nth-child(3) {
+		margin: 0 0 0 55px;
+	}
+}
+@media (max-width: 500px) {
+	.s-profile__info-lessons-nav-items {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 19px;
+		color: #435179;
+	}
+	.s-profile__info-student-lessons {
+		font-weight: bold;
+		font-size: 10px;
+		line-height: 12px;
+		color: #8349ff;
+		width: 80px;
+	}
+	.s-profile__info-student-nav-items:nth-child(3) {
+		margin: 0 0 0 30px;
+	}
+	.s-profile__info-student-date {
+		font-style: normal;
+		font-weight: bold;
+		width: 70px;
+	}
+	.s-profile__info-student-nav {
+		margin: 40px 0 0 0;
+		padding: 0 55px 0 17px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	.s-profile__banners .wrappers {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 34px;
+	}
+}

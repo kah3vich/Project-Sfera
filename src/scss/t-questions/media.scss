@@ -1,0 +1,111 @@
+@media (max-width: 1410px) {
+	.t-questions .wrappers {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 35px;
+	}
+	.t-questions__message {
+		width: 100%;
+	}
+	.t-questions__message-btn {
+		margin: 45px 0 0 auto;
+	}
+	.t-questions__list {
+		width: 100%;
+	}
+}
+@media (max-width: 950px) {
+	.t-questions__list-block-question {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		text-decoration-line: underline;
+		color: #435179;
+		width: 200px;
+		margin: 0 0 0 120px;
+	}
+	.t-questions__list-nav {
+		width: 100%;
+		padding: 0 150px 0 0;
+	}
+	.t-questions__list-nav-items:nth-child(2) {
+		margin: 0 0 0 auto;
+	}
+	.t-questions__list-nav-items:nth-child(3) {
+		margin: 0 0 0 210px;
+	}
+}
+@media (max-width: 860px) {
+	.t-questions__list-nav-items:nth-child(3) {
+		margin: 0 0 0 110px;
+	}
+	.t-questions__list-block-question {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		text-decoration-line: underline;
+		color: #435179;
+		width: 200px;
+		margin: 0 0 0 25px;
+	}
+}
+@media (max-width: 790px) {
+	.t-questions {
+		padding: 65px 0 70px 0;
+		font-family: Inter;
+	}
+}
+@media (max-width: 650px) {
+	.t-questions__list-block-question {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		text-decoration-line: underline;
+		color: #435179;
+		width: 134px;
+		margin: 0 0 0 25px;
+	}
+	.t-questions__list-nav {
+		width: 100%;
+		padding: 0 80px 0 0;
+	}
+}
+@media (max-width: 600px) {
+	.t-questions__list-block-status {
+		padding: 0 0 0 39px;
+		position: relative;
+		width: 80px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.t-questions .wrappers {
+		padding: 0 20px;
+	}
+	.t-questions__list-block-status {
+		padding: 0;
+	}
+	.t-questions__list-block-status::after {
+		display: none;
+	}
+}
+@media (max-width: 500px) {
+	.t-questions__list-block-date {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		color: #435179;
+		width: 80px;
+		margin: 0 0 0 auto;
+	}
+	.t-questions__list-nav-items:nth-child(3) {
+		margin: 0 0 0 70px;
+	}
+}

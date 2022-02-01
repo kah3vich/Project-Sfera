@@ -1,0 +1,53 @@
+@media (max-width: 1400px) {
+    .t-lesson .wrappers {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 55px;
+    }
+    .t-lesson__panel {
+        width: 100%;
+    }
+    .t-lesson__panel-controls-window {
+        & img {
+            width: 100%;
+        }
+    }
+    .t-lesson__contact {
+        width: 100%;
+    }
+    .t-lesson__contact-chat {
+        width: 100%;
+    }
+    .t-lesson__panel-controls-tools {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(28px, 1fr));
+        gap: 25px 11px;
+        width: 90%;
+        margin: 0 0 35px 0;
+    }
+}
+@media (max-width: 790px) {
+    .t-lesson {
+        padding: 65px 0 50px 0;
+        font-family: Inter;
+    }
+}
+@media (max-width: 600px) {
+    .t-lesson .wrappers {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 550px) {
+    .t-lesson__contact-chat {
+        margin: 15px 0 0 0;
+        background: rgba(87, 65, 157, 0.03);
+        border-radius: 14px;
+        height: 610px;
+        padding: 40px 10px 35px 10px;
+    }
+    .t-lesson__panel-controls-tools {
+        gap: 12px;
+    }
+}

@@ -1,0 +1,45 @@
+@media (max-width: 1400px) {
+	.t-quiz__book-title,
+	.t-quiz__page-title {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 1000px) {
+	.t-quiz__pages img {
+		width: 90%;
+	}
+}
+@media (max-width: 900px) {
+	.t-quiz__book {
+		padding: 0;
+	}
+	.t-quiz__book-list {
+		margin: 104px 0 0 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+		gap: 42px 30px;
+		justify-items: center;
+		width: 100%;
+	}
+}
+@media (max-width: 790px) {
+	.t-quiz {
+		padding: 65px 0 80px 0;
+		font-family: Inter;
+	}
+}
+@media (max-width: 600px) {
+	.t-quiz .wrappers {
+		padding: 0 20px;
+	}
+}
+@media (max-width: 550px) {
+	.t-quiz__age-title {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 500px) {
+	.t-quiz__age-items {
+		width: 100%;
+	}
+}

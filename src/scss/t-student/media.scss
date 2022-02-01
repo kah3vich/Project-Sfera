@@ -1,0 +1,106 @@
+@media (max-width: 1420px) {
+	.t-student__info .wrappers {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 55px;
+	}
+	.t-student__info-list {
+		width: 100%;
+	}
+	.t-student__info-list-wrapper li {
+		width: 100%;
+	}
+	.t-student__info-list-items-lessons {
+		margin: 0 0 0 auto;
+	}
+	.t-student__info-chat {
+		width: 100%;
+	}
+	.t-student__info-chat-wrappers {
+		width: 100%;
+	}
+}
+@media (max-width: 790px) {
+	.t-student__info {
+		padding: 35px 0 70px 0;
+		font-family: Inter;
+	}
+}
+@media (max-width: 670px) {
+	.t-student__info-list-items-name {
+		margin: 0 0 0 17px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #435179;
+		width: 140px;
+	}
+}
+@media (max-width: 600px) {
+	.t-student__info .wrappers {
+		padding: 0 20px;
+	}
+}
+@media (max-width: 530px) {
+	.t-student__info-list-items-name {
+		margin: 0;
+	}
+	.t-student__info-list-items-photo {
+		display: none;
+	}
+	.t-student__info-chat-wrappers {
+		margin: 15px 0 0 0;
+		background: rgba(87, 65, 157, 0.03);
+		border-radius: 14px;
+		height: 610px;
+		padding: 40px 15px 35px 15px;
+	}
+	.t-student__info-chat-message {
+		width: unset;
+	}
+	.t-student__info-chat-controls-message {
+		& input {
+			&::placeholder {
+				font-size: 13px;
+			}
+		}
+	}
+}
+@media (max-width: 450px) {
+	.t-student__info-list-items-lessons {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		line-height: 12px;
+		color: #8349ff;
+		width: 100px;
+	}
+	.t-student__info-list-items-date {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 10px;
+		line-height: 12px;
+		width: 85px;
+		margin: 0 0 0 20px;
+		color: #435179;
+	}
+	.t-student__info-list-add {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 0 35px 0 17px;
+		margin: 45px 0 0 0;
+	}
+	.t-student__info-list-items-name {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #435179;
+		width: 120px;
+	}
+}

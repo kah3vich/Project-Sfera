@@ -1,0 +1,50 @@
+@media (max-width: 1390px) {
+	.s-schedule__info .wrappers {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 35px;
+	}
+	.s-schedule__info-profile {
+		width: 100%;
+	}
+	.s-schedule__info-list {
+		width: 100%;
+	}
+}
+@media (max-width: 1100px) {
+	.s-schedule__info .wrappers {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.s-schedule__info-calendar {
+		width: 100%;
+		&-items {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+	.hasDatepicker {
+		width: 414px !important;
+	}
+}
+@media (max-width: 790px) {
+	.s-schedule__info {
+		padding: 35px 0 80px 0;
+		font-family: Inter;
+	}
+}
+@media (max-width: 600px) {
+	.s-schedule__info .wrappers {
+		padding: 0 20px;
+	}
+	.s-schedule__info-calendar-items {
+		padding: 38px 10px;
+	}
+	.hasDatepicker {
+		width: 100% !important;
+	}
+	.s-schedule__info-title {
+		flex-wrap: wrap;
+	}
+}

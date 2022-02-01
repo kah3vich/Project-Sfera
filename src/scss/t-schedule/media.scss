@@ -1,0 +1,64 @@
+@media (max-width: 1410px) {
+	.t-schedule__info .wrappers {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 55px;
+	}
+	.t-schedule__info-list {
+		width: 100%;
+	}
+	.t-schedule__info-calendar {
+		width: 100%;
+		&-items {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.t-schedule__info-calendar-items #datepickerScheduleTeacher {
+		width: 414px;
+	}
+	.t-schedule__info-calendar-btn {
+		width: max-content;
+		margin: 45px 0 0 auto;
+	}
+}
+@media (max-width: 790px) {
+	.t-schedule__info {
+		padding: 35px 0 80px 0;
+		font-family: Inter;
+	}
+}
+@media (max-width: 630px) {
+	.modelScheduleTeacher__wrappers {
+		width: 380px;
+		padding: 20px 20px 105px 20px;
+	}
+	.modelScheduleTeacher__wrappers-block {
+		flex-direction: column;
+		gap: 35px;
+	}
+	.modelScheduleTeacher__wrappers-lessons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+@media (max-width: 600px) {
+	.t-schedule__info .wrappers {
+		padding: 0 20px;
+	}
+}
+@media (max-width: 550px) {
+	.t-schedule__info-calendar-items {
+		padding: 38px 15px;
+	}
+}
+@media (max-width: 450px) {
+	.t-schedule__info-calendar-btn {
+		width: 100%;
+	}
+}

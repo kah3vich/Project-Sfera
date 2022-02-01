@@ -218,13 +218,13 @@ $(".t-quiz__page-back").on("click", function () {
 ;
 
 var _loop5 = function _loop5(_i9) {
-  $(".t-student__info-list-items:nth-child(".concat(_i9, ")")).on("click", function () {
+  $(".t-student__info-list-wrapper li:nth-child(".concat(_i9, ")")).on("click", function () {
     $(".wrappers .t-student__info-chat").addClass("display-n");
     $(".wrappers .t-student__info-chat:nth-child(".concat(_i9 + 1, ")")).removeClass("display-n");
   });
 };
 
-for (var _i9 = 1; _i9 <= $(".t-student__info-list-items").length; _i9++) {
+for (var _i9 = 1; _i9 <= $(".t-student__info-list-wrapper li").length; _i9++) {
   _loop5(_i9);
 }
 
@@ -278,6 +278,14 @@ $(".t-edit__info-plus").on("click", function () {
   newElementP.innerHTML = "<input type=\"text\" placeholder=\"".concat(elementsP, "\" id='edit__price_").concat(a, "' />");
   inviteSectionP.appendChild(newElementP);
   a++;
+});
+$(".menu__open").on("click", function () {
+  $(".menu").css("display", "block");
+  $("body").css("overflow", "hidden");
+});
+$(".menu__close").on("click", function () {
+  $(".menu").css("display", "none");
+  $("body").css("overflow", "visible");
 });
 ;
 $('.s-header__nav-client-profile').on('click', function () {
@@ -563,13 +571,13 @@ $(".modelScheduleTeacher__wrappers-close").on("click", function () {
 ;
 
 var _loop7 = function _loop7(_i14) {
-  $(".s-teacher__info-list-items:nth-child(".concat(_i14, ")")).on("click", function () {
+  $(".s-teacher__info-list-wrapper li:nth-child(".concat(_i14, ")")).on("click", function () {
     $(".wrappers .s-teacher__info-chat").addClass("display-n");
     $(".wrappers .s-teacher__info-chat:nth-child(".concat(_i14 + 1, ")")).removeClass("display-n");
   });
 };
 
-for (var _i14 = 1; _i14 <= $(".s-teacher__info-list-items").length; _i14++) {
+for (var _i14 = 1; _i14 <= $(".s-teacher__info-list-wrapper li").length; _i14++) {
   _loop7(_i14);
 }
 

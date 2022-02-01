@@ -1,0 +1,119 @@
+@media (max-width: 1400px) {
+	.s-pay .wrappers {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 55px;
+	}
+	.s-pay__history {
+		max-width: 100%;
+	}
+	.s-pay__history-nav {
+		width: 100%;
+		padding: 0 120px 0 0;
+	}
+	.s-pay__history-list-items {
+		max-width: 100%;
+	}
+	.s-pay__history-nav-items:nth-child(2),
+	.s-pay__history-nav-items:nth-child(3),
+	.s-pay__history-nav-items:nth-child(4) {
+		margin: 0 0 0 auto;
+	}
+}
+@media (max-width: 1200px) {
+	.s-pay {
+		padding: 65px 0 70px 115px;
+		font-family: Inter;
+	}
+}
+@media (max-width: 1000px) {
+	.s-pay__history-list-items-comment {
+		margin: 0 0 0 auto;
+		width: 170px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #435179;
+	}
+	.s-pay__history-nav {
+		width: 100%;
+		padding: 0 85px 0 0;
+	}
+}
+@media (max-width: 790px) {
+	.s-pay {
+		padding: 65px 0 70px 0;
+		font-family: Inter;
+	}
+}
+@media (max-width: 650px) {
+	.s-pay__history-list-items-status {
+		padding: 0;
+		&::after {
+			display: none;
+		}
+	}
+	.s-pay__history-list-items-comment {
+		margin: 0 0 0 auto;
+		width: 110px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #435179;
+	}
+	.s-pay__history-nav {
+		width: 100%;
+		padding: 0px 25px 0 0;
+	}
+}
+@media (max-width: 600px) {
+	.s-pay .wrappers {
+		padding: 0 20px;
+	}
+	.s-pay__history-title {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 35px;
+	}
+	.s-pay__history-list-items {
+		margin: 23px 0 0 0;
+		background: #ffffff;
+		border-radius: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 23px 10px 23px 10px;
+	}
+}
+@media (max-width: 550px) {
+	.s-pay__history-list-items-comment {
+		margin: 0 0 0 auto;
+		width: 80px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #435179;
+	}
+	.s-pay__history-nav {
+		width: 100%;
+		padding: 0px 5px 0 0;
+	}
+	.s-pay__history-nav-items:nth-child(1) {
+		margin: 0;
+	}
+	.s-pay__history-nav-items p {
+		font-size: 13px;
+	}
+}
+@media (max-width: 450px) {
+	.s-pay__account-block-items {
+		width: 100%;
+	}
+}

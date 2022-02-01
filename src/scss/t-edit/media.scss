@@ -1,0 +1,77 @@
+@media (max-width: 1380px) {
+    .t-edit__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 35px;
+    }
+    .t-edit__info {
+        width: 100%;
+    }
+    .t-edit__info-email {
+        height: max-content;
+    }
+    .t-edit__info-phone {
+        height: max-content;
+    }
+}
+@media (max-width: 1050px) {
+    .t-edit__info-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 55px;
+    }
+}
+@media (max-width: 790px) {
+    .t-edit {
+        padding: 35px 0 30px 0;
+        font-family: Inter;
+    }
+}
+@media (max-width: 620px) {
+    .t-edit__info-passwords {
+        margin: -35px 0 0 0;
+    }
+    .t-edit__info {
+        margin: 35px 0 0 0;
+    }
+}
+@media (max-width: 600px) {
+    .t-edit .wrappers {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 500px) {
+    .t-edit__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+    .t-edit__title-v {
+        margin: 0;
+    }
+    .t-edit__info-prices,
+    .t-edit__info-times,
+    .t-edit__info-students,
+    .t-edit__info-passwords,
+    .t-edit__info-password,
+    .t-edit__info-lessons,
+    .t-edit__info-phone,
+    .t-edit__info-email,
+    .t-edit__info-year,
+    .t-edit__info-patronymic,
+    .t-edit__info-name,
+    .t-edit__info-surname {
+        width: 100%;
+    }
+    .t-edit__info-student,
+    .t-edit__info-time,
+    .t-edit__info-price {
+        width: 100%;
+    }
+}

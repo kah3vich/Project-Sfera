@@ -2,24 +2,32 @@
     "title": "Моё расписание",
 })
 
+.menu__open 
+
 .menu 
     .menu__logo 
         img(src="./svg/menu/logos.svg" alt="logo")
+    .menu__close
     .menu__list 
         a(href="t-profile.html").menu__list-items#menuList-1
             .menu__list-items-add
+            .menu__list-items-text Страница 
             svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-1")
         a(href="t-schedule.html").menu__list-items#menuList-2
             .menu__list-items-add
+            .menu__list-items-text Страница
             svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-2")
         a(href="t-student.html").menu__list-items#menuList-3.menu__list-items-active
             .menu__list-items-add
+            .menu__list-items-text Страница
             svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-3")
         a(href="t-profile.html").menu__list-items#menuList-4 
             .menu__list-items-add
+            .menu__list-items-text Страница
             svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-4")
         a(href="t-profile.html").menu__list-items#menuList-5 
             .menu__list-items-add
+            .menu__list-items-text Страница
             svg.menu-icons: use(xlink:href="./svg/sprite.svg#menu--menu-icons-5")
 
 @@include('components/_t-header.pug')

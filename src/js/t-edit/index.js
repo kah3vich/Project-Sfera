@@ -24,3 +24,13 @@ $(".t-edit__info-plus").on("click", () => {
 
 	a++;
 });
+
+$(".menu__open").on("click", () => {
+	$(".menu").css("display", "block");
+	$("body").css("overflow", "hidden");
+});
+
+$(".menu__close").on("click", () => {
+	$(".menu").css("display", "none");
+	$("body").css("overflow", "visible");
+});
