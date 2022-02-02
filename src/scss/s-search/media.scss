@@ -1,3 +1,30 @@
+@media (max-width: 1320px) {
+	.s-search__quiz-long {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.s-search__quiz-long-line {
+		display: none;
+	}
+	.s-search__quiz-long-wrapper {
+		padding: 30px 0;
+	}
+	.s-search__quiz-students:first-child {
+		margin: 0 auto 0 0;
+	}
+	.s-search__quiz-price {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 35px;
+	}
+	.s-search__quiz-price-line {
+		display: none;
+	}
+}
 @media (max-width: 1200px) {
 	.s-search__quiz-things {
 		display: flex;
@@ -5,6 +32,20 @@
 		align-items: center;
 		justify-content: flex-start;
 		gap: 35px;
+	}
+	.s-search__quiz-student {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 35px;
+	}
+	.s-search__quiz-students-text textarea {
+		width: 100%;
+	}
+	.s-search__quiz-students,
+	.s-search__quiz-students-text {
+		width: 100%;
 	}
 	.s-search__quiz-things-line {
 		display: none;
@@ -26,6 +67,21 @@
 	.s-search__quiz-btn {
 		margin: 20px 0 0 auto;
 	}
+	.s-search__quiz-btns {
+		margin: 20px 0 0 auto;
+	}
+}
+@media (max-width: 1050px) {
+	.s-search__quiz-title {
+		padding: 0;
+	}
+	.s-search__quiz-stat {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 35px;
+	}
 }
 @media (max-width: 950px) {
 	.s-search__quiz-navig p {
@@ -37,6 +93,22 @@
 		text-align: center;
 		color: #2a2a2a;
 	}
+	.s-search__quiz-title h3 {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 30px;
+		color: #2a2a2a;
+	}
+	.s-search__quiz-long {
+		padding: 30px;
+	}
+	.s-search__quiz-student {
+		padding: 30px 0;
+	}
+	.s-search__quiz-price {
+		padding: 30px 0;
+	}
 }
 @media (max-width: 790px) {
 	.s-search {
@@ -46,10 +118,78 @@
 	.s-search__quiz-title {
 		padding: 0 5px;
 	}
+	.s-search__quiz-times {
+		padding: 30px;
+	}
+	.s-search__quiz-time-items {
+		justify-content: center;
+	}
+}
+@media (max-width: 750px) {
+	.s-search__quiz-stat {
+		padding: 30px 0;
+	}
+}
+@media (max-width: 700px) {
+	.s-search__quiz-time-line {
+		margin: 0;
+	}
+	.s-search__quiz-time-items {
+		width: 100%;
+	}
+	.s-search__quiz-time {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.s-search__quiz-time-close {
+		margin: 0 0 0 10px;
+		cursor: pointer;
+		background: transparent;
+	}
+	.s-search__quiz-time-items h3 {
+		width: 130px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #181818;
+	}
+	.s-search__quiz-students-items {
+		width: 100%;
+	}
 }
 @media (max-width: 600px) {
 	.s-search .wrappers {
 		padding: 0 20px;
+	}
+	.s-search__quiz-price-input {
+		width: 100%;
+	}
+	.s-search__quiz-price-items {
+		width: 100%;
+	}
+	.s-search__quiz-price-info {
+		width: 100%;
+	}
+	.s-search__quiz-time-items h3 {
+		width: 130px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 15px;
+		color: #181818;
+	}
+	.s-search__quiz-time-items h3 {
+		width: 100px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 15px;
+		color: #181818;
+	}
+	.s-search__quiz-time-line {
+		width: 5px;
+		height: 1px;
+		border-top: 1px solid #625dee;
 	}
 	.s-search__quiz-navigs {
 		display: flex;
@@ -70,6 +210,27 @@
 	.s-search__quiz-navig p {
 		margin: 10px 0 0 0;
 	}
+	.s-search__quiz-long-info {
+		width: 100%;
+	}
+	.s-search__quiz-times {
+		padding: 30px 0;
+	}
+	.s-search__quiz-long-info h3 {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 29px;
+		line-height: 35px;
+		color: #2a2a2a;
+	}
+	.s-search__quiz-title h3 {
+		font-style: normal;
+		width: 200px;
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 30px;
+		color: #2a2a2a;
+	}
 }
 @media (max-width: 500px) {
 	.quiz-select-css {
@@ -77,13 +238,6 @@
 	}
 }
 @media (max-width: 450px) {
-	.s-search__quiz-title h3 {
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		line-height: 59px;
-		color: #2a2a2a;
-	}
 	.s-search__quiz-things-info {
 		width: 350px;
 	}
