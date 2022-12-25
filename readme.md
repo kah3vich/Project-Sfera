@@ -1,49 +1,198 @@
-# Project Sfera
+<div align="center">
+  <a href="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
+    <img width="200" height="200" src="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
+  </a>
+  <br/>
+  <h1>Sfera</h1>
+  <p>
+    Admin panel
+  </p>
+  <br/>
+</div>
 
-### by kah3vich x bpump
+<!-- ||| -->
 
-<hr />
+<div align="center">
+    <br/>
+    <h2>🌏 Table of Contents 🌏</h2>
+    <br/>
+</div>
 
-# Teacher
+### 1. <a href="#install">Install</a>
 
-# Teacher Profile: [click me](https://kah3vich.github.io/Project-Sfera/public/t-profile.html)
+### 2. <a href="#description">Description</a>
 
-# Teacher List: [click me](https://kah3vich.github.io/Project-Sfera/public/t-list.html)
+### 3. <a href="#link">Link</a>
 
-# Teacher Pay: [click me](https://kah3vich.github.io/Project-Sfera/public/t-pay.html)
+### 4. <a href="#stack">Stack</a>
 
-# Teacher Question: [click me](https://kah3vich.github.io/Project-Sfera/public/t-question.html)
+### 5. <a href="#team">Team</a>
 
-# Teacher Questions: [click me](https://kah3vich.github.io/Project-Sfera/public/t-questions.html)
+### 6. <a href="#license">License</a>
 
-# Teacher Quiz: [click me](https://kah3vich.github.io/Project-Sfera/public/t-quiz.html)
+<!-- ||| -->
 
-# Teacher Schedule: [click me](https://kah3vich.github.io/Project-Sfera/public/t-schedule.html)
+<div id="install" align="center">
+    <br/>
+    <h2>🤔 Install 🤔</h2>
+    <br/>
+</div>
 
-# Teacher Student: [click me](https://kah3vich.github.io/Project-Sfera/public/t-student.html)
+### Install with npm:
 
-# Teacher Lesson: [click me](https://kah3vich.github.io/Project-Sfera/public/t-lesson.html)
+```bash
+npm install
+```
 
-# Teacher Edit: [click me](https://kah3vich.github.io/Project-Sfera/public/t-edit.html)
+### Start project:
 
-<hr />
+```bash
+npm run gulp
+```
 
-# Student
+<!-- ||| -->
 
-# Student Profile: [click me](https://kah3vich.github.io/Project-Sfera/public/s-profile.html)
+<div id="description" align="center">
+    <br/>
+    <h2>🌟 Description 🌟</h2>
+    <br/>
+</div>
 
-# Student List: [click me](https://kah3vich.github.io/Project-Sfera/public/s-list.html)
+<div align="center">
+    <p>English language school, english for children and teenagers, english language courses in Moscow, english language training in kiev, english training in Moscow, english language tutor Moscow, english for children, english at school.</p>
+</div>
 
-# Student Pay: [click me](https://kah3vich.github.io/Project-Sfera/public/s-pay.html)
+<!-- ||| -->
 
-# Student Schedule: [click me](https://kah3vich.github.io/Project-Sfera/public/s-schedule.html)
+<div id="link" align="center">
+    <br/>
+    <h2>🔒 Link 🔒</h2>
+    <br/>
+</div>
 
-# Student Teacher: [click me](https://kah3vich.github.io/Project-Sfera/public/s-teacher.html)
+### Teacher
 
-# Student Search: [click me](https://kah3vich.github.io/Project-Sfera/public/s-search.html)
+### 1. <a href="https://kah3vich.github.io/Project-Sfera/public/t-profile.html">Teacher Profile</a>
 
-# Student Teacher Profile: [click me](https://kah3vich.github.io/Project-Sfera/public/s-profiles.html)
+### 2. <a href="https://kah3vich.github.io/Project-Sfera/public/t-list.html">Teacher List</a>
 
-# Student List Teacher: [click me](https://kah3vich.github.io/Project-Sfera/public/s-found.html)
+### 3. <a href="https://kah3vich.github.io/Project-Sfera/public/t-pay.html">Teacher Pay</a>
 
-# Student Edit: [click me](https://kah3vich.github.io/Project-Sfera/public/s-edit.html)
+### 4. <a href="https://kah3vich.github.io/Project-Sfera/public/t-question.html">Teacher Question</a>
+
+### 5. <a href="https://kah3vich.github.io/Project-Sfera/public/t-questions.html">Teacher Questions</a>
+
+### 6. <a href="https://kah3vich.github.io/Project-Sfera/public/t-quiz.html">Teacher Quiz</a>
+
+### 7. <a href="https://kah3vich.github.io/Project-Sfera/public/t-schedule.html">Teacher Schedule</a>
+
+### 8. <a href="https://kah3vich.github.io/Project-Sfera/public/t-student.html">Teacher Student</a>
+
+### 9. <a href="https://kah3vich.github.io/Project-Sfera/public/t-lesson.html">Teacher Lesson</a>
+
+### 10. <a href="https://kah3vich.github.io/Project-Sfera/public/t-edit.html">Teacher Edit</a>
+
+### Student
+
+### 1. <a href="https://kah3vich.github.io/Project-Sfera/public/s-profile.html">Student Profile</a>
+
+### 2. <a href="https://kah3vich.github.io/Project-Sfera/public/s-list.html">Student List</a>
+
+### 3. <a href="https://kah3vich.github.io/Project-Sfera/public/s-pay.html">Student Pay</a>
+
+### 4. <a href="https://kah3vich.github.io/Project-Sfera/public/s-schedule.html">Student Schedule</a>
+
+### 5. <a href="https://kah3vich.github.io/Project-Sfera/public/s-teacher.html">Student Teacher</a>
+
+### 6. <a href="https://kah3vich.github.io/Project-Sfera/public/s-search.html">Student Search</a>
+
+### 7. <a href="https://kah3vich.github.io/Project-Sfera/public/s-profiles.html">Student Teacher Profile</a>
+
+### 8. <a href="https://kah3vich.github.io/Project-Sfera/public/s-found.html">Student List Teacher</a>
+
+### 9. <a href="https://kah3vich.github.io/Project-Sfera/public/s-edit.html">Student Edit</a>
+
+<!-- ||| -->
+
+<div id="stack" align="center">
+    <br/>
+    <h2>🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
+    <br/>
+</div>
+
+<table align="center">
+  <tr>
+    <td align="center" width="96">
+      <a href="#">
+        <img src="https://raw.githubusercontent.com/kah3vich/kah3vich/main/assets/icon/javascript.svg" width="48" height="48" alt="JavaScript" />
+      </a>
+      <br/>
+      <p>JavaScript</p>
+    </td>
+    <td align="center" width="96">
+      <a href="#">
+        <img src="https://raw.githubusercontent.com/kah3vich/kah3vich/main/assets/icon/scss.svg" width="48" height="48" alt="SCSS" />
+      </a>
+      <br/>
+      <p>SCSS</p>
+    </td>
+    <td align="center" width="96">
+      <a href="#">
+        <img src="https://raw.githubusercontent.com/kah3vich/kah3vich/main/assets/icon/pug.svg" width="48" height="48" alt="Pug" />
+      </a>
+      <br/>
+      <p>Pug</p>
+    </td>
+    <td align="center" width="96">
+      <a href="#">
+        <img src="https://raw.githubusercontent.com/kah3vich/kah3vich/main/assets/icon/html5.svg" width="48" height="48" alt="HTML" />
+      </a>
+      <br/>
+      <p>HTML</p>
+    </td>
+    <td align="center" width="96">
+      <a href="#">
+        <img src="https://raw.githubusercontent.com/kah3vich/kah3vich/main/assets/icon/gulp.svg" width="48" height="48" alt="Gulp" />
+      </a>
+      <br/>
+      <p>Gulp</p>
+    </td>
+  </tr>
+</table>
+
+<!-- ||| -->
+
+<div id="team" align="center">
+    <br/>
+    <h2>🧠 Core Team 🧠</h2>
+    <br/>
+</div>
+
+<table align="center">
+    <tr>
+        <td align="center" valign="top">
+            <img width="96" height="96" src="https://github.com/kah3vich.png?s=96">
+            <br/>
+            <a href="https://github.com/kah3vich">Kah3vich</a>
+            <p>Core Developer</p>
+        </td>
+        <td align="center" valign="top">
+            <img width="96" height="96" src="https://github.com/bpump.png?s=96">
+            <br/>
+            <a href="https://github.com/bpump">Bpump</a>
+            <p>Supports</p>
+        </td>
+    </tr>
+</table>
+
+<!-- ||| -->
+
+<div id="license" align="center">
+    <br/>
+    <h2>✅ License ✅</h2>
+    <br/>
+</div>
+
+## [GNU - free software license.](LICENSE)
+
+<!-- ! by kah3vich -->
