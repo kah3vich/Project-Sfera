@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="200" height="200" src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/logo.svg">
+  <img width="200" height="200" src="https://raw.githubusercontent.com/kah3vich/Project-Sfera/master/src/svg/menu/logos.svg">
   <br/>
   <h1>Sfera</h1>
   <p>
