@@ -1,11 +1,9 @@
 <div align="center">
-  <a href="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
-    <img width="200" height="200" src="https://www.vectorlogo.zone/logos/readmeio/readmeio-icon.svg">
-  </a>
+  <img width="200" height="200" src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/logo.svg">
   <br/>
   <h1>Sfera</h1>
   <p>
-    Admin panel
+    Admin panel.
   </p>
   <br/>
 </div>
@@ -14,7 +12,9 @@
 
 <div align="center">
     <br/>
-    <h2>🌏 Table of Contents 🌏</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/tableOfContents.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -32,9 +32,11 @@
 
 <!-- ||| -->
 
-<div id="install" align="center">
+<div align="center">
     <br/>
-    <h2>🤔 Install 🤔</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/install.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -44,29 +46,47 @@
 npm install
 ```
 
-### Start project:
+### Install with npm:
+
+```bash
+yarn
+```
+
+### Install with yarn:
 
 ```bash
 npm run gulp
 ```
 
+### Install with yarn:
+
+```bash
+yarn gulp
+```
+
 <!-- ||| -->
 
-<div id="description" align="center">
+<div align="center">
     <br/>
-    <h2>🌟 Description 🌟</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/description.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
 <div align="center">
-    <p>English language school, english for children and teenagers, english language courses in Moscow, english language training in kiev, english training in Moscow, english language tutor Moscow, english for children, english at school.</p>
+    <p>
+      English language school, english for children and teenagers, english language courses in Moscow, english language training in kiev, english training in Moscow, english language tutor Moscow, english for children, english at school.
+    </p>
 </div>
 
 <!-- ||| -->
 
-<div id="link" align="center">
+<div align="center">
     <br/>
-    <h2>🔒 Link 🔒</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/link.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -114,9 +134,11 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="stack" align="center">
+<div align="center">
     <br/>
-    <h2>🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/stack.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -162,9 +184,11 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="team" align="center">
+<div align="center">
     <br/>
-    <h2>🧠 Core Team 🧠</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/team.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
@@ -187,12 +211,18 @@ npm run gulp
 
 <!-- ||| -->
 
-<div id="license" align="center">
+<div align="center">
     <br/>
-    <h2>✅ License ✅</h2>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/license.svg" alt="" width="100%" height="29px">
+    <br/>
+    <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/gif/line.gif" alt="" width="100%" height="20px">
     <br/>
 </div>
 
-## [GNU - free software license.](LICENSE)
+<a href="https://github.com/kah3vich/Project-Sfera/blob/master/LICENSE">
+  <br/>
+  <img src="https://raw.githubusercontent.com/kah3vich/readme-project-base/main/assets/svg/licenseContent.svg" alt="" width="100%" height="29px">
+  <br/>
+</a>
 
-<!-- ! by kah3vich -->
+<!--| 🔥 by kah3vich 🔥 -->
